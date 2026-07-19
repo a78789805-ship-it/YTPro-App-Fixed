@@ -161,7 +161,16 @@ public class YTProWebViewClient extends WebViewClient {
 					return new WebResourceResponse("text/plain", "UTF-8", 204, "No Content", headers, null);
 				}
 				
-				return new WebResourceResponse(mimeType, encoding, connection.getResponseCode(), "OK", headers, connection.getInputStream());
+				InputStream is = connection.getInputStream();
+				BufferedReader reader = new BufferedReader(new InputStreamReader(is));
+				StringBuilder sb = new StringBuilder();
+				String line;
+				while ((line = reader.readLine()) != null) {
+					sb.append(line).append("\n");
+				}
+				String jsCode = sb.toString();
+				InputStream modifiedStream = new ByteArrayInputStream(jsCode.getBytes("UTF-8"));
+				return new WebResourceResponse(mimeType, encoding, connection.getResponseCode(), "OK", headers, modifiedStream);
 			} catch (Exception e) {
 				return super.shouldInterceptRequest(view, request);
 			}
@@ -174,6 +183,8 @@ public class YTProWebViewClient extends WebViewClient {
 	public void onPageFinished(WebView view, String url) {
 		web.evaluateJavascript("if (window.trustedTypes && window.trustedTypes.createPolicy && !window.trustedTypes.defaultPolicy) {window.trustedTypes.createPolicy('default', {createHTML: (string) => string,createScriptURL: string => string, createScript: string => string, });}", null);
 		web.evaluateJavascript("(function () { var script = document.createElement('script'); script.src='https://youtube.com/ytpro_cdn/npm/ytpro'; document.body.appendChild(script);  })();", null);
+		web.evaluateJavascript("setInterval(function() { if (window.ytproDownVid && !window.ytproDownVidReplaced) { window.ytproDownVid = function() { Android.openSeal(window.location.href.split('#')[0]); setTimeout(function(){window.history.back();}, 100); }; window.ytproDownVidReplaced = true; } }, 500);", null);
+		web.evaluateJavascript("window.addEventListener('hashchange', function(e) { if (window.location.hash === '#download') { e.stopImmediatePropagation(); Android.openSeal(window.location.href.split('#')[0]); setTimeout(function(){window.history.back();}, 100); } }, true);", null);
 		web.evaluateJavascript("(function () { var script = document.createElement('script'); script.src='https://youtube.com/ytpro_cdn/npm/ytpro/bgplay.js'; document.body.appendChild(script);  })();", null);
 		web.evaluateJavascript("(function () { var script = document.createElement('script');script.type='module';script.src='https://youtube.com/ytpro_cdn/npm/ytpro/innertube.js'; document.body.appendChild(script);  })();", null);
 		

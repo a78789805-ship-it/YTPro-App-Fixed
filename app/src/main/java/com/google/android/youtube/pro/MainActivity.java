@@ -100,7 +100,7 @@ public class MainActivity extends Activity {
         web.addJavascriptInterface(new WebAppInterface(this, web), "Android");
         web.setWebChromeClient(new YTProWebChromeClient(this, web));
         web.setWebViewClient(new YTProWebViewClient(this, web));
-        
+        web.clearCache(true);
         web.loadUrl(url);
 
         setupReceiver();

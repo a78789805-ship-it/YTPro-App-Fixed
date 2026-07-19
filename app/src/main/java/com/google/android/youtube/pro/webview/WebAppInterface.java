@@ -60,19 +60,20 @@ public class WebAppInterface {
 	
 	@JavascriptInterface
 	public void downvid(final String name, final String url, final String m) {
-		if (name != null && name.contains("YTPRO.zip")) {
-			DownloadUtils.downloadFile(activity, name, url, m);
-			return;
-		}
+		DownloadUtils.downloadFile(activity, name, url, m);
+	}
+	
+	@JavascriptInterface
+	public void openSeal(final String url) {
 		activity.runOnUiThread(new Runnable() {
 			@Override
 			public void run() {
 				try {
 					Intent intent = new Intent(Intent.ACTION_SEND);
 					intent.setType("text/plain");
-					String pageUrl = web.getUrl();
+					String pageUrl = url;
 					if (pageUrl == null || pageUrl.isEmpty()) {
-						pageUrl = url;
+						pageUrl = web.getUrl();
 					}
 					intent.putExtra(Intent.EXTRA_TEXT, pageUrl);
 					intent.setPackage("com.junkfood.seal");
