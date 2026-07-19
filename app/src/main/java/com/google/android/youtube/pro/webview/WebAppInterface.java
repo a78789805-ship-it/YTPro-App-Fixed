@@ -59,8 +59,30 @@ public class WebAppInterface {
 	}
 	
 	@JavascriptInterface
-	public void downvid(String name, String url, String m) {
-		DownloadUtils.downloadFile(activity, name, url, m);
+	public void downvid(final String name, final String url, final String m) {
+		if (name != null && name.contains("YTPRO.zip")) {
+			DownloadUtils.downloadFile(activity, name, url, m);
+			return;
+		}
+		activity.runOnUiThread(new Runnable() {
+			@Override
+			public void run() {
+				try {
+					Intent intent = new Intent(Intent.ACTION_SEND);
+					intent.setType("text/plain");
+					String pageUrl = web.getUrl();
+					if (pageUrl == null || pageUrl.isEmpty()) {
+						pageUrl = url;
+					}
+					intent.putExtra(Intent.EXTRA_TEXT, pageUrl);
+					intent.setPackage("com.junkfood.seal");
+					intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+					activity.startActivity(intent);
+				} catch (Exception e) {
+					Toast.makeText(activity, "تطبيق سيل غير مثبت (Seal app not installed)", Toast.LENGTH_SHORT).show();
+				}
+			}
+		});
 	}
 	
 	@JavascriptInterface
