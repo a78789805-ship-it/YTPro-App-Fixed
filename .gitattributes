@@ -1,0 +1,20 @@
+# Auto detect text files and perform LF normalization
+* text=auto
+
+# Binary files
+*.jar binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.webp binary
+*.ico binary
+*.keystore binary
+*.jks binary
+*.aab binary
+*.apk binary
+
+# Gradle wrapper script should always have LF
+gradlew text eol=lf
+*.sh text eol=lf
+*.bat text eol=crlf
