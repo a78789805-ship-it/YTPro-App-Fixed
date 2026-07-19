@@ -71,6 +71,7 @@ public class MainActivity extends Activity {
         web.getSettings().setDomStorageEnabled(true);
         web.getSettings().setDatabaseEnabled(true);
         web.getSettings().setMediaPlaybackRequiresUserGesture(false); 
+        web.getSettings().setUserAgentString("Mozilla/5.0 (Linux; Android 13; SM-G991U) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Mobile Safari/537.36");
         web.setLayerType(View.LAYER_TYPE_HARDWARE, null);
 
         CookieManager cookieManager = CookieManager.getInstance();
@@ -100,7 +101,7 @@ public class MainActivity extends Activity {
         web.addJavascriptInterface(new WebAppInterface(this, web), "Android");
         web.setWebChromeClient(new YTProWebChromeClient(this, web));
         web.setWebViewClient(new YTProWebViewClient(this, web));
-        web.clearCache(true);
+        
         web.loadUrl(url);
 
         setupReceiver();
@@ -173,6 +174,10 @@ public class MainActivity extends Activity {
     @Override
     protected void onUserLeaveHint() {
         super.onUserLeaveHint();
+        if (dL) {
+            dL = false;
+            return;
+        }
         if (Build.VERSION.SDK_INT >= 26 && web.getUrl() != null && web.getUrl().contains("watch")) {
             if (isPlaying) {
                 try {

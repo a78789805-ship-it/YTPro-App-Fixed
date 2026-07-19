@@ -78,6 +78,7 @@ public class WebAppInterface {
 					intent.putExtra(Intent.EXTRA_TEXT, pageUrl);
 					intent.setClassName("com.junkfood.seal", "com.junkfood.seal.QuickDownloadActivity");
 					intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+					activity.dL = true;
 					activity.startActivity(intent);
 				} catch (Exception e) {
 					Toast.makeText(activity, "تطبيق سيل غير مثبت (Seal app not installed)", Toast.LENGTH_SHORT).show();
