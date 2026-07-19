@@ -76,7 +76,7 @@ public class WebAppInterface {
 						pageUrl = web.getUrl();
 					}
 					intent.putExtra(Intent.EXTRA_TEXT, pageUrl);
-					intent.setPackage("com.junkfood.seal");
+					intent.setClassName("com.junkfood.seal", "com.junkfood.seal.QuickDownloadActivity");
 					intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 					activity.startActivity(intent);
 				} catch (Exception e) {
