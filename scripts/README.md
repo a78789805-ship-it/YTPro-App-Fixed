@@ -35,10 +35,9 @@
    * Summarise Vidoes
    * Customisable prompts and models
  * Video Downloader
- * Shorts Downloader
- * In-built Video and Audio Muxer
+ * Shorts Downloader 
  * Thumbnails Downloader
- * Captions Downloader
+ * Captions Downloader 
  * Ads Blocker
  * Minimize Video
  * Picture in Picture Mode
@@ -50,8 +49,7 @@
  * Skip Sponsers
  * Force Zoom
  * Hide Shorts
- * Upto 10x video speed 
- * Minimal APK size
+ * APK size under 50KB
  * Adaptive UI icons
  * Minimal
  * Almost 0 Internal Dependencies
@@ -65,9 +63,9 @@ The available variables for gemini prompt are
 * `{videoId}` : Video Id of the video
 
 ## ToDo
+ * Add basic features to the video player
  * Enhance Audio
- * Skip Silence 
- 
+ * Merging Adaptive Formats
 
 ### Credits
  * [Sponsor Block](https://github.com/ajayyy/SponsorBlock)
@@ -81,4 +79,4 @@ The available variables for gemini prompt are
 
 
 ## Disclaimer 
-This is an educational project aimed at showcasing javascript injection into a webview to enhance productivity.
+This is an educational project trying to showcase the javascript injection into a webview for enhancing the productivity.

@@ -1,0 +1,29 @@
+apply plugin: 'com.android.application'
+
+android {
+    namespace "com.google.android.youtube.pro"  
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "com.google.android.youtube.pro"
+        minSdkVersion 24
+        targetSdkVersion 34
+        versionCode 1
+        versionName "3.98"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    // Add your dependencies here
+    implementation 'androidx.webkit:webkit:1.12.0'
+}
+
+
+
