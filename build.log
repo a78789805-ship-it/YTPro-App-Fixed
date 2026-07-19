@@ -1,0 +1,1215 @@
+Initialized native services in: /opt/gradle/.gradle/native
+Initialized jansi services in: /opt/gradle/.gradle/native
+Received JVM installation metadata from '/usr/lib/jvm/temurin-21-jdk-amd64': {JAVA_HOME=/usr/lib/jvm/temurin-21-jdk-amd64, JAVA_VERSION=21.0.11, JAVA_VENDOR=Eclipse Adoptium, RUNTIME_NAME=OpenJDK Runtime Environment, RUNTIME_VERSION=21.0.11+10-LTS, VM_NAME=OpenJDK 64-Bit Server VM, VM_VERSION=21.0.11+10-LTS, VM_VENDOR=Eclipse Adoptium, OS_ARCH=amd64}
+The client will now receive all logging from the daemon (pid: 1112). The daemon log file: /opt/gradle/.gradle/daemon/8.7/daemon-1112.out.log
+Starting 2nd build in daemon [uptime: 18 mins 41.186 secs, performance: 99%, GC rate: 0.00/s, heap usage: 0% of 1.5 GiB]
+Using 4 worker leases.
+Watching the file system is configured to be enabled if available
+Unable to list file systems to check whether they can be watched. Disabling watching. Reason: Could not query file systems: could not open mount file (errno 2: No such file or directory)
+File system watching is inactive
+Starting Build
+Settings evaluated using settings file '/app/applet/settings.gradle'.
+Projects loaded. Root project using build file '/app/applet/build.gradle'.
+Included projects: [root project 'applet', project ':app']
+
+> Configure project :
+Evaluating root project 'applet' using build file '/app/applet/build.gradle'.
+Invalidating in-memory cache of /app/applet/.gradle/buildOutputCleanup/outputFiles.bin
+Invalidating in-memory cache of /opt/gradle/.gradle/caches/journal-1/file-access.bin
+Transforming gradle-8.5.0.jar (com.android.tools.build:gradle:8.5.0) with ExternalDependencyInstrumentingArtifactTransform
+Transforming google-services-4.4.2.jar (com.google.gms:google-services:4.4.2) with ExternalDependencyInstrumentingArtifactTransform
+Transforming gradle-settings-api-8.5.0.jar (com.android.tools.build:gradle-settings-api:8.5.0) with ExternalDependencyInstrumentingArtifactTransform
+Transforming lint-model-31.5.0.jar (com.android.tools.lint:lint-model:31.5.0) with ExternalDependencyInstrumentingArtifactTransform
+Transforming builder-8.5.0.jar (com.android.tools.build:builder:8.5.0) with ExternalDependencyInstrumentingArtifactTransform
+Transforming manifest-merger-31.5.0.jar (com.android.tools.build:manifest-merger:31.5.0) with ExternalDependencyInstrumentingArtifactTransform
+Transforming sdk-common-31.5.0.jar (com.android.tools:sdk-common:31.5.0) with ExternalDependencyInstrumentingArtifactTransform
+Transforming sdklib-31.5.0.jar (com.android.tools:sdklib:31.5.0) with ExternalDependencyInstrumentingArtifactTransform
+Transforming repository-31.5.0.jar (com.android.tools:repository:31.5.0) with ExternalDependencyInstrumentingArtifactTransform
+Transforming gradle-api-8.5.0.jar (com.android.tools.build:gradle-api:8.5.0) with ExternalDependencyInstrumentingArtifactTransform
+Transforming builder-test-api-8.5.0.jar (com.android.tools.build:builder-test-api:8.5.0) with ExternalDependencyInstrumentingArtifactTransform
+Transforming ddmlib-31.5.0.jar (com.android.tools.ddms:ddmlib:31.5.0) with ExternalDependencyInstrumentingArtifactTransform
+Transforming aaptcompiler-8.5.0.jar (com.android.tools.build:aaptcompiler:8.5.0) with ExternalDependencyInstrumentingArtifactTransform
+Transforming bundletool-1.16.0.jar (com.android.tools.build:bundletool:1.16.0) with ExternalDependencyInstrumentingArtifactTransform
+Transforming aapt2-proto-8.5.0-11315950.jar (com.android.tools.build:aapt2-proto:8.5.0-11315950) with ExternalDependencyInstrumentingArtifactTransform
+Transforming crash-31.5.0.jar (com.android.tools.analytics-library:crash:31.5.0) with ExternalDependencyInstrumentingArtifactTransform
+Transforming tracker-31.5.0.jar (com.android.tools.analytics-library:tracker:31.5.0) with ExternalDependencyInstrumentingArtifactTransform
+Transforming shared-31.5.0.jar (com.android.tools.analytics-library:shared:31.5.0) with ExternalDependencyInstrumentingArtifactTransform
+Transforming lint-typedef-remover-31.5.0.jar (com.android.tools.lint:lint-typedef-remover:31.5.0) with ExternalDependencyInstrumentingArtifactTransform
+Transforming databinding-compiler-common-8.5.0.jar (androidx.databinding:databinding-compiler-common:8.5.0) with ExternalDependencyInstrumentingArtifactTransform
+Transforming databinding-common-8.5.0.jar (androidx.databinding:databinding-common:8.5.0) with ExternalDependencyInstrumentingArtifactTransform
+Transforming baseLibrary-8.5.0.jar (com.android.databinding:baseLibrary:8.5.0) with ExternalDependencyInstrumentingArtifactTransform
+Transforming layoutlib-api-31.5.0.jar (com.android.tools.layoutlib:layoutlib-api:31.5.0) with ExternalDependencyInstrumentingArtifactTransform
+Transforming android-device-provider-ddmlib-proto-31.5.0.jar (com.android.tools.utp:android-device-provider-ddmlib-proto:31.5.0) with ExternalDependencyInstrumentingArtifactTransform
+Transforming android-device-provider-gradle-proto-31.5.0.jar (com.android.tools.utp:android-device-provider-gradle-proto:31.5.0) with ExternalDependencyInstrumentingArtifactTransform
+Transforming android-test-plugin-host-additional-test-output-proto-31.5.0.jar (com.android.tools.utp:android-test-plugin-host-additional-test-output-proto:31.5.0) with ExternalDependencyInstrumentingArtifactTransform
+Transforming android-test-plugin-host-coverage-proto-31.5.0.jar (com.android.tools.utp:android-test-plugin-host-coverage-proto:31.5.0) with ExternalDependencyInstrumentingArtifactTransform
+Transforming android-test-plugin-host-emulator-control-proto-31.5.0.jar (com.android.tools.utp:android-test-plugin-host-emulator-control-proto:31.5.0) with ExternalDependencyInstrumentingArtifactTransform
+Transforming android-test-plugin-host-logcat-proto-31.5.0.jar (com.android.tools.utp:android-test-plugin-host-logcat-proto:31.5.0) with ExternalDependencyInstrumentingArtifactTransform
+Transforming android-test-plugin-host-apk-installer-proto-31.5.0.jar (com.android.tools.utp:android-test-plugin-host-apk-installer-proto:31.5.0) with ExternalDependencyInstrumentingArtifactTransform
+Transforming android-test-plugin-host-retention-proto-31.5.0.jar (com.android.tools.utp:android-test-plugin-host-retention-proto:31.5.0) with ExternalDependencyInstrumentingArtifactTransform
+Transforming android-test-plugin-result-listener-gradle-proto-31.5.0.jar (com.android.tools.utp:android-test-plugin-result-listener-gradle-proto:31.5.0) with ExternalDependencyInstrumentingArtifactTransform
+Transforming builder-model-8.5.0.jar (com.android.tools.build:builder-model:8.5.0) with ExternalDependencyInstrumentingArtifactTransform
+Transforming strict-version-matcher-plugin-1.2.4.jar (com.google.android.gms:strict-version-matcher-plugin:1.2.4) with ExternalDependencyInstrumentingArtifactTransform
+Transforming dvlib-31.5.0.jar (com.android.tools:dvlib:31.5.0) with ExternalDependencyInstrumentingArtifactTransform
+Transforming common-31.5.0.jar (com.android.tools:common:31.5.0) with ExternalDependencyInstrumentingArtifactTransform
+Transforming jetifier-processor-1.0.0-beta10.jar (com.android.tools.build.jetifier:jetifier-processor:1.0.0-beta10) with ExternalDependencyInstrumentingArtifactTransform
+Transforming jetifier-core-1.0.0-beta10.jar (com.android.tools.build.jetifier:jetifier-core:1.0.0-beta10) with ExternalDependencyInstrumentingArtifactTransform
+Transforming kotlin-reflect-1.9.20.jar (org.jetbrains.kotlin:kotlin-reflect:1.9.20) with ExternalDependencyInstrumentingArtifactTransform
+Transforming kotlin-stdlib-jdk7-1.9.20.jar (org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.9.20) with ExternalDependencyInstrumentingArtifactTransform
+Transforming kotlin-stdlib-1.9.20.jar (org.jetbrains.kotlin:kotlin-stdlib:1.9.20) with ExternalDependencyInstrumentingArtifactTransform
+Transforming kotlin-stdlib-jdk8-1.9.20.jar (org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.9.20) with ExternalDependencyInstrumentingArtifactTransform
+Transforming transform-api-2.0.0-deprecated-use-gradle-api.jar (com.android.tools.build:transform-api:2.0.0-deprecated-use-gradle-api) with ExternalDependencyInstrumentingArtifactTransform
+Transforming httpmime-4.5.6.jar (org.apache.httpcomponents:httpmime:4.5.6) with ExternalDependencyInstrumentingArtifactTransform
+Transforming commons-io-2.13.0.jar (commons-io:commons-io:2.13.0) with ExternalDependencyInstrumentingArtifactTransform
+Transforming asm-commons-9.6.jar (org.ow2.asm:asm-commons:9.6) with ExternalDependencyInstrumentingArtifactTransform
+Transforming asm-util-9.6.jar (org.ow2.asm:asm-util:9.6) with ExternalDependencyInstrumentingArtifactTransform
+Transforming asm-analysis-9.6.jar (org.ow2.asm:asm-analysis:9.6) with ExternalDependencyInstrumentingArtifactTransform
+Transforming asm-tree-9.6.jar (org.ow2.asm:asm-tree:9.6) with ExternalDependencyInstrumentingArtifactTransform
+Transforming asm-9.6.jar (org.ow2.asm:asm:9.6) with ExternalDependencyInstrumentingArtifactTransform
+Transforming apkzlib-8.5.0.jar (com.android.tools.build:apkzlib:8.5.0) with ExternalDependencyInstrumentingArtifactTransform
+Transforming bcpkix-jdk18on-1.77.jar (org.bouncycastle:bcpkix-jdk18on:1.77) with ExternalDependencyInstrumentingArtifactTransform
+Transforming jaxb-runtime-2.3.2.jar (org.glassfish.jaxb:jaxb-runtime:2.3.2) with ExternalDependencyInstrumentingArtifactTransform
+Transforming jopt-simple-4.9.jar (net.sf.jopt-simple:jopt-simple:4.9) with ExternalDependencyInstrumentingArtifactTransform
+Transforming javapoet-1.10.0.jar (com.squareup:javapoet:1.10.0) with ExternalDependencyInstrumentingArtifactTransform
+Transforming protobuf-java-util-3.22.3.jar (com.google.protobuf:protobuf-java-util:3.22.3) with ExternalDependencyInstrumentingArtifactTransform
+Transforming grpc-protobuf-1.57.0.jar (io.grpc:grpc-protobuf:1.57.0) with ExternalDependencyInstrumentingArtifactTransform
+Transforming tink-1.7.0.jar (com.google.crypto.tink:tink:1.7.0) with ExternalDependencyInstrumentingArtifactTransform
+Transforming protos-31.5.0.jar (com.android.tools.analytics-library:protos:31.5.0) with ExternalDependencyInstrumentingArtifactTransform
+Transforming proto-google-common-protos-2.17.0.jar (com.google.api.grpc:proto-google-common-protos:2.17.0) with ExternalDependencyInstrumentingArtifactTransform
+Transforming protobuf-java-3.22.3.jar (com.google.protobuf:protobuf-java:3.22.3) with ExternalDependencyInstrumentingArtifactTransform
+Transforming grpc-netty-1.57.0.jar (io.grpc:grpc-netty:1.57.0) with ExternalDependencyInstrumentingArtifactTransform
+Transforming grpc-core-1.57.0.jar (io.grpc:grpc-core:1.57.0) with ExternalDependencyInstrumentingArtifactTransform
+Transforming gson-2.10.1.jar (com.google.code.gson:gson:2.10.1) with ExternalDependencyInstrumentingArtifactTransform
+Transforming grpc-stub-1.57.0.jar (io.grpc:grpc-stub:1.57.0) with ExternalDependencyInstrumentingArtifactTransform
+Transforming core-proto-0.0.9-alpha02.jar (com.google.testing.platform:core-proto:0.0.9-alpha02) with ExternalDependencyInstrumentingArtifactTransform
+Transforming kxml2-2.3.0.jar (net.sf.kxml:kxml2:2.3.0) with ExternalDependencyInstrumentingArtifactTransform
+Transforming tensorflow-lite-metadata-0.1.0-rc2.jar (org.tensorflow:tensorflow-lite-metadata:0.1.0-rc2) with ExternalDependencyInstrumentingArtifactTransform
+Transforming flatbuffers-java-1.12.0.jar (com.google.flatbuffers:flatbuffers-java:1.12.0) with ExternalDependencyInstrumentingArtifactTransform
+Transforming jimfs-1.1.jar (com.google.jimfs:jimfs:1.1) with ExternalDependencyInstrumentingArtifactTransform
+Transforming grpc-context-1.57.0.jar (io.grpc:grpc-context:1.57.0) with ExternalDependencyInstrumentingArtifactTransform
+Transforming grpc-protobuf-lite-1.57.0.jar (io.grpc:grpc-protobuf-lite:1.57.0) with ExternalDependencyInstrumentingArtifactTransform
+Transforming grpc-api-1.57.0.jar (io.grpc:grpc-api:1.57.0) with ExternalDependencyInstrumentingArtifactTransform
+Transforming guava-32.0.1-jre.jar (com.google.guava:guava:32.0.1-jre) with ExternalDependencyInstrumentingArtifactTransform
+Transforming dagger-2.28.3.jar (com.google.dagger:dagger:2.28.3) with ExternalDependencyInstrumentingArtifactTransform
+Transforming javax.inject-1.jar (javax.inject:javax.inject:1) with ExternalDependencyInstrumentingArtifactTransform
+Transforming bcutil-jdk18on-1.77.jar (org.bouncycastle:bcutil-jdk18on:1.77) with ExternalDependencyInstrumentingArtifactTransform
+Transforming bcprov-jdk18on-1.77.jar (org.bouncycastle:bcprov-jdk18on:1.77) with ExternalDependencyInstrumentingArtifactTransform
+Transforming trove4j-1.0.20200330.jar (org.jetbrains.intellij.deps:trove4j:1.0.20200330) with ExternalDependencyInstrumentingArtifactTransform
+Transforming commons-compress-1.21.jar (org.apache.commons:commons-compress:1.21) with ExternalDependencyInstrumentingArtifactTransform
+Transforming httpclient-4.5.14.jar (org.apache.httpcomponents:httpclient:4.5.14) with ExternalDependencyInstrumentingArtifactTransform
+Transforming httpcore-4.4.16.jar (org.apache.httpcomponents:httpcore:4.4.16) with ExternalDependencyInstrumentingArtifactTransform
+Transforming javax.activation-1.2.0.jar (com.sun.activation:javax.activation:1.2.0) with ExternalDependencyInstrumentingArtifactTransform
+Transforming annotations-23.0.0.jar (org.jetbrains:annotations:23.0.0) with ExternalDependencyInstrumentingArtifactTransform
+Transforming signflinger-8.5.0.jar (com.android:signflinger:8.5.0) with ExternalDependencyInstrumentingArtifactTransform
+Transforming zipflinger-8.5.0.jar (com.android:zipflinger:8.5.0) with ExternalDependencyInstrumentingArtifactTransform
+Transforming annotations-31.5.0.jar (com.android.tools:annotations:31.5.0) with ExternalDependencyInstrumentingArtifactTransform
+Transforming jna-platform-5.6.0.jar (net.java.dev.jna:jna-platform:5.6.0) with ExternalDependencyInstrumentingArtifactTransform
+Transforming juniversalchardet-1.0.3.jar (com.googlecode.juniversalchardet:juniversalchardet:1.0.3) with ExternalDependencyInstrumentingArtifactTransform
+Transforming javax.annotation-api-1.3.2.jar (javax.annotation:javax.annotation-api:1.3.2) with ExternalDependencyInstrumentingArtifactTransform
+Transforming stax-ex-1.8.1.jar (org.jvnet.staxex:stax-ex:1.8.1) with ExternalDependencyInstrumentingArtifactTransform
+Transforming jakarta.xml.bind-api-2.3.2.jar (jakarta.xml.bind:jakarta.xml.bind-api:2.3.2) with ExternalDependencyInstrumentingArtifactTransform
+Transforming txw2-2.3.2.jar (org.glassfish.jaxb:txw2:2.3.2) with ExternalDependencyInstrumentingArtifactTransform
+Transforming istack-commons-runtime-3.0.8.jar (com.sun.istack:istack-commons-runtime:3.0.8) with ExternalDependencyInstrumentingArtifactTransform
+Transforming FastInfoset-1.2.16.jar (com.sun.xml.fastinfoset:FastInfoset:1.2.16) with ExternalDependencyInstrumentingArtifactTransform
+Transforming jakarta.activation-api-1.2.1.jar (jakarta.activation:jakarta.activation-api:1.2.1) with ExternalDependencyInstrumentingArtifactTransform
+Transforming auto-value-annotations-1.6.2.jar (com.google.auto.value:auto-value-annotations:1.6.2) with ExternalDependencyInstrumentingArtifactTransform
+Transforming error_prone_annotations-2.18.0.jar (com.google.errorprone:error_prone_annotations:2.18.0) with ExternalDependencyInstrumentingArtifactTransform
+Transforming jose4j-0.9.5.jar (org.bitbucket.b_c:jose4j:0.9.5) with ExternalDependencyInstrumentingArtifactTransform
+Transforming slf4j-api-1.7.30.jar (org.slf4j:slf4j-api:1.7.30) with ExternalDependencyInstrumentingArtifactTransform
+Transforming jdom2-2.0.6.jar (org.jdom:jdom2:2.0.6) with ExternalDependencyInstrumentingArtifactTransform
+Transforming jsr305-3.0.2.jar (com.google.code.findbugs:jsr305:3.0.2) with ExternalDependencyInstrumentingArtifactTransform
+Transforming j2objc-annotations-2.8.jar (com.google.j2objc:j2objc-annotations:2.8) with ExternalDependencyInstrumentingArtifactTransform
+Transforming annotations-4.1.1.4.jar (com.google.android:annotations:4.1.1.4) with ExternalDependencyInstrumentingArtifactTransform
+Transforming animal-sniffer-annotations-1.23.jar (org.codehaus.mojo:animal-sniffer-annotations:1.23) with ExternalDependencyInstrumentingArtifactTransform
+Transforming perfmark-api-0.26.0.jar (io.perfmark:perfmark-api:0.26.0) with ExternalDependencyInstrumentingArtifactTransform
+Transforming netty-codec-http2-4.1.93.Final.jar (io.netty:netty-codec-http2:4.1.93.Final) with ExternalDependencyInstrumentingArtifactTransform
+Transforming netty-handler-proxy-4.1.93.Final.jar (io.netty:netty-handler-proxy:4.1.93.Final) with ExternalDependencyInstrumentingArtifactTransform
+Transforming netty-codec-http-4.1.93.Final.jar (io.netty:netty-codec-http:4.1.93.Final) with ExternalDependencyInstrumentingArtifactTransform
+Transforming netty-handler-4.1.93.Final.jar (io.netty:netty-handler:4.1.93.Final) with ExternalDependencyInstrumentingArtifactTransform
+Transforming netty-transport-native-unix-common-4.1.93.Final.jar (io.netty:netty-transport-native-unix-common:4.1.93.Final) with ExternalDependencyInstrumentingArtifactTransform
+Transforming checker-qual-3.33.0.jar (org.checkerframework:checker-qual:3.33.0) with ExternalDependencyInstrumentingArtifactTransform
+Transforming commons-codec-1.11.jar (commons-codec:commons-codec:1.11) with ExternalDependencyInstrumentingArtifactTransform
+Transforming apksig-8.5.0.jar (com.android.tools.build:apksig:8.5.0) with ExternalDependencyInstrumentingArtifactTransform
+Transforming javawriter-2.5.0.jar (com.squareup:javawriter:2.5.0) with ExternalDependencyInstrumentingArtifactTransform
+Transforming failureaccess-1.0.1.jar (com.google.guava:failureaccess:1.0.1) with ExternalDependencyInstrumentingArtifactTransform
+Transforming listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar (com.google.guava:listenablefuture:9999.0-empty-to-avoid-conflict-with-guava) with ExternalDependencyInstrumentingArtifactTransform
+Transforming commons-logging-1.2.jar (commons-logging:commons-logging:1.2) with ExternalDependencyInstrumentingArtifactTransform
+Transforming jna-5.6.0.jar (net.java.dev.jna:jna:5.6.0) with ExternalDependencyInstrumentingArtifactTransform
+Transforming netty-codec-socks-4.1.93.Final.jar (io.netty:netty-codec-socks:4.1.93.Final) with ExternalDependencyInstrumentingArtifactTransform
+Transforming netty-codec-4.1.93.Final.jar (io.netty:netty-codec:4.1.93.Final) with ExternalDependencyInstrumentingArtifactTransform
+Transforming netty-transport-4.1.93.Final.jar (io.netty:netty-transport:4.1.93.Final) with ExternalDependencyInstrumentingArtifactTransform
+Transforming netty-buffer-4.1.93.Final.jar (io.netty:netty-buffer:4.1.93.Final) with ExternalDependencyInstrumentingArtifactTransform
+Transforming netty-resolver-4.1.93.Final.jar (io.netty:netty-resolver:4.1.93.Final) with ExternalDependencyInstrumentingArtifactTransform
+Transforming netty-common-4.1.93.Final.jar (io.netty:netty-common:4.1.93.Final) with ExternalDependencyInstrumentingArtifactTransform
+
+> Configure project :app
+Evaluating project ':app' using build file '/app/applet/app/build.gradle'.
+Using default execution profile
+Parsed shrinker version: 8.5.10
+All projects evaluated.
+Task name matched 'assembleDebug'
+Selected primary task 'assembleDebug' from project :
+Tasks to be executed: [task ':app:preBuild', task ':app:preDebugBuild', task ':app:mergeDebugNativeDebugMetadata', task ':app:javaPreCompileDebug', task ':app:checkDebugAarMetadata', task ':app:generateDebugResValues', task ':app:mapDebugSourceSetPaths', task ':app:generateDebugResources', task ':app:mergeDebugResources', task ':app:packageDebugResources', task ':app:parseDebugLocalResources', task ':app:createDebugCompatibleScreenManifests', task ':app:extractDeepLinksDebug', task ':app:processDebugMainManifest', task ':app:processDebugManifest', task ':app:processDebugManifestForPackage', task ':app:processDebugResources', task ':app:compileDebugJavaWithJavac', task ':app:mergeDebugShaders', task ':app:compileDebugShaders', task ':app:generateDebugAssets', task ':app:mergeDebugAssets', task ':app:compressDebugAssets', task ':app:processDebugJavaRes', task ':app:mergeDebugJavaResource', task ':app:checkDebugDuplicateClasses', task ':app:desugarDebugFileDependencies', task ':app:mergeDebugStartupProfile', task ':app:mergeExtDexDebug', task ':app:mergeLibDexDebug', task ':app:dexBuilderDebug', task ':app:mergeProjectDexDebug', task ':app:mergeDebugJniLibFolders', task ':app:mergeDebugNativeLibs', task ':app:stripDebugDebugSymbols', task ':app:validateSigningDebug', task ':app:writeDebugAppMetadata', task ':app:writeDebugSigningConfigVersions', task ':app:packageDebug', task ':app:createDebugApkListingFileRedirect', task ':app:assembleDebug']
+Tasks that were excluded: []
+Resolve mutations for :app:preBuild (Thread[#135,included builds,5,main]) started.
+:app:preBuild (Thread[#135,included builds,5,main]) started.
+
+> Task :app:preBuild UP-TO-DATE
+Skipping task ':app:preBuild' as it has no actions.
+Resolve mutations for :app:preDebugBuild (Thread[#135,included builds,5,main]) started.
+:app:preDebugBuild (Thread[#135,included builds,5,main]) started.
+
+> Task :app:preDebugBuild UP-TO-DATE
+Skipping task ':app:preDebugBuild' as it has no actions.
+Resolve mutations for :app:mergeDebugNativeDebugMetadata (Thread[#137,Execution worker Thread 2,5,main]) started.
+:app:mergeDebugNativeDebugMetadata (Thread[#137,Execution worker Thread 2,5,main]) started.
+
+> Task :app:mergeDebugNativeDebugMetadata NO-SOURCE
+Skipping task ':app:mergeDebugNativeDebugMetadata' as it has no source files and no previous output files.
+Resolve mutations for :app:javaPreCompileDebug (Thread[#137,Execution worker Thread 2,5,main]) started.
+:app:javaPreCompileDebug (Thread[#137,Execution worker Thread 2,5,main]) started.
+Resolve mutations for :app:checkDebugAarMetadata (Thread[#135,included builds,5,main]) started.
+:app:checkDebugAarMetadata (Thread[#135,included builds,5,main]) started.
+
+> Task :app:javaPreCompileDebug
+Deleting stale output file: /app/applet/app/build/intermediates/annotation_processor_list/debug/javaPreCompileDebug/annotationProcessors.json
+Caching disabled for task ':app:javaPreCompileDebug' because:
+  Build cache is disabled
+Task ':app:javaPreCompileDebug' is not up-to-date because:
+  Output property 'annotationProcessorListFile' file /app/applet/app/build/intermediates/annotation_processor_list/debug/javaPreCompileDebug/annotationProcessors.json has been removed.
+Resolve mutations for :app:generateDebugResValues (Thread[#137,Execution worker Thread 2,5,main]) started.
+:app:generateDebugResValues (Thread[#137,Execution worker Thread 2,5,main]) started.
+
+> Task :app:checkDebugAarMetadata
+Deleting stale output file: /app/applet/app/build/intermediates/aar_metadata_check/debug/checkDebugAarMetadata
+Transforming webkit-1.12.0.aar (androidx.webkit:webkit:1.12.0) with ExtractAarTransform
+Transforming lifecycle-runtime-2.0.0.aar (androidx.lifecycle:lifecycle-runtime:2.0.0) with ExtractAarTransform
+Transforming webkit-1.12.0.aar (androidx.webkit:webkit:1.12.0) with AarTransform
+Transforming lifecycle-runtime-2.0.0.aar (androidx.lifecycle:lifecycle-runtime:2.0.0) with AarTransform
+Transforming versionedparcelable-1.1.0.aar (androidx.versionedparcelable:versionedparcelable:1.1.0) with ExtractAarTransform
+Transforming versionedparcelable-1.1.0.aar (androidx.versionedparcelable:versionedparcelable:1.1.0) with AarTransform
+Transforming core-1.1.0.aar (androidx.core:core:1.1.0) with ExtractAarTransform
+Transforming core-1.1.0.aar (androidx.core:core:1.1.0) with AarTransform
+Caching disabled for task ':app:checkDebugAarMetadata' because:
+  Build cache is disabled
+  Caching has been disabled for the task
+Task ':app:checkDebugAarMetadata' is not up-to-date because:
+  Output property 'dummyOutputDirectory' file /app/applet/app/build/intermediates/aar_metadata_check/debug/checkDebugAarMetadata has been removed.
+
+> Task :app:generateDebugResValues
+Deleting stale output file: /app/applet/app/build/generated/res/resValues/debug
+Caching disabled for task ':app:generateDebugResValues' because:
+  Build cache is disabled
+Task ':app:generateDebugResValues' is not up-to-date because:
+  Output property 'outputDirectory' file /app/applet/app/build/generated/res/resValues/debug has been removed.
+Resolve mutations for :app:mapDebugSourceSetPaths (Thread[#137,Execution worker Thread 2,5,main]) started.
+:app:mapDebugSourceSetPaths (Thread[#135,included builds,5,main]) started.
+
+> Task :app:mapDebugSourceSetPaths
+Deleting stale output file: /app/applet/app/build/intermediates/source_set_path_map/debug/mapDebugSourceSetPaths/file-map.txt
+Transforming webkit-1.12.0.aar (androidx.webkit:webkit:1.12.0) with ExtractAarTransform
+Transforming webkit-1.12.0.aar (androidx.webkit:webkit:1.12.0) with AarTransform
+Transforming core-1.1.0.aar (androidx.core:core:1.1.0) with ExtractAarTransform
+Transforming core-1.1.0.aar (androidx.core:core:1.1.0) with AarTransform
+Transforming versionedparcelable-1.1.0.aar (androidx.versionedparcelable:versionedparcelable:1.1.0) with ExtractAarTransform
+Transforming versionedparcelable-1.1.0.aar (androidx.versionedparcelable:versionedparcelable:1.1.0) with AarTransform
+Transforming lifecycle-runtime-2.0.0.aar (androidx.lifecycle:lifecycle-runtime:2.0.0) with ExtractAarTransform
+Transforming lifecycle-runtime-2.0.0.aar (androidx.lifecycle:lifecycle-runtime:2.0.0) with AarTransform
+Caching disabled for task ':app:mapDebugSourceSetPaths' because:
+  Build cache is disabled
+  Caching has been disabled for the task
+Task ':app:mapDebugSourceSetPaths' is not up-to-date because:
+  Output property 'filepathMappingFile' file /app/applet/app/build/intermediates/source_set_path_map/debug/mapDebugSourceSetPaths/file-map.txt has been removed.
+Resolve mutations for :app:generateDebugResources (Thread[#135,included builds,5,main]) started.
+:app:generateDebugResources (Thread[#135,included builds,5,main]) started.
+
+> Task :app:generateDebugResources
+Deleting stale output file: /app/applet/app/build/intermediates/nested_resources_validation_report/debug/generateDebugResources/nestedResourcesValidationReport.txt
+Caching disabled for task ':app:generateDebugResources' because:
+  Build cache is disabled
+Task ':app:generateDebugResources' is not up-to-date because:
+  Output property 'validationReportFile' file /app/applet/app/build/intermediates/nested_resources_validation_report/debug/generateDebugResources/nestedResourcesValidationReport.txt has been removed.
+Resolve mutations for :app:mergeDebugResources (Thread[#135,included builds,5,main]) started.
+:app:mergeDebugResources (Thread[#135,included builds,5,main]) started.
+Resolve mutations for :app:packageDebugResources (Thread[#137,Execution worker Thread 2,5,main]) started.
+:app:packageDebugResources (Thread[#137,Execution worker Thread 2,5,main]) started.
+
+> Task :app:packageDebugResources
+Deleting stale output file: /app/applet/app/build/intermediates/data_binding_layout_info_type_package/debug/packageDebugResources/out
+Deleting stale output file: /app/applet/app/build/intermediates/packaged_res/debug/packageDebugResources
+Deleting stale output file: /app/applet/app/build/intermediates/incremental/debug/packageDebugResources
+Caching disabled for task ':app:packageDebugResources' because:
+  Build cache is disabled
+Task ':app:packageDebugResources' is not up-to-date because:
+  Output property 'dataBindingLayoutInfoOutFolder' file /app/applet/app/build/intermediates/data_binding_layout_info_type_package/debug/packageDebugResources/out has been removed.
+  Output property 'incrementalFolder' file /app/applet/app/build/intermediates/incremental/debug/packageDebugResources has been removed.
+  Output property 'incrementalFolder' file /app/applet/app/build/intermediates/incremental/debug/packageDebugResources/compile-file-map.properties has been removed.
+  Output property 'incrementalFolder' file /app/applet/app/build/intermediates/incremental/debug/packageDebugResources/merged.dir has been removed.
+  Output property 'incrementalFolder' file /app/applet/app/build/intermediates/incremental/debug/packageDebugResources/merger.xml has been removed.
+  Output property 'incrementalFolder' file /app/applet/app/build/intermediates/incremental/debug/packageDebugResources/stripped.dir has been removed.
+  Output property 'outputDir' file /app/applet/app/build/intermediates/packaged_res/debug/packageDebugResources has been removed.
+The input changes require a full rebuild for incremental task ':app:packageDebugResources'.
+[MergeResources] Inputs are non-incremental full task action.
+Resolve mutations for :app:parseDebugLocalResources (Thread[#137,Execution worker Thread 2,5,main]) started.
+:app:parseDebugLocalResources (Thread[#137,Execution worker Thread 2,5,main]) started.
+Resolve mutations for :app:createDebugCompatibleScreenManifests (Thread[#136,Execution worker,5,main]) started.
+:app:createDebugCompatibleScreenManifests (Thread[#136,Execution worker,5,main]) started.
+
+> Task :app:createDebugCompatibleScreenManifests
+Deleting stale output file: /app/applet/app/build/intermediates/compatible_screen_manifest/debug/createDebugCompatibleScreenManifests
+Caching disabled for task ':app:createDebugCompatibleScreenManifests' because:
+  Build cache is disabled
+  Caching has been disabled for the task
+Task ':app:createDebugCompatibleScreenManifests' is not up-to-date because:
+  Output property 'outputFolder' file /app/applet/app/build/intermediates/compatible_screen_manifest/debug/createDebugCompatibleScreenManifests has been removed.
+  Output property 'outputFolder' file /app/applet/app/build/intermediates/compatible_screen_manifest/debug/createDebugCompatibleScreenManifests/output-metadata.json has been removed.
+Resolve mutations for :app:extractDeepLinksDebug (Thread[#136,Execution worker,5,main]) started.
+:app:extractDeepLinksDebug (Thread[#136,Execution worker,5,main]) started.
+
+> Task :app:extractDeepLinksDebug
+Deleting stale output file: /app/applet/app/build/intermediates/navigation_json/debug/extractDeepLinksDebug/navigation.json
+Caching disabled for task ':app:extractDeepLinksDebug' because:
+  Build cache is disabled
+Task ':app:extractDeepLinksDebug' is not up-to-date because:
+  Output property 'navigationJson' file /app/applet/app/build/intermediates/navigation_json/debug/extractDeepLinksDebug/navigation.json has been removed.
+Resolve mutations for :app:processDebugMainManifest (Thread[#136,Execution worker,5,main]) started.
+:app:processDebugMainManifest (Thread[#136,Execution worker,5,main]) started.
+
+> Task :app:parseDebugLocalResources
+Deleting stale output file: /app/applet/app/build/intermediates/local_only_symbol_list/debug/parseDebugLocalResources/R-def.txt
+Transforming android.jar with PlatformAttrTransform
+Transforming android.jar with PlatformAttrTransform
+Caching disabled for task ':app:parseDebugLocalResources' because:
+  Build cache is disabled
+Task ':app:parseDebugLocalResources' is not up-to-date because:
+  Output property 'librarySymbolsFile' file /app/applet/app/build/intermediates/local_only_symbol_list/debug/parseDebugLocalResources/R-def.txt has been removed.
+The input changes require a full rebuild for incremental task ':app:parseDebugLocalResources'.
+Transforming android.jar with PlatformAttrTransform
+
+> Task :app:mergeDebugResources
+Deleting stale output file: /app/applet/app/build/generated/res/pngs/debug
+Deleting stale output file: /app/applet/app/build/intermediates/incremental/debug/mergeDebugResources
+Deleting stale output file: /app/applet/app/build/intermediates/data_binding_layout_info_type_merge/debug/mergeDebugResources/out
+Deleting stale output file: /app/applet/app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out
+Deleting stale output file: /app/applet/app/build/intermediates/merged_res/debug/mergeDebugResources
+Caching disabled for task ':app:mergeDebugResources' because:
+  Build cache is disabled
+Task ':app:mergeDebugResources' is not up-to-date because:
+  Output property 'blameLogOutputFolder' file /app/applet/app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out has been removed.
+  Output property 'blameLogOutputFolder' file /app/applet/app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out/multi-v2 has been removed.
+  Output property 'blameLogOutputFolder' file /app/applet/app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out/multi-v2/mergeDebugResources.json has been removed.
+  Output property 'blameLogOutputFolder' file /app/applet/app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out/multi-v2/values-af.json has been removed.
+  Output property 'blameLogOutputFolder' file /app/applet/app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out/multi-v2/values-am.json has been removed.
+  Output property 'blameLogOutputFolder' file /app/applet/app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out/multi-v2/values-ar.json has been removed.
+  Output property 'blameLogOutputFolder' file /app/applet/app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out/multi-v2/values-as.json has been removed.
+  Output property 'blameLogOutputFolder' file /app/applet/app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out/multi-v2/values-az.json has been removed.
+  Output property 'blameLogOutputFolder' file /app/applet/app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out/multi-v2/values-b+sr+Latn.json has been removed.
+  Output property 'blameLogOutputFolder' file /app/applet/app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out/multi-v2/values-be.json has been removed.
+  Output property 'blameLogOutputFolder' file /app/applet/app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out/multi-v2/values-bg.json has been removed.
+  Output property 'blameLogOutputFolder' file /app/applet/app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out/multi-v2/values-bn.json has been removed.
+  Output property 'blameLogOutputFolder' file /app/applet/app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out/multi-v2/values-bs.json has been removed.
+  Output property 'blameLogOutputFolder' file /app/applet/app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out/multi-v2/values-ca.json has been removed.
+  Output property 'blameLogOutputFolder' file /app/applet/app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out/multi-v2/values-cs.json has been removed.
+  Output property 'blameLogOutputFolder' file /app/applet/app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out/multi-v2/values-da.json has been removed.
+  Output property 'blameLogOutputFolder' file /app/applet/app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out/multi-v2/values-de.json has been removed.
+  Output property 'blameLogOutputFolder' file /app/applet/app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out/multi-v2/values-el.json has been removed.
+  Output property 'blameLogOutputFolder' file /app/applet/app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out/multi-v2/values-en-rAU.json has been removed.
+  Output property 'blameLogOutputFolder' file /app/applet/app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out/multi-v2/values-en-rCA.json has been removed.
+  Output property 'blameLogOutputFolder' file /app/applet/app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out/multi-v2/values-en-rGB.json has been removed.
+  Output property 'blameLogOutputFolder' file /app/applet/app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out/multi-v2/values-en-rIN.json has been removed.
+  Output property 'blameLogOutputFolder' file /app/applet/app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out/multi-v2/values-en-rXC.json has been removed.
+  Output property 'blameLogOutputFolder' file /app/applet/app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out/multi-v2/values-es-rUS.json has been removed.
+  Output property 'blameLogOutputFolder' file /app/applet/app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out/multi-v2/values-es.json has been removed.
+  Output property 'blameLogOutputFolder' file /app/applet/app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out/multi-v2/values-et.json has been removed.
+  Output property 'blameLogOutputFolder' file /app/applet/app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out/multi-v2/values-eu.json has been removed.
+  Output property 'blameLogOutputFolder' file /app/applet/app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out/multi-v2/values-fa.json has been removed.
+  Output property 'blameLogOutputFolder' file /app/applet/app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out/multi-v2/values-fi.json has been removed.
+  Output property 'blameLogOutputFolder' file /app/applet/app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out/multi-v2/values-fr-rCA.json has been removed.
+  Output property 'blameLogOutputFolder' file /app/applet/app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out/multi-v2/values-fr.json has been removed.
+  Output property 'blameLogOutputFolder' file /app/applet/app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out/multi-v2/values-gl.json has been removed.
+  Output property 'blameLogOutputFolder' file /app/applet/app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out/multi-v2/values-gu.json has been removed.
+  Output property 'blameLogOutputFolder' file /app/applet/app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out/multi-v2/values-hi.json has been removed.
+  Output property 'blameLogOutputFolder' file /app/applet/app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out/multi-v2/values-hr.json has been removed.
+  Output property 'blameLogOutputFolder' file /app/applet/app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out/multi-v2/values-hu.json has been removed.
+  Output property 'blameLogOutputFolder' file /app/applet/app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out/multi-v2/values-hy.json has been removed.
+  Output property 'blameLogOutputFolder' file /app/applet/app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out/multi-v2/values-in.json has been removed.
+  Output property 'blameLogOutputFolder' file /app/applet/app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out/multi-v2/values-is.json has been removed.
+  Output property 'blameLogOutputFolder' file /app/applet/app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out/multi-v2/values-it.json has been removed.
+  Output property 'blameLogOutputFolder' file /app/applet/app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out/multi-v2/values-iw.json has been removed.
+  Output property 'blameLogOutputFolder' file /app/applet/app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out/multi-v2/values-ja.json has been removed.
+  Output property 'blameLogOutputFolder' file /app/applet/app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out/multi-v2/values-ka.json has been removed.
+  Output property 'blameLogOutputFolder' file /app/applet/app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out/multi-v2/values-kk.json has been removed.
+  Output property 'blameLogOutputFolder' file /app/applet/app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out/multi-v2/values-km.json has been removed.
+  Output property 'blameLogOutputFolder' file /app/applet/app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out/multi-v2/values-kn.json has been removed.
+  Output property 'blameLogOutputFolder' file /app/applet/app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out/multi-v2/values-ko.json has been removed.
+  Output property 'blameLogOutputFolder' file /app/applet/app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out/multi-v2/values-ky.json has been removed.
+  Output property 'blameLogOutputFolder' file /app/applet/app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out/multi-v2/values-lo.json has been removed.
+  Output property 'blameLogOutputFolder' file /app/applet/app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out/multi-v2/values-lt.json has been removed.
+  Output property 'blameLogOutputFolder' file /app/applet/app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out/multi-v2/values-lv.json has been removed.
+  Output property 'blameLogOutputFolder' file /app/applet/app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out/multi-v2/values-mk.json has been removed.
+  Output property 'blameLogOutputFolder' file /app/applet/app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out/multi-v2/values-ml.json has been removed.
+  Output property 'blameLogOutputFolder' file /app/applet/app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out/multi-v2/values-mn.json has been removed.
+  Output property 'blameLogOutputFolder' file /app/applet/app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out/multi-v2/values-mr.json has been removed.
+  Output property 'blameLogOutputFolder' file /app/applet/app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out/multi-v2/values-ms.json has been removed.
+  Output property 'blameLogOutputFolder' file /app/applet/app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out/multi-v2/values-my.json has been removed.
+  Output property 'blameLogOutputFolder' file /app/applet/app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out/multi-v2/values-nb.json has been removed.
+  Output property 'blameLogOutputFolder' file /app/applet/app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out/multi-v2/values-ne.json has been removed.
+  Output property 'blameLogOutputFolder' file /app/applet/app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out/multi-v2/values-nl.json has been removed.
+  Output property 'blameLogOutputFolder' file /app/applet/app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out/multi-v2/values-or.json has been removed.
+  Output property 'blameLogOutputFolder' file /app/applet/app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out/multi-v2/values-pa.json has been removed.
+  Output property 'blameLogOutputFolder' file /app/applet/app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out/multi-v2/values-pl.json has been removed.
+  Output property 'blameLogOutputFolder' file /app/applet/app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out/multi-v2/values-pt-rBR.json has been removed.
+  Output property 'blameLogOutputFolder' file /app/applet/app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out/multi-v2/values-pt-rPT.json has been removed.
+  Output property 'blameLogOutputFolder' file /app/applet/app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out/multi-v2/values-pt.json has been removed.
+  Output property 'blameLogOutputFolder' file /app/applet/app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out/multi-v2/values-ro.json has been removed.
+  Output property 'blameLogOutputFolder' file /app/applet/app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out/multi-v2/values-ru.json has been removed.
+  Output property 'blameLogOutputFolder' file /app/applet/app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out/multi-v2/values-si.json has been removed.
+  Output property 'blameLogOutputFolder' file /app/applet/app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out/multi-v2/values-sk.json has been removed.
+  Output property 'blameLogOutputFolder' file /app/applet/app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out/multi-v2/values-sl.json has been removed.
+  Output property 'blameLogOutputFolder' file /app/applet/app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out/multi-v2/values-sq.json has been removed.
+  Output property 'blameLogOutputFolder' file /app/applet/app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out/multi-v2/values-sr.json has been removed.
+  Output property 'blameLogOutputFolder' file /app/applet/app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out/multi-v2/values-sv.json has been removed.
+  Output property 'blameLogOutputFolder' file /app/applet/app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out/multi-v2/values-sw.json has been removed.
+  Output property 'blameLogOutputFolder' file /app/applet/app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out/multi-v2/values-ta.json has been removed.
+  Output property 'blameLogOutputFolder' file /app/applet/app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out/multi-v2/values-te.json has been removed.
+  Output property 'blameLogOutputFolder' file /app/applet/app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out/multi-v2/values-th.json has been removed.
+  Output property 'blameLogOutputFolder' file /app/applet/app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out/multi-v2/values-tl.json has been removed.
+  Output property 'blameLogOutputFolder' file /app/applet/app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out/multi-v2/values-tr.json has been removed.
+  Output property 'blameLogOutputFolder' file /app/applet/app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out/multi-v2/values-uk.json has been removed.
+  Output property 'blameLogOutputFolder' file /app/applet/app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out/multi-v2/values-ur.json has been removed.
+  Output property 'blameLogOutputFolder' file /app/applet/app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out/multi-v2/values-uz.json has been removed.
+  Output property 'blameLogOutputFolder' file /app/applet/app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out/multi-v2/values-v16.json has been removed.
+  Output property 'blameLogOutputFolder' file /app/applet/app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out/multi-v2/values-v21.json has been removed.
+  Output property 'blameLogOutputFolder' file /app/applet/app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out/multi-v2/values-vi.json has been removed.
+  Output property 'blameLogOutputFolder' file /app/applet/app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out/multi-v2/values-zh-rCN.json has been removed.
+  Output property 'blameLogOutputFolder' file /app/applet/app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out/multi-v2/values-zh-rHK.json has been removed.
+  Output property 'blameLogOutputFolder' file /app/applet/app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out/multi-v2/values-zh-rTW.json has been removed.
+  Output property 'blameLogOutputFolder' file /app/applet/app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out/multi-v2/values-zu.json has been removed.
+  Output property 'blameLogOutputFolder' file /app/applet/app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out/multi-v2/values.json has been removed.
+  Output property 'blameLogOutputFolder' file /app/applet/app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out/single has been removed.
+  Output property 'dataBindingLayoutInfoOutFolder' file /app/applet/app/build/intermediates/data_binding_layout_info_type_merge/debug/mergeDebugResources/out has been removed.
+The input changes require a full rebuild for incremental task ':app:mergeDebugResources'.
+[MergeResources] Inputs are non-incremental full task action.
+Compiling XML table /app/applet/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values/values.xml to /app/applet/app/build/intermediates/merged_res/debug/mergeDebugResources/values_values.arsc.flat
+Compiling XML table /app/applet/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-hi/values-hi.xml to /app/applet/app/build/intermediates/merged_res/debug/mergeDebugResources/values-hi_values-hi.arsc.flat
+Compiling XML table /app/applet/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-de/values-de.xml to /app/applet/app/build/intermediates/merged_res/debug/mergeDebugResources/values-de_values-de.arsc.flat
+Compiling XML table /app/applet/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-lt/values-lt.xml to /app/applet/app/build/intermediates/merged_res/debug/mergeDebugResources/values-lt_values-lt.arsc.flat
+Compiling XML table /app/applet/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-hr/values-hr.xml to /app/applet/app/build/intermediates/merged_res/debug/mergeDebugResources/values-hr_values-hr.arsc.flat
+Compiling XML table /app/applet/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-en-rIN/values-en-rIN.xml to /app/applet/app/build/intermediates/merged_res/debug/mergeDebugResources/values-en-rIN_values-en-rIN.arsc.flat
+Compiling XML table /app/applet/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-hy/values-hy.xml to /app/applet/app/build/intermediates/merged_res/debug/mergeDebugResources/values-hy_values-hy.arsc.flat
+Compiling XML table /app/applet/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-ur/values-ur.xml to /app/applet/app/build/intermediates/merged_res/debug/mergeDebugResources/values-ur_values-ur.arsc.flat
+Compiling XML table /app/applet/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-uz/values-uz.xml to /app/applet/app/build/intermediates/merged_res/debug/mergeDebugResources/values-uz_values-uz.arsc.flat
+Compiling XML table /app/applet/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-mk/values-mk.xml to /app/applet/app/build/intermediates/merged_res/debug/mergeDebugResources/values-mk_values-mk.arsc.flat
+Compiling XML table /app/applet/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-af/values-af.xml to /app/applet/app/build/intermediates/merged_res/debug/mergeDebugResources/values-af_values-af.arsc.flat
+Compiling XML table /app/applet/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-mr/values-mr.xml to /app/applet/app/build/intermediates/merged_res/debug/mergeDebugResources/values-mr_values-mr.arsc.flat
+Compiling XML table /app/applet/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-zh-rHK/values-zh-rHK.xml to /app/applet/app/build/intermediates/merged_res/debug/mergeDebugResources/values-zh-rHK_values-zh-rHK.arsc.flat
+Compiling XML table /app/applet/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-ms/values-ms.xml to /app/applet/app/build/intermediates/merged_res/debug/mergeDebugResources/values-ms_values-ms.arsc.flat
+Compiling XML table /app/applet/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-is/values-is.xml to /app/applet/app/build/intermediates/merged_res/debug/mergeDebugResources/values-is_values-is.arsc.flat
+Compiling XML table /app/applet/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-am/values-am.xml to /app/applet/app/build/intermediates/merged_res/debug/mergeDebugResources/values-am_values-am.arsc.flat
+Compiling XML table /app/applet/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-es/values-es.xml to /app/applet/app/build/intermediates/merged_res/debug/mergeDebugResources/values-es_values-es.arsc.flat
+Compiling XML table /app/applet/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-et/values-et.xml to /app/applet/app/build/intermediates/merged_res/debug/mergeDebugResources/values-et_values-et.arsc.flat
+Compiling XML table /app/applet/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-eu/values-eu.xml to /app/applet/app/build/intermediates/merged_res/debug/mergeDebugResources/values-eu_values-eu.arsc.flat
+Compiling XML table /app/applet/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-vi/values-vi.xml to /app/applet/app/build/intermediates/merged_res/debug/mergeDebugResources/values-vi_values-vi.arsc.flat
+Compiling XML table /app/applet/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-v21/values-v21.xml to /app/applet/app/build/intermediates/merged_res/debug/mergeDebugResources/values-v21_values-v21.arsc.flat
+Compiling XML table /app/applet/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-ja/values-ja.xml to /app/applet/app/build/intermediates/merged_res/debug/mergeDebugResources/values-ja_values-ja.arsc.flat
+Compiling XML table /app/applet/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-pt/values-pt.xml to /app/applet/app/build/intermediates/merged_res/debug/mergeDebugResources/values-pt_values-pt.arsc.flat
+Compiling XML table /app/applet/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-fa/values-fa.xml to /app/applet/app/build/intermediates/merged_res/debug/mergeDebugResources/values-fa_values-fa.arsc.flat
+Compiling XML table /app/applet/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-hu/values-hu.xml to /app/applet/app/build/intermediates/merged_res/debug/mergeDebugResources/values-hu_values-hu.arsc.flat
+Compiling XML table /app/applet/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-ne/values-ne.xml to /app/applet/app/build/intermediates/merged_res/debug/mergeDebugResources/values-ne_values-ne.arsc.flat
+Compiling XML table /app/applet/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-v16/values-v16.xml to /app/applet/app/build/intermediates/merged_res/debug/mergeDebugResources/values-v16_values-v16.arsc.flat
+Compiling XML table /app/applet/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-zh-rCN/values-zh-rCN.xml to /app/applet/app/build/intermediates/merged_res/debug/mergeDebugResources/values-zh-rCN_values-zh-rCN.arsc.flat
+Compiling XML table /app/applet/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-zu/values-zu.xml to /app/applet/app/build/intermediates/merged_res/debug/mergeDebugResources/values-zu_values-zu.arsc.flat
+Compiling XML table /app/applet/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-mn/values-mn.xml to /app/applet/app/build/intermediates/merged_res/debug/mergeDebugResources/values-mn_values-mn.arsc.flat
+Compiling XML table /app/applet/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-en-rXC/values-en-rXC.xml to /app/applet/app/build/intermediates/merged_res/debug/mergeDebugResources/values-en-rXC_values-en-rXC.arsc.flat
+Compiling XML table /app/applet/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-ru/values-ru.xml to /app/applet/app/build/intermediates/merged_res/debug/mergeDebugResources/values-ru_values-ru.arsc.flat
+Compiling XML table /app/applet/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-in/values-in.xml to /app/applet/app/build/intermediates/merged_res/debug/mergeDebugResources/values-in_values-in.arsc.flat
+Compiling XML table /app/applet/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-bg/values-bg.xml to /app/applet/app/build/intermediates/merged_res/debug/mergeDebugResources/values-bg_values-bg.arsc.flat
+Compiling XML table /app/applet/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-bs/values-bs.xml to /app/applet/app/build/intermediates/merged_res/debug/mergeDebugResources/values-bs_values-bs.arsc.flat
+Compiling XML table /app/applet/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-zh-rTW/values-zh-rTW.xml to /app/applet/app/build/intermediates/merged_res/debug/mergeDebugResources/values-zh-rTW_values-zh-rTW.arsc.flat
+Compiling XML table /app/applet/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-en-rCA/values-en-rCA.xml to /app/applet/app/build/intermediates/merged_res/debug/mergeDebugResources/values-en-rCA_values-en-rCA.arsc.flat
+Compiling XML table /app/applet/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-si/values-si.xml to /app/applet/app/build/intermediates/merged_res/debug/mergeDebugResources/values-si_values-si.arsc.flat
+Compiling XML table /app/applet/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-my/values-my.xml to /app/applet/app/build/intermediates/merged_res/debug/mergeDebugResources/values-my_values-my.arsc.flat
+Compiling XML table /app/applet/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-ca/values-ca.xml to /app/applet/app/build/intermediates/merged_res/debug/mergeDebugResources/values-ca_values-ca.arsc.flat
+Compiling XML table /app/applet/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-sk/values-sk.xml to /app/applet/app/build/intermediates/merged_res/debug/mergeDebugResources/values-sk_values-sk.arsc.flat
+Compiling XML table /app/applet/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-iw/values-iw.xml to /app/applet/app/build/intermediates/merged_res/debug/mergeDebugResources/values-iw_values-iw.arsc.flat
+Compiling XML table /app/applet/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-or/values-or.xml to /app/applet/app/build/intermediates/merged_res/debug/mergeDebugResources/values-or_values-or.arsc.flat
+Compiling XML table /app/applet/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-sr/values-sr.xml to /app/applet/app/build/intermediates/merged_res/debug/mergeDebugResources/values-sr_values-sr.arsc.flat
+Compiling XML table /app/applet/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-as/values-as.xml to /app/applet/app/build/intermediates/merged_res/debug/mergeDebugResources/values-as_values-as.arsc.flat
+Compiling XML table /app/applet/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-ko/values-ko.xml to /app/applet/app/build/intermediates/merged_res/debug/mergeDebugResources/values-ko_values-ko.arsc.flat
+Compiling XML table /app/applet/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-sv/values-sv.xml to /app/applet/app/build/intermediates/merged_res/debug/mergeDebugResources/values-sv_values-sv.arsc.flat
+Compiling XML table /app/applet/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-es-rUS/values-es-rUS.xml to /app/applet/app/build/intermediates/merged_res/debug/mergeDebugResources/values-es-rUS_values-es-rUS.arsc.flat
+Compiling XML table /app/applet/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-pt-rBR/values-pt-rBR.xml to /app/applet/app/build/intermediates/merged_res/debug/mergeDebugResources/values-pt-rBR_values-pt-rBR.arsc.flat
+Compiling XML table /app/applet/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-gl/values-gl.xml to /app/applet/app/build/intermediates/merged_res/debug/mergeDebugResources/values-gl_values-gl.arsc.flat
+Compiling XML table /app/applet/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-pt-rPT/values-pt-rPT.xml to /app/applet/app/build/intermediates/merged_res/debug/mergeDebugResources/values-pt-rPT_values-pt-rPT.arsc.flat
+Compiling XML table /app/applet/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-te/values-te.xml to /app/applet/app/build/intermediates/merged_res/debug/mergeDebugResources/values-te_values-te.arsc.flat
+Compiling XML table /app/applet/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-da/values-da.xml to /app/applet/app/build/intermediates/merged_res/debug/mergeDebugResources/values-da_values-da.arsc.flat
+Compiling XML table /app/applet/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-nl/values-nl.xml to /app/applet/app/build/intermediates/merged_res/debug/mergeDebugResources/values-nl_values-nl.arsc.flat
+Compiling xml file /app/applet/app/src/main/res/drawable/ic_skip_next_white.xml to /app/applet/app/build/intermediates/merged_res/debug/mergeDebugResources/drawable_ic_skip_next_white.xml.flat
+Compiling XML table /app/applet/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-gu/values-gu.xml to /app/applet/app/build/intermediates/merged_res/debug/mergeDebugResources/values-gu_values-gu.arsc.flat
+Compiling XML table /app/applet/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-be/values-be.xml to /app/applet/app/build/intermediates/merged_res/debug/mergeDebugResources/values-be_values-be.arsc.flat
+Compiling xml file /app/applet/app/src/main/res/mipmap-xhdpi-v26/app_icon.xml to /app/applet/app/build/intermediates/merged_res/debug/mergeDebugResources/mipmap-xhdpi-v26_app_icon.xml.flat
+Compiling XML table /app/applet/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-th/values-th.xml to /app/applet/app/build/intermediates/merged_res/debug/mergeDebugResources/values-th_values-th.arsc.flat
+Compiling XML table /app/applet/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-bn/values-bn.xml to /app/applet/app/build/intermediates/merged_res/debug/mergeDebugResources/values-bn_values-bn.arsc.flat
+Compiling xml file /app/applet/app/src/main/res/drawable-xhdpi/notification.xml to /app/applet/app/build/intermediates/merged_res/debug/mergeDebugResources/drawable-xhdpi_notification.xml.flat
+Compiling XML table /app/applet/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-tr/values-tr.xml to /app/applet/app/build/intermediates/merged_res/debug/mergeDebugResources/values-tr_values-tr.arsc.flat
+Compiling XML table /app/applet/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-ka/values-ka.xml to /app/applet/app/build/intermediates/merged_res/debug/mergeDebugResources/values-ka_values-ka.arsc.flat
+Compiling xml file /app/applet/app/src/main/res/drawable-xhdpi/foreground.xml to /app/applet/app/build/intermediates/merged_res/debug/mergeDebugResources/drawable-xhdpi_foreground.xml.flat
+Compiling XML table /app/applet/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-sq/values-sq.xml to /app/applet/app/build/intermediates/merged_res/debug/mergeDebugResources/values-sq_values-sq.arsc.flat
+Compiling XML table /app/applet/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-km/values-km.xml to /app/applet/app/build/intermediates/merged_res/debug/mergeDebugResources/values-km_values-km.arsc.flat
+Compiling xml file /app/applet/app/src/main/res/drawable/ic_play_arrow_white.xml to /app/applet/app/build/intermediates/merged_res/debug/mergeDebugResources/drawable_ic_play_arrow_white.xml.flat
+Compiling XML table /app/applet/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-sw/values-sw.xml to /app/applet/app/build/intermediates/merged_res/debug/mergeDebugResources/values-sw_values-sw.arsc.flat
+Compiling XML table /app/applet/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-lo/values-lo.xml to /app/applet/app/build/intermediates/merged_res/debug/mergeDebugResources/values-lo_values-lo.arsc.flat
+Compiling XML table /app/applet/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-lv/values-lv.xml to /app/applet/app/build/intermediates/merged_res/debug/mergeDebugResources/values-lv_values-lv.arsc.flat
+Compiling XML table /app/applet/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-uk/values-uk.xml to /app/applet/app/build/intermediates/merged_res/debug/mergeDebugResources/values-uk_values-uk.arsc.flat
+Compiling XML table /app/applet/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-ml/values-ml.xml to /app/applet/app/build/intermediates/merged_res/debug/mergeDebugResources/values-ml_values-ml.arsc.flat
+Compiling XML table /app/applet/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-fr-rCA/values-fr-rCA.xml to /app/applet/app/build/intermediates/merged_res/debug/mergeDebugResources/values-fr-rCA_values-fr-rCA.arsc.flat
+Compiling XML table /app/applet/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-el/values-el.xml to /app/applet/app/build/intermediates/merged_res/debug/mergeDebugResources/values-el_values-el.arsc.flat
+Compiling XML table /app/applet/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-ky/values-ky.xml to /app/applet/app/build/intermediates/merged_res/debug/mergeDebugResources/values-ky_values-ky.arsc.flat
+Compiling XML table /app/applet/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-it/values-it.xml to /app/applet/app/build/intermediates/merged_res/debug/mergeDebugResources/values-it_values-it.arsc.flat
+Compiling XML table /app/applet/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-b+sr+Latn/values-b+sr+Latn.xml to /app/applet/app/build/intermediates/merged_res/debug/mergeDebugResources/values-b+sr+Latn_values-b+sr+Latn.arsc.flat
+Compiling XML table /app/applet/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-pa/values-pa.xml to /app/applet/app/build/intermediates/merged_res/debug/mergeDebugResources/values-pa_values-pa.arsc.flat
+Compiling XML table /app/applet/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-ar/values-ar.xml to /app/applet/app/build/intermediates/merged_res/debug/mergeDebugResources/values-ar_values-ar.arsc.flat
+Compiling XML table /app/applet/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-pl/values-pl.xml to /app/applet/app/build/intermediates/merged_res/debug/mergeDebugResources/values-pl_values-pl.arsc.flat
+Compiling XML table /app/applet/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-nb/values-nb.xml to /app/applet/app/build/intermediates/merged_res/debug/mergeDebugResources/values-nb_values-nb.arsc.flat
+Compiling xml file /app/applet/app/src/main/res/drawable/ic_pause_white.xml to /app/applet/app/build/intermediates/merged_res/debug/mergeDebugResources/drawable_ic_pause_white.xml.flat
+Compiling XML table /app/applet/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-az/values-az.xml to /app/applet/app/build/intermediates/merged_res/debug/mergeDebugResources/values-az_values-az.arsc.flat
+Compiling xml file /app/applet/app/src/main/res/drawable-xhdpi/monochrome.xml to /app/applet/app/build/intermediates/merged_res/debug/mergeDebugResources/drawable-xhdpi_monochrome.xml.flat
+Compiling XML table /app/applet/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-ro/values-ro.xml to /app/applet/app/build/intermediates/merged_res/debug/mergeDebugResources/values-ro_values-ro.arsc.flat
+Compiling file /app/applet/app/src/main/res/mipmap-xhdpi/app_icon.jpg to /app/applet/app/build/intermediates/merged_res/debug/mergeDebugResources/mipmap-xhdpi_app_icon.jpg.flat
+Compiling XML table /app/applet/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-fi/values-fi.xml to /app/applet/app/build/intermediates/merged_res/debug/mergeDebugResources/values-fi_values-fi.arsc.flat
+Compiling XML table /app/applet/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-fr/values-fr.xml to /app/applet/app/build/intermediates/merged_res/debug/mergeDebugResources/values-fr_values-fr.arsc.flat
+Compiling XML table /app/applet/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-en-rGB/values-en-rGB.xml to /app/applet/app/build/intermediates/merged_res/debug/mergeDebugResources/values-en-rGB_values-en-rGB.arsc.flat
+Compiling XML table /app/applet/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-sl/values-sl.xml to /app/applet/app/build/intermediates/merged_res/debug/mergeDebugResources/values-sl_values-sl.arsc.flat
+Compiling XML table /app/applet/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-kk/values-kk.xml to /app/applet/app/build/intermediates/merged_res/debug/mergeDebugResources/values-kk_values-kk.arsc.flat
+Compiling XML table /app/applet/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-kn/values-kn.xml to /app/applet/app/build/intermediates/merged_res/debug/mergeDebugResources/values-kn_values-kn.arsc.flat
+Compiling XML table /app/applet/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-ta/values-ta.xml to /app/applet/app/build/intermediates/merged_res/debug/mergeDebugResources/values-ta_values-ta.arsc.flat
+Compiling XML table /app/applet/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-cs/values-cs.xml to /app/applet/app/build/intermediates/merged_res/debug/mergeDebugResources/values-cs_values-cs.arsc.flat
+Compiling XML table /app/applet/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-tl/values-tl.xml to /app/applet/app/build/intermediates/merged_res/debug/mergeDebugResources/values-tl_values-tl.arsc.flat
+Compiling XML table /app/applet/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-en-rAU/values-en-rAU.xml to /app/applet/app/build/intermediates/merged_res/debug/mergeDebugResources/values-en-rAU_values-en-rAU.arsc.flat
+Compiling xml file /app/applet/app/src/main/res/layout/main.xml to /app/applet/app/build/intermediates/merged_res/debug/mergeDebugResources/layout_main.xml.flat
+Compiling xml file /app/applet/app/src/main/res/drawable/ic_skip_previous_white.xml to /app/applet/app/build/intermediates/merged_res/debug/mergeDebugResources/drawable_ic_skip_previous_white.xml.flat
+
+> Task :app:processDebugMainManifest
+Deleting stale output file: /app/applet/app/build/intermediates/manifest_merge_blame_file/debug/processDebugMainManifest/manifest-merger-blame-debug-report.txt
+Deleting stale output file: /app/applet/app/build/intermediates/merged_manifest/debug/processDebugMainManifest/AndroidManifest.xml
+Deleting stale output file: /app/applet/app/build/outputs/logs/manifest-merger-debug-report.txt
+Transforming webkit-1.12.0.aar (androidx.webkit:webkit:1.12.0) with ExtractAarTransform
+Transforming webkit-1.12.0.aar (androidx.webkit:webkit:1.12.0) with AarTransform
+Transforming core-1.1.0.aar (androidx.core:core:1.1.0) with ExtractAarTransform
+Transforming core-1.1.0.aar (androidx.core:core:1.1.0) with AarTransform
+Transforming versionedparcelable-1.1.0.aar (androidx.versionedparcelable:versionedparcelable:1.1.0) with ExtractAarTransform
+Transforming versionedparcelable-1.1.0.aar (androidx.versionedparcelable:versionedparcelable:1.1.0) with AarTransform
+Transforming lifecycle-runtime-2.0.0.aar (androidx.lifecycle:lifecycle-runtime:2.0.0) with ExtractAarTransform
+Transforming lifecycle-runtime-2.0.0.aar (androidx.lifecycle:lifecycle-runtime:2.0.0) with AarTransform
+Transforming webkit-1.12.0.aar (androidx.webkit:webkit:1.12.0) with ExtractAarTransform
+Transforming webkit-1.12.0.aar (androidx.webkit:webkit:1.12.0) with AarTransform
+Transforming core-1.1.0.aar (androidx.core:core:1.1.0) with ExtractAarTransform
+Transforming core-1.1.0.aar (androidx.core:core:1.1.0) with AarTransform
+Transforming versionedparcelable-1.1.0.aar (androidx.versionedparcelable:versionedparcelable:1.1.0) with ExtractAarTransform
+Transforming versionedparcelable-1.1.0.aar (androidx.versionedparcelable:versionedparcelable:1.1.0) with AarTransform
+Transforming lifecycle-runtime-2.0.0.aar (androidx.lifecycle:lifecycle-runtime:2.0.0) with ExtractAarTransform
+Transforming lifecycle-runtime-2.0.0.aar (androidx.lifecycle:lifecycle-runtime:2.0.0) with AarTransform
+Caching disabled for task ':app:processDebugMainManifest' because:
+  Build cache is disabled
+Task ':app:processDebugMainManifest' is not up-to-date because:
+  Output property 'mergeBlameFile' file /app/applet/app/build/intermediates/manifest_merge_blame_file/debug/processDebugMainManifest/manifest-merger-blame-debug-report.txt has been removed.
+  Output property 'mergedManifest' file /app/applet/app/build/intermediates/merged_manifest/debug/processDebugMainManifest/AndroidManifest.xml has been removed.
+  Output property 'reportFile' file /app/applet/app/build/outputs/logs/manifest-merger-debug-report.txt has been removed.
+package="com.google.android.youtube.pro" found in source AndroidManifest.xml: /app/applet/app/src/main/AndroidManifest.xml.
+Setting the namespace via the package attribute in the source AndroidManifest.xml is no longer supported, and the value is ignored.
+Recommendation: remove package="com.google.android.youtube.pro" from the source AndroidManifest.xml: /app/applet/app/src/main/AndroidManifest.xml.
+Loading library manifest /opt/gradle/.gradle/caches/transforms-4/f181c58d69d319edf1355a89f8ed893d/transformed/webkit-1.12.0/AndroidManifest.xml
+Loading library manifest /opt/gradle/.gradle/caches/transforms-4/31cd24222cf7e221fc587df94a1a4699/transformed/core-1.1.0/AndroidManifest.xml
+Loading library manifest /opt/gradle/.gradle/caches/transforms-4/725bc9fe3646d1104c402aa76ba16488/transformed/versionedparcelable-1.1.0/AndroidManifest.xml
+Loading library manifest /opt/gradle/.gradle/caches/transforms-4/51df4d0cd7df2658ffe471f45da35a8f/transformed/lifecycle-runtime-2.0.0/AndroidManifest.xml
+Merging main manifest /app/applet/app/src/main/AndroidManifest.xml
+
+Merging library manifest /opt/gradle/.gradle/caches/transforms-4/f181c58d69d319edf1355a89f8ed893d/transformed/webkit-1.12.0/AndroidManifest.xml
+Merging manifest with lower [androidx.webkit:webkit:1.12.0] AndroidManifest.xml:2:1-7:12
+uses-sdk defined in both files...
+Merging uses-sdk with lower [androidx.webkit:webkit:1.12.0] AndroidManifest.xml:5:5-44
+Merging library manifest /opt/gradle/.gradle/caches/transforms-4/31cd24222cf7e221fc587df94a1a4699/transformed/core-1.1.0/AndroidManifest.xml
+Merging manifest with lower [androidx.core:core:1.1.0] AndroidManifest.xml:17:1-26:12
+uses-sdk defined in both files...
+Merging uses-sdk with lower [androidx.core:core:1.1.0] AndroidManifest.xml:20:5-22:41
+application defined in both files...
+Merging application with lower [androidx.core:core:1.1.0] AndroidManifest.xml:24:5-89
+Merging library manifest /opt/gradle/.gradle/caches/transforms-4/725bc9fe3646d1104c402aa76ba16488/transformed/versionedparcelable-1.1.0/AndroidManifest.xml
+Merging manifest with lower [androidx.versionedparcelable:versionedparcelable:1.1.0] AndroidManifest.xml:17:1-27:12
+uses-sdk defined in both files...
+Merging uses-sdk with lower [androidx.versionedparcelable:versionedparcelable:1.1.0] AndroidManifest.xml:20:5-22:41
+application defined in both files...
+Merging application with lower [androidx.versionedparcelable:versionedparcelable:1.1.0] AndroidManifest.xml:24:5-25:19
+Merging library manifest /opt/gradle/.gradle/caches/transforms-4/51df4d0cd7df2658ffe471f45da35a8f/transformed/lifecycle-runtime-2.0.0/AndroidManifest.xml
+Merging manifest with lower [androidx.lifecycle:lifecycle-runtime:2.0.0] AndroidManifest.xml:17:1-22:12
+uses-sdk defined in both files...
+Merging uses-sdk with lower [androidx.lifecycle:lifecycle-runtime:2.0.0] AndroidManifest.xml:20:5-44
+Merging result: SUCCESS
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.google.android.youtube.pro"
+4    android:versionCode="1"
+5    android:versionName="3.98" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="24"
+9        android:targetSdkVersion="34" />
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->/app/applet/app/src/main/AndroidManifest.xml:4:2-63
+11-->/app/applet/app/src/main/AndroidManifest.xml:4:19-61
+12    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+12-->/app/applet/app/src/main/AndroidManifest.xml:5:2-74
+12-->/app/applet/app/src/main/AndroidManifest.xml:5:19-71
+13    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+13-->/app/applet/app/src/main/AndroidManifest.xml:6:2-68
+13-->/app/applet/app/src/main/AndroidManifest.xml:6:19-65
+14    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+14-->/app/applet/app/src/main/AndroidManifest.xml:7:2-77
+14-->/app/applet/app/src/main/AndroidManifest.xml:7:19-74
+15    <uses-permission
+15-->/app/applet/app/src/main/AndroidManifest.xml:9:1-11:34
+16        android:name="android.permission.READ_EXTERNAL_STORAGE"
+16-->/app/applet/app/src/main/AndroidManifest.xml:10:5-60
+17        android:maxSdkVersion="28" />
+17-->/app/applet/app/src/main/AndroidManifest.xml:11:5-31
+18    <uses-permission
+18-->/app/applet/app/src/main/AndroidManifest.xml:13:1-15:34
+19        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+19-->/app/applet/app/src/main/AndroidManifest.xml:14:5-61
+20        android:maxSdkVersion="28" />
+20-->/app/applet/app/src/main/AndroidManifest.xml:15:5-31
+21    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+21-->/app/applet/app/src/main/AndroidManifest.xml:17:2-74
+21-->/app/applet/app/src/main/AndroidManifest.xml:17:19-71
+22    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK" />
+22-->/app/applet/app/src/main/AndroidManifest.xml:18:2-89
+22-->/app/applet/app/src/main/AndroidManifest.xml:18:19-86
+23
+24    <application
+24-->/app/applet/app/src/main/AndroidManifest.xml:19:2-87:16
+25        android:allowBackup="true"
+25-->/app/applet/app/src/main/AndroidManifest.xml:20:3-29
+26        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+26-->[androidx.core:core:1.1.0] /opt/gradle/.gradle/caches/transforms-4/31cd24222cf7e221fc587df94a1a4699/transformed/core-1.1.0/AndroidManifest.xml:24:18-86
+27        android:debuggable="true"
+28        android:extractNativeLibs="false"
+29        android:icon="@mipmap/app_icon"
+29-->/app/applet/app/src/main/AndroidManifest.xml:22:3-34
+30        android:label="@string/app_name"
+30-->/app/applet/app/src/main/AndroidManifest.xml:21:3-35
+31        android:largeHeap="true"
+31-->/app/applet/app/src/main/AndroidManifest.xml:24:3-27
+32        android:roundIcon="@mipmap/app_icon"
+32-->/app/applet/app/src/main/AndroidManifest.xml:23:3-39
+33        android:theme="@style/AppTheme"
+33-->/app/applet/app/src/main/AndroidManifest.xml:26:3-34
+34        android:usesCleartextTraffic="true" >
+34-->/app/applet/app/src/main/AndroidManifest.xml:25:3-38
+35        <activity
+35-->/app/applet/app/src/main/AndroidManifest.xml:27:3-54:14
+36            android:name="com.google.android.youtube.pro.MainActivity"
+36-->/app/applet/app/src/main/AndroidManifest.xml:28:4-32
+37            android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
+37-->/app/applet/app/src/main/AndroidManifest.xml:29:4-97
+38            android:exported="true"
+38-->/app/applet/app/src/main/AndroidManifest.xml:33:25-48
+39            android:hardwareAccelerated="true"
+39-->/app/applet/app/src/main/AndroidManifest.xml:30:4-38
+40            android:screenOrientation="unspecified"
+40-->/app/applet/app/src/main/AndroidManifest.xml:34:4-43
+41            android:supportsPictureInPicture="true"
+41-->/app/applet/app/src/main/AndroidManifest.xml:31:4-43
+42            android:theme="@style/AppTheme" >
+42-->/app/applet/app/src/main/AndroidManifest.xml:32:11-42
+43            <intent-filter>
+43-->/app/applet/app/src/main/AndroidManifest.xml:35:4-38:20
+44                <action android:name="android.intent.action.MAIN" />
+44-->/app/applet/app/src/main/AndroidManifest.xml:36:5-56
+44-->/app/applet/app/src/main/AndroidManifest.xml:36:13-54
+45
+46                <category android:name="android.intent.category.LAUNCHER" />
+46-->/app/applet/app/src/main/AndroidManifest.xml:37:5-64
+46-->/app/applet/app/src/main/AndroidManifest.xml:37:15-62
+47            </intent-filter>
+48            <intent-filter>
+48-->/app/applet/app/src/main/AndroidManifest.xml:39:4-48:20
+49                <action android:name="android.intent.action.VIEW" />
+49-->/app/applet/app/src/main/AndroidManifest.xml:40:5-57
+49-->/app/applet/app/src/main/AndroidManifest.xml:40:13-54
+50
+51                <category android:name="android.intent.category.DEFAULT" />
+51-->/app/applet/app/src/main/AndroidManifest.xml:41:5-64
+51-->/app/applet/app/src/main/AndroidManifest.xml:41:15-61
+52                <category android:name="android.intent.category.BROWSABLE" />
+52-->/app/applet/app/src/main/AndroidManifest.xml:42:5-66
+52-->/app/applet/app/src/main/AndroidManifest.xml:42:15-63
+53
+54                <data android:scheme="http" />
+54-->/app/applet/app/src/main/AndroidManifest.xml:43:5-35
+54-->/app/applet/app/src/main/AndroidManifest.xml:43:11-32
+55                <data android:scheme="https" />
+55-->/app/applet/app/src/main/AndroidManifest.xml:43:5-35
+55-->/app/applet/app/src/main/AndroidManifest.xml:43:11-32
+56                <data android:host="youtube.com" />
+56-->/app/applet/app/src/main/AndroidManifest.xml:43:5-35
+56-->/app/applet/app/src/main/AndroidManifest.xml:45:11-37
+57                <data android:host="*.youtube.com" />
+57-->/app/applet/app/src/main/AndroidManifest.xml:43:5-35
+57-->/app/applet/app/src/main/AndroidManifest.xml:45:11-37
+58                <data android:host="youtu.be" />
+58-->/app/applet/app/src/main/AndroidManifest.xml:43:5-35
+58-->/app/applet/app/src/main/AndroidManifest.xml:45:11-37
+59            </intent-filter>
+60            <intent-filter>
+60-->/app/applet/app/src/main/AndroidManifest.xml:49:4-53:20
+61                <action android:name="android.intent.action.SEND" />
+61-->/app/applet/app/src/main/AndroidManifest.xml:50:5-57
+61-->/app/applet/app/src/main/AndroidManifest.xml:50:13-54
+62
+63                <category android:name="android.intent.category.DEFAULT" />
+63-->/app/applet/app/src/main/AndroidManifest.xml:41:5-64
+63-->/app/applet/app/src/main/AndroidManifest.xml:41:15-61
+64
+65                <data android:mimeType="text/plain" />
+65-->/app/applet/app/src/main/AndroidManifest.xml:43:5-35
+65-->/app/applet/app/src/main/AndroidManifest.xml:52:11-40
+66            </intent-filter>
+67        </activity>
+68        <activity
+68-->/app/applet/app/src/main/AndroidManifest.xml:55:3-78:14
+69            android:name="com.google.android.youtube.pro.DownloadFromIntentFilter"
+69-->/app/applet/app/src/main/AndroidManifest.xml:56:4-44
+70            android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
+70-->/app/applet/app/src/main/AndroidManifest.xml:57:4-97
+71            android:exported="true"
+71-->/app/applet/app/src/main/AndroidManifest.xml:61:4-27
+72            android:hardwareAccelerated="true"
+72-->/app/applet/app/src/main/AndroidManifest.xml:58:4-38
+73            android:screenOrientation="unspecified"
+73-->/app/applet/app/src/main/AndroidManifest.xml:62:4-43
+74            android:supportsPictureInPicture="true"
+74-->/app/applet/app/src/main/AndroidManifest.xml:59:4-43
+75            android:theme="@style/AppTheme" >
+75-->/app/applet/app/src/main/AndroidManifest.xml:60:4-35
+76            <intent-filter android:label="@string/dl" >
+76-->/app/applet/app/src/main/AndroidManifest.xml:39:4-48:20
+76-->/app/applet/app/src/main/AndroidManifest.xml:63:19-45
+77                <action android:name="android.intent.action.VIEW" />
+77-->/app/applet/app/src/main/AndroidManifest.xml:40:5-57
+77-->/app/applet/app/src/main/AndroidManifest.xml:40:13-54
+78
+79                <category android:name="android.intent.category.DEFAULT" />
+79-->/app/applet/app/src/main/AndroidManifest.xml:41:5-64
+79-->/app/applet/app/src/main/AndroidManifest.xml:41:15-61
+80                <category android:name="android.intent.category.BROWSABLE" />
+80-->/app/applet/app/src/main/AndroidManifest.xml:42:5-66
+80-->/app/applet/app/src/main/AndroidManifest.xml:42:15-63
+81
+82                <data android:scheme="http" />
+82-->/app/applet/app/src/main/AndroidManifest.xml:43:5-35
+82-->/app/applet/app/src/main/AndroidManifest.xml:43:11-32
+83                <data android:scheme="https" />
+83-->/app/applet/app/src/main/AndroidManifest.xml:43:5-35
+83-->/app/applet/app/src/main/AndroidManifest.xml:43:11-32
+84                <data android:host="youtube.com" />
+84-->/app/applet/app/src/main/AndroidManifest.xml:43:5-35
+84-->/app/applet/app/src/main/AndroidManifest.xml:45:11-37
+85                <data android:host="*.youtube.com" />
+85-->/app/applet/app/src/main/AndroidManifest.xml:43:5-35
+85-->/app/applet/app/src/main/AndroidManifest.xml:45:11-37
+86                <data android:host="youtu.be" />
+86-->/app/applet/app/src/main/AndroidManifest.xml:43:5-35
+86-->/app/applet/app/src/main/AndroidManifest.xml:45:11-37
+87            </intent-filter>
+88            <intent-filter android:label="@string/dl" >
+88-->/app/applet/app/src/main/AndroidManifest.xml:49:4-53:20
+88-->/app/applet/app/src/main/AndroidManifest.xml:73:19-45
+89                <action android:name="android.intent.action.SEND" />
+89-->/app/applet/app/src/main/AndroidManifest.xml:50:5-57
+89-->/app/applet/app/src/main/AndroidManifest.xml:50:13-54
+90
+91                <category android:name="android.intent.category.DEFAULT" />
+91-->/app/applet/app/src/main/AndroidManifest.xml:41:5-64
+91-->/app/applet/app/src/main/AndroidManifest.xml:41:15-61
+92
+93                <data android:mimeType="text/plain" />
+93-->/app/applet/app/src/main/AndroidManifest.xml:43:5-35
+93-->/app/applet/app/src/main/AndroidManifest.xml:52:11-40
+94            </intent-filter>
+95        </activity>
+96
+97        <service
+97-->/app/applet/app/src/main/AndroidManifest.xml:79:3-84:6
+98            android:name="com.google.android.youtube.pro.ForegroundService"
+98-->/app/applet/app/src/main/AndroidManifest.xml:80:4-37
+99            android:enabled="true"
+99-->/app/applet/app/src/main/AndroidManifest.xml:81:4-26
+100            android:exported="true"
+100-->/app/applet/app/src/main/AndroidManifest.xml:82:4-27
+101            android:foregroundServiceType="mediaPlayback" />
+101-->/app/applet/app/src/main/AndroidManifest.xml:83:4-49
+102
+103        <receiver android:name="com.google.android.youtube.pro.utils.NotificationActionReceiver" />
+103-->/app/applet/app/src/main/AndroidManifest.xml:86:3-63
+103-->/app/applet/app/src/main/AndroidManifest.xml:86:13-61
+104    </application>
+105
+106</manifest>
+
+Merged manifest saved to /app/applet/app/build/intermediates/merged_manifest/debug/processDebugMainManifest/AndroidManifest.xml
+Resolve mutations for :app:processDebugManifest (Thread[#136,Execution worker,5,main]) started.
+:app:processDebugManifest (Thread[#136,Execution worker,5,main]) started.
+
+> Task :app:processDebugManifest
+Deleting stale output file: /app/applet/app/build/intermediates/merged_manifests/debug/processDebugManifest
+Caching disabled for task ':app:processDebugManifest' because:
+  Build cache is disabled
+Task ':app:processDebugManifest' is not up-to-date because:
+  Output property 'multiApkManifestOutputDirectory' file /app/applet/app/build/intermediates/merged_manifests/debug/processDebugManifest has been removed.
+  Output property 'multiApkManifestOutputDirectory' file /app/applet/app/build/intermediates/merged_manifests/debug/processDebugManifest/AndroidManifest.xml has been removed.
+  Output property 'multiApkManifestOutputDirectory' file /app/applet/app/build/intermediates/merged_manifests/debug/processDebugManifest/output-metadata.json has been removed.
+Resolve mutations for :app:processDebugManifestForPackage (Thread[#136,Execution worker,5,main]) started.
+:app:processDebugManifestForPackage (Thread[#136,Execution worker,5,main]) started.
+Resolve mutations for :app:mergeDebugShaders (Thread[#135,included builds,5,main]) started.
+:app:mergeDebugShaders (Thread[#135,included builds,5,main]) started.
+
+> Task :app:mergeDebugShaders
+Deleting stale output file: /app/applet/app/build/intermediates/merged_shaders/debug/mergeDebugShaders/out
+Caching disabled for task ':app:mergeDebugShaders' because:
+  Build cache is disabled
+  Simple merging task
+Task ':app:mergeDebugShaders' is not up-to-date because:
+  Output property 'outputDir' file /app/applet/app/build/intermediates/merged_shaders/debug/mergeDebugShaders/out has been removed.
+The input changes require a full rebuild for incremental task ':app:mergeDebugShaders'.
+Resolve mutations for :app:compileDebugShaders (Thread[#135,included builds,5,main]) started.
+:app:compileDebugShaders (Thread[#135,included builds,5,main]) started.
+
+> Task :app:compileDebugShaders NO-SOURCE
+Skipping task ':app:compileDebugShaders' as it has no source files and no previous output files.
+Resolve mutations for :app:generateDebugAssets (Thread[#135,included builds,5,main]) started.
+:app:generateDebugAssets (Thread[#135,included builds,5,main]) started.
+
+> Task :app:generateDebugAssets UP-TO-DATE
+Skipping task ':app:generateDebugAssets' as it has no actions.
+Resolve mutations for :app:mergeDebugAssets (Thread[#135,included builds,5,main]) started.
+:app:mergeDebugAssets (Thread[#135,included builds,5,main]) started.
+
+> Task :app:mergeDebugAssets
+Deleting stale output file: /app/applet/app/build/intermediates/assets/debug/mergeDebugAssets
+Transforming webkit-1.12.0.aar (androidx.webkit:webkit:1.12.0) with ExtractAarTransform
+Transforming webkit-1.12.0.aar (androidx.webkit:webkit:1.12.0) with AarTransform
+Transforming core-1.1.0.aar (androidx.core:core:1.1.0) with ExtractAarTransform
+Transforming core-1.1.0.aar (androidx.core:core:1.1.0) with AarTransform
+Transforming versionedparcelable-1.1.0.aar (androidx.versionedparcelable:versionedparcelable:1.1.0) with ExtractAarTransform
+Transforming versionedparcelable-1.1.0.aar (androidx.versionedparcelable:versionedparcelable:1.1.0) with AarTransform
+Transforming lifecycle-runtime-2.0.0.aar (androidx.lifecycle:lifecycle-runtime:2.0.0) with ExtractAarTransform
+Transforming lifecycle-runtime-2.0.0.aar (androidx.lifecycle:lifecycle-runtime:2.0.0) with AarTransform
+Caching disabled for task ':app:mergeDebugAssets' because:
+  Build cache is disabled
+  Simple merging task
+Task ':app:mergeDebugAssets' is not up-to-date because:
+  Output property 'outputDir' file /app/applet/app/build/intermediates/assets/debug/mergeDebugAssets has been removed.
+The input changes require a full rebuild for incremental task ':app:mergeDebugAssets'.
+Resolve mutations for :app:compressDebugAssets (Thread[#135,included builds,5,main]) started.
+:app:compressDebugAssets (Thread[#135,included builds,5,main]) started.
+
+> Task :app:compressDebugAssets
+Deleting stale output file: /app/applet/app/build/intermediates/compressed_assets/debug/compressDebugAssets/out
+Caching disabled for task ':app:compressDebugAssets' because:
+  Build cache is disabled
+Task ':app:compressDebugAssets' is not up-to-date because:
+  Output property 'outputDir' file /app/applet/app/build/intermediates/compressed_assets/debug/compressDebugAssets/out has been removed.
+The input changes require a full rebuild for incremental task ':app:compressDebugAssets'.
+Resolve mutations for :app:processDebugJavaRes (Thread[#135,included builds,5,main]) started.
+:app:processDebugJavaRes (Thread[#135,included builds,5,main]) started.
+
+> Task :app:processDebugJavaRes NO-SOURCE
+file or directory '/app/applet/app/src/main/resources', not found
+file or directory '/app/applet/app/src/debug/resources', not found
+Skipping task ':app:processDebugJavaRes' as it has no source files and no previous output files.
+Resolve mutations for :app:mergeDebugJavaResource (Thread[#135,included builds,5,main]) started.
+:app:mergeDebugJavaResource (Thread[#135,included builds,5,main]) started.
+
+> Task :app:processDebugManifestForPackage
+Deleting stale output file: /app/applet/app/build/intermediates/packaged_manifests/debug/processDebugManifestForPackage
+Custom actions are attached to task ':app:processDebugManifestForPackage'.
+Caching disabled for task ':app:processDebugManifestForPackage' because:
+  Build cache is disabled
+Task ':app:processDebugManifestForPackage' is not up-to-date because:
+  Output property 'packageManifests' file /app/applet/app/build/intermediates/packaged_manifests/debug/processDebugManifestForPackage has been removed.
+  Output property 'packageManifests' file /app/applet/app/build/intermediates/packaged_manifests/debug/processDebugManifestForPackage/AndroidManifest.xml has been removed.
+  Output property 'packageManifests' file /app/applet/app/build/intermediates/packaged_manifests/debug/processDebugManifestForPackage/output-metadata.json has been removed.
+Resolve mutations for :app:processDebugResources (Thread[#136,Execution worker,5,main]) started.
+:app:processDebugResources (Thread[#136,Execution worker,5,main]) started.
+Resolve mutations for :app:checkDebugDuplicateClasses (Thread[#138,Execution worker Thread 3,5,main]) started.
+:app:checkDebugDuplicateClasses (Thread[#138,Execution worker Thread 3,5,main]) started.
+
+> Task :app:mergeDebugJavaResource
+Deleting stale output file: /app/applet/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache
+Deleting stale output file: /app/applet/app/build/intermediates/merged_java_res/debug/mergeDebugJavaResource/base.jar
+Transforming webkit-1.12.0.aar (androidx.webkit:webkit:1.12.0) with ExtractAarTransform
+Transforming webkit-1.12.0.aar (androidx.webkit:webkit:1.12.0) with AarTransform
+Transforming core-1.1.0.aar (androidx.core:core:1.1.0) with ExtractAarTransform
+Transforming core-1.1.0.aar (androidx.core:core:1.1.0) with AarTransform
+Transforming versionedparcelable-1.1.0.aar (androidx.versionedparcelable:versionedparcelable:1.1.0) with ExtractAarTransform
+Transforming versionedparcelable-1.1.0.aar (androidx.versionedparcelable:versionedparcelable:1.1.0) with AarTransform
+Transforming lifecycle-runtime-2.0.0.aar (androidx.lifecycle:lifecycle-runtime:2.0.0) with ExtractAarTransform
+Transforming collection-1.0.0.jar (androidx.collection:collection:1.0.0) with IdentityTransform
+Transforming lifecycle-runtime-2.0.0.aar (androidx.lifecycle:lifecycle-runtime:2.0.0) with AarTransform
+Transforming annotation-1.2.0.jar (androidx.annotation:annotation:1.2.0) with IdentityTransform
+Transforming lifecycle-common-2.0.0.jar (androidx.lifecycle:lifecycle-common:2.0.0) with IdentityTransform
+Transforming core-common-2.0.0.jar (androidx.arch.core:core-common:2.0.0) with IdentityTransform
+Caching disabled for task ':app:mergeDebugJavaResource' because:
+  Build cache is disabled
+  Caching has been disabled for the task
+Task ':app:mergeDebugJavaResource' is not up-to-date because:
+  Output property 'cacheDir' file /app/applet/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache has been removed.
+  Output property 'cacheDir' file /app/applet/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/AKhLT57JgZ71lVTpZ3JJN+yPHV0= has been removed.
+  Output property 'cacheDir' file /app/applet/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/Bt94SfrjEyCan9O9SNsAcELTlSg= has been removed.
+  Output property 'cacheDir' file /app/applet/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/FZhC0UypA53prMo5zdf83u9kRLs= has been removed.
+  Output property 'cacheDir' file /app/applet/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/hBwmq9HHbqoWJl9VC4N10IGUuzk= has been removed.
+  Output property 'cacheDir' file /app/applet/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/joefDjczuF+rBip9OwvQsRhzPDg= has been removed.
+  Output property 'cacheDir' file /app/applet/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/otTUMDq11d2Jd2UTX7fRPqmsR2A= has been removed.
+  Output property 'cacheDir' file /app/applet/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/oZyv5O9M_IdBwpcOTHqaJEp6WZ4= has been removed.
+  Output property 'cacheDir' file /app/applet/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/urfZaUmlXJTx0WU8v+HwF4Gbphg= has been removed.
+  Output property 'outputFile' file /app/applet/app/build/intermediates/merged_java_res/debug/mergeDebugJavaResource/base.jar has been removed.
+The input changes require a full rebuild for incremental task ':app:mergeDebugJavaResource'.
+Resolve mutations for :app:desugarDebugFileDependencies (Thread[#135,included builds,5,main]) started.
+:app:desugarDebugFileDependencies (Thread[#135,included builds,5,main]) started.
+
+> Task :app:checkDebugDuplicateClasses
+Deleting stale output file: /app/applet/app/build/intermediates/duplicate_classes_check/debug/checkDebugDuplicateClasses
+Transforming webkit-1.12.0.aar (androidx.webkit:webkit:1.12.0) with AarToClassTransform
+Transforming webkit-1.12.0.aar (androidx.webkit:webkit:1.12.0) with EnumerateClassesTransform
+Transforming core-1.1.0.aar (androidx.core:core:1.1.0) with AarToClassTransform
+Transforming core-1.1.0.aar (androidx.core:core:1.1.0) with EnumerateClassesTransform
+Transforming versionedparcelable-1.1.0.aar (androidx.versionedparcelable:versionedparcelable:1.1.0) with AarToClassTransform
+Transforming versionedparcelable-1.1.0.aar (androidx.versionedparcelable:versionedparcelable:1.1.0) with EnumerateClassesTransform
+Transforming collection-1.0.0.jar (androidx.collection:collection:1.0.0) with IdentityTransform
+Transforming collection-1.0.0.jar (androidx.collection:collection:1.0.0) with EnumerateClassesTransform
+Transforming annotation-1.2.0.jar (androidx.annotation:annotation:1.2.0) with IdentityTransform
+Transforming annotation-1.2.0.jar (androidx.annotation:annotation:1.2.0) with EnumerateClassesTransform
+Transforming lifecycle-runtime-2.0.0.aar (androidx.lifecycle:lifecycle-runtime:2.0.0) with AarToClassTransform
+Transforming lifecycle-runtime-2.0.0.aar (androidx.lifecycle:lifecycle-runtime:2.0.0) with EnumerateClassesTransform
+Transforming lifecycle-common-2.0.0.jar (androidx.lifecycle:lifecycle-common:2.0.0) with IdentityTransform
+Transforming lifecycle-common-2.0.0.jar (androidx.lifecycle:lifecycle-common:2.0.0) with EnumerateClassesTransform
+Transforming core-common-2.0.0.jar (androidx.arch.core:core-common:2.0.0) with IdentityTransform
+Transforming core-common-2.0.0.jar (androidx.arch.core:core-common:2.0.0) with EnumerateClassesTransform
+Caching disabled for task ':app:checkDebugDuplicateClasses' because:
+  Build cache is disabled
+  Caching has been disabled for the task
+Task ':app:checkDebugDuplicateClasses' is not up-to-date because:
+  Output property 'dummyOutputDirectory' file /app/applet/app/build/intermediates/duplicate_classes_check/debug/checkDebugDuplicateClasses has been removed.
+
+> Task :app:desugarDebugFileDependencies
+Deleting stale output file: /app/applet/app/build/intermediates/external_file_lib_dex_archives/debug/desugarDebugFileDependencies
+Caching disabled for task ':app:desugarDebugFileDependencies' because:
+  Build cache is disabled
+Task ':app:desugarDebugFileDependencies' is not up-to-date because:
+  Output property 'outputDirectory' file /app/applet/app/build/intermediates/external_file_lib_dex_archives/debug/desugarDebugFileDependencies has been removed.
+Resolve mutations for :app:mergeDebugStartupProfile (Thread[#135,included builds,5,main]) started.
+:app:mergeDebugStartupProfile (Thread[#135,included builds,5,main]) started.
+
+> Task :app:mergeDebugStartupProfile UP-TO-DATE
+Caching disabled for task ':app:mergeDebugStartupProfile' because:
+  Build cache is disabled
+  Simple merging task
+Skipping task ':app:mergeDebugStartupProfile' as it is up-to-date.
+Resolve mutations for :app:mergeExtDexDebug (Thread[#135,included builds,5,main]) started.
+:app:mergeExtDexDebug (Thread[#135,included builds,5,main]) started.
+Resolve mutations for :app:mergeLibDexDebug (Thread[#138,Execution worker Thread 3,5,main]) started.
+:app:mergeLibDexDebug (Thread[#138,Execution worker Thread 3,5,main]) started.
+Resolve mutations for :app:mergeDebugJniLibFolders (Thread[#137,Execution worker Thread 2,5,main]) started.
+:app:mergeDebugJniLibFolders (Thread[#137,Execution worker Thread 2,5,main]) started.
+
+> Task :app:mergeLibDexDebug
+Deleting stale output file: /app/applet/app/build/intermediates/dex/debug/mergeLibDexDebug
+Caching disabled for task ':app:mergeLibDexDebug' because:
+  Build cache is disabled
+Task ':app:mergeLibDexDebug' is not up-to-date because:
+  Output property 'outputDir' file /app/applet/app/build/intermediates/dex/debug/mergeLibDexDebug has been removed.
+  Output property 'outputDir' file /app/applet/app/build/intermediates/dex/debug/mergeLibDexDebug/0 has been removed.
+  Output property 'outputDir' file /app/applet/app/build/intermediates/dex/debug/mergeLibDexDebug/1 has been removed.
+  Output property 'outputDir' file /app/applet/app/build/intermediates/dex/debug/mergeLibDexDebug/10 has been removed.
+  Output property 'outputDir' file /app/applet/app/build/intermediates/dex/debug/mergeLibDexDebug/11 has been removed.
+  Output property 'outputDir' file /app/applet/app/build/intermediates/dex/debug/mergeLibDexDebug/12 has been removed.
+  Output property 'outputDir' file /app/applet/app/build/intermediates/dex/debug/mergeLibDexDebug/13 has been removed.
+  Output property 'outputDir' file /app/applet/app/build/intermediates/dex/debug/mergeLibDexDebug/14 has been removed.
+  Output property 'outputDir' file /app/applet/app/build/intermediates/dex/debug/mergeLibDexDebug/15 has been removed.
+  Output property 'outputDir' file /app/applet/app/build/intermediates/dex/debug/mergeLibDexDebug/2 has been removed.
+  Output property 'outputDir' file /app/applet/app/build/intermediates/dex/debug/mergeLibDexDebug/3 has been removed.
+  Output property 'outputDir' file /app/applet/app/build/intermediates/dex/debug/mergeLibDexDebug/4 has been removed.
+  Output property 'outputDir' file /app/applet/app/build/intermediates/dex/debug/mergeLibDexDebug/5 has been removed.
+  Output property 'outputDir' file /app/applet/app/build/intermediates/dex/debug/mergeLibDexDebug/6 has been removed.
+  Output property 'outputDir' file /app/applet/app/build/intermediates/dex/debug/mergeLibDexDebug/7 has been removed.
+  Output property 'outputDir' file /app/applet/app/build/intermediates/dex/debug/mergeLibDexDebug/8 has been removed.
+  Output property 'outputDir' file /app/applet/app/build/intermediates/dex/debug/mergeLibDexDebug/9 has been removed.
+The input changes require a full rebuild for incremental task ':app:mergeLibDexDebug'.
+
+> Task :app:mergeDebugJniLibFolders
+Deleting stale output file: /app/applet/app/build/intermediates/merged_jni_libs/debug/mergeDebugJniLibFolders/out
+Caching disabled for task ':app:mergeDebugJniLibFolders' because:
+  Build cache is disabled
+  Simple merging task
+Task ':app:mergeDebugJniLibFolders' is not up-to-date because:
+  Output property 'outputDir' file /app/applet/app/build/intermediates/merged_jni_libs/debug/mergeDebugJniLibFolders/out has been removed.
+The input changes require a full rebuild for incremental task ':app:mergeDebugJniLibFolders'.
+Resolve mutations for :app:mergeDebugNativeLibs (Thread[#137,Execution worker Thread 2,5,main]) started.
+:app:mergeDebugNativeLibs (Thread[#137,Execution worker Thread 2,5,main]) started.
+
+> Task :app:mergeDebugNativeLibs NO-SOURCE
+Transforming webkit-1.12.0.aar (androidx.webkit:webkit:1.12.0) with ExtractAarTransform
+Transforming webkit-1.12.0.aar (androidx.webkit:webkit:1.12.0) with AarTransform
+Transforming core-1.1.0.aar (androidx.core:core:1.1.0) with ExtractAarTransform
+Transforming core-1.1.0.aar (androidx.core:core:1.1.0) with AarTransform
+Transforming versionedparcelable-1.1.0.aar (androidx.versionedparcelable:versionedparcelable:1.1.0) with ExtractAarTransform
+Transforming versionedparcelable-1.1.0.aar (androidx.versionedparcelable:versionedparcelable:1.1.0) with AarTransform
+Transforming collection-1.0.0.jar (androidx.collection:collection:1.0.0) with ExtractJniTransform
+Transforming annotation-1.2.0.jar (androidx.annotation:annotation:1.2.0) with ExtractJniTransform
+Transforming lifecycle-runtime-2.0.0.aar (androidx.lifecycle:lifecycle-runtime:2.0.0) with ExtractAarTransform
+Transforming lifecycle-runtime-2.0.0.aar (androidx.lifecycle:lifecycle-runtime:2.0.0) with AarTransform
+Transforming lifecycle-common-2.0.0.jar (androidx.lifecycle:lifecycle-common:2.0.0) with ExtractJniTransform
+Transforming core-common-2.0.0.jar (androidx.arch.core:core-common:2.0.0) with ExtractJniTransform
+Skipping task ':app:mergeDebugNativeLibs' as it has no source files and no previous output files.
+Resolve mutations for :app:stripDebugDebugSymbols (Thread[#137,Execution worker Thread 2,5,main]) started.
+:app:stripDebugDebugSymbols (Thread[#137,Execution worker Thread 2,5,main]) started.
+
+> Task :app:stripDebugDebugSymbols NO-SOURCE
+Skipping task ':app:stripDebugDebugSymbols' as it has no source files and no previous output files.
+Resolve mutations for :app:validateSigningDebug (Thread[#137,Execution worker Thread 2,5,main]) started.
+:app:validateSigningDebug (Thread[#137,Execution worker Thread 2,5,main]) started.
+
+> Task :app:validateSigningDebug
+Deleting stale output file: /app/applet/app/build/intermediates/validate_signing_config/debug/validateSigningDebug
+Caching disabled for task ':app:validateSigningDebug' because:
+  Build cache is disabled
+  Caching has been disabled for the task
+Task ':app:validateSigningDebug' is not up-to-date because:
+  Output property 'dummyOutputDirectory' file /app/applet/app/build/intermediates/validate_signing_config/debug/validateSigningDebug has been removed.
+Resolve mutations for :app:writeDebugAppMetadata (Thread[#137,Execution worker Thread 2,5,main]) started.
+:app:writeDebugAppMetadata (Thread[#137,Execution worker Thread 2,5,main]) started.
+
+> Task :app:writeDebugAppMetadata
+Deleting stale output file: /app/applet/app/build/intermediates/app_metadata/debug/writeDebugAppMetadata/app-metadata.properties
+Caching disabled for task ':app:writeDebugAppMetadata' because:
+  Build cache is disabled
+  Caching has been disabled for the task
+Task ':app:writeDebugAppMetadata' is not up-to-date because:
+  Output property 'outputFile' file /app/applet/app/build/intermediates/app_metadata/debug/writeDebugAppMetadata/app-metadata.properties has been removed.
+Resolve mutations for :app:writeDebugSigningConfigVersions (Thread[#137,Execution worker Thread 2,5,main]) started.
+:app:writeDebugSigningConfigVersions (Thread[#137,Execution worker Thread 2,5,main]) started.
+
+> Task :app:writeDebugSigningConfigVersions
+Deleting stale output file: /app/applet/app/build/intermediates/signing_config_versions/debug/writeDebugSigningConfigVersions/signing-config-versions.json
+Caching disabled for task ':app:writeDebugSigningConfigVersions' because:
+  Build cache is disabled
+  Caching has been disabled for the task
+Task ':app:writeDebugSigningConfigVersions' is not up-to-date because:
+  Output property 'outputFile' file /app/applet/app/build/intermediates/signing_config_versions/debug/writeDebugSigningConfigVersions/signing-config-versions.json has been removed.
+
+> Task :app:processDebugResources
+Deleting stale output file: /app/applet/app/build/intermediates/runtime_symbol_list/debug/processDebugResources/R.txt
+Deleting stale output file: /app/applet/app/build/intermediates/compile_and_runtime_not_namespaced_r_class_jar/debug/processDebugResources/R.jar
+Deleting stale output file: /app/applet/app/build/intermediates/processed_res/debug/processDebugResources/out
+Deleting stale output file: /app/applet/app/build/intermediates/symbol_list_with_package_name/debug/processDebugResources/package-aware-r.txt
+Deleting stale output file: /app/applet/app/build/intermediates/stable_resource_ids_file/debug/processDebugResources/stableIds.txt
+Transforming aapt2-8.5.0-11315950-linux.jar (com.android.tools.build:aapt2:8.5.0-11315950) with Aapt2Extractor
+Transforming webkit-1.12.0.aar (androidx.webkit:webkit:1.12.0) with ExtractAarTransform
+Transforming webkit-1.12.0.aar (androidx.webkit:webkit:1.12.0) with AarResourcesCompilerTransform
+Transforming core-1.1.0.aar (androidx.core:core:1.1.0) with ExtractAarTransform
+Transforming core-1.1.0.aar (androidx.core:core:1.1.0) with AarResourcesCompilerTransform
+Transforming versionedparcelable-1.1.0.aar (androidx.versionedparcelable:versionedparcelable:1.1.0) with ExtractAarTransform
+Transforming versionedparcelable-1.1.0.aar (androidx.versionedparcelable:versionedparcelable:1.1.0) with AarResourcesCompilerTransform
+Transforming lifecycle-runtime-2.0.0.aar (androidx.lifecycle:lifecycle-runtime:2.0.0) with ExtractAarTransform
+Transforming lifecycle-runtime-2.0.0.aar (androidx.lifecycle:lifecycle-runtime:2.0.0) with AarResourcesCompilerTransform
+Transforming webkit-1.12.0.aar (androidx.webkit:webkit:1.12.0) with ExtractAarTransform
+Transforming webkit-1.12.0.aar (androidx.webkit:webkit:1.12.0) with LibrarySymbolTableTransform
+Transforming core-1.1.0.aar (androidx.core:core:1.1.0) with ExtractAarTransform
+Transforming core-1.1.0.aar (androidx.core:core:1.1.0) with LibrarySymbolTableTransform
+Transforming versionedparcelable-1.1.0.aar (androidx.versionedparcelable:versionedparcelable:1.1.0) with ExtractAarTransform
+Transforming versionedparcelable-1.1.0.aar (androidx.versionedparcelable:versionedparcelable:1.1.0) with LibrarySymbolTableTransform
+Transforming lifecycle-runtime-2.0.0.aar (androidx.lifecycle:lifecycle-runtime:2.0.0) with ExtractAarTransform
+Transforming lifecycle-runtime-2.0.0.aar (androidx.lifecycle:lifecycle-runtime:2.0.0) with LibrarySymbolTableTransform
+Caching disabled for task ':app:processDebugResources' because:
+  Build cache is disabled
+Task ':app:processDebugResources' is not up-to-date because:
+  Output property 'RClassOutputJar' file /app/applet/app/build/intermediates/compile_and_runtime_not_namespaced_r_class_jar/debug/processDebugResources/R.jar has been removed.
+  Output property 'resPackageOutputFolder' file /app/applet/app/build/intermediates/processed_res/debug/processDebugResources/out has been removed.
+  Output property 'resPackageOutputFolder' file /app/applet/app/build/intermediates/processed_res/debug/processDebugResources/out/output-metadata.json has been removed.
+  Output property 'resPackageOutputFolder' file /app/applet/app/build/intermediates/processed_res/debug/processDebugResources/out/resources-debug.ap_ has been removed.
+  Output property 'stableIdsOutputFileProperty' file /app/applet/app/build/intermediates/stable_resource_ids_file/debug/processDebugResources/stableIds.txt has been removed.
+The input changes require a full rebuild for incremental task ':app:processDebugResources'.
+AAPT2 aapt2-8.5.0-11315950-linux Daemon #0: starting
+Aapt output file /app/applet/app/build/intermediates/processed_res/debug/processDebugResources/out/resources-debug.ap_
+Resolve mutations for :app:compileDebugJavaWithJavac (Thread[#136,Execution worker,5,main]) started.
+:app:compileDebugJavaWithJavac (Thread[#136,Execution worker,5,main]) started.
+
+> Task :app:mergeExtDexDebug
+Deleting stale output file: /app/applet/app/build/intermediates/dex/debug/mergeExtDexDebug
+Transforming webkit-1.12.0.aar (androidx.webkit:webkit:1.12.0) with AarToClassTransform
+Transforming webkit-1.12.0.aar (androidx.webkit:webkit:1.12.0) with IdentityTransform
+Transforming webkit-1.12.0.aar (androidx.webkit:webkit:1.12.0) with DexingNoClasspathTransform
+Transforming core-1.1.0.aar (androidx.core:core:1.1.0) with AarToClassTransform
+Transforming core-1.1.0.aar (androidx.core:core:1.1.0) with IdentityTransform
+Transforming core-1.1.0.aar (androidx.core:core:1.1.0) with DexingNoClasspathTransform
+Transforming versionedparcelable-1.1.0.aar (androidx.versionedparcelable:versionedparcelable:1.1.0) with AarToClassTransform
+Transforming versionedparcelable-1.1.0.aar (androidx.versionedparcelable:versionedparcelable:1.1.0) with IdentityTransform
+Transforming versionedparcelable-1.1.0.aar (androidx.versionedparcelable:versionedparcelable:1.1.0) with DexingNoClasspathTransform
+Transforming collection-1.0.0.jar (androidx.collection:collection:1.0.0) with IdentityTransform
+Transforming collection-1.0.0.jar (androidx.collection:collection:1.0.0) with IdentityTransform
+Transforming collection-1.0.0.jar (androidx.collection:collection:1.0.0) with DexingNoClasspathTransform
+Transforming annotation-1.2.0.jar (androidx.annotation:annotation:1.2.0) with IdentityTransform
+Transforming annotation-1.2.0.jar (androidx.annotation:annotation:1.2.0) with IdentityTransform
+Transforming annotation-1.2.0.jar (androidx.annotation:annotation:1.2.0) with DexingNoClasspathTransform
+Transforming lifecycle-runtime-2.0.0.aar (androidx.lifecycle:lifecycle-runtime:2.0.0) with AarToClassTransform
+Transforming lifecycle-runtime-2.0.0.aar (androidx.lifecycle:lifecycle-runtime:2.0.0) with IdentityTransform
+Transforming lifecycle-runtime-2.0.0.aar (androidx.lifecycle:lifecycle-runtime:2.0.0) with DexingNoClasspathTransform
+Transforming lifecycle-common-2.0.0.jar (androidx.lifecycle:lifecycle-common:2.0.0) with IdentityTransform
+Transforming lifecycle-common-2.0.0.jar (androidx.lifecycle:lifecycle-common:2.0.0) with IdentityTransform
+Transforming lifecycle-common-2.0.0.jar (androidx.lifecycle:lifecycle-common:2.0.0) with DexingNoClasspathTransform
+Transforming core-common-2.0.0.jar (androidx.arch.core:core-common:2.0.0) with IdentityTransform
+Transforming core-common-2.0.0.jar (androidx.arch.core:core-common:2.0.0) with IdentityTransform
+Transforming core-common-2.0.0.jar (androidx.arch.core:core-common:2.0.0) with DexingNoClasspathTransform
+Caching disabled for task ':app:mergeExtDexDebug' because:
+  Build cache is disabled
+Task ':app:mergeExtDexDebug' is not up-to-date because:
+  Output property 'outputDir' file /app/applet/app/build/intermediates/dex/debug/mergeExtDexDebug has been removed.
+  Output property 'outputDir' file /app/applet/app/build/intermediates/dex/debug/mergeExtDexDebug/classes.dex has been removed.
+The input changes require a full rebuild for incremental task ':app:mergeExtDexDebug'.
+Merging to '/app/applet/app/build/intermediates/dex/debug/mergeExtDexDebug' with D8 from all or a subset of dex files in /opt/gradle/.gradle/caches/transforms-4/61643787a9a9d47e5f33f3142e14d3ee/transformed/webkit-1.12.0-runtime, /opt/gradle/.gradle/caches/transforms-4/bbe177790ad8f1474244416d95e501cb/transformed/core-1.1.0-runtime, /opt/gradle/.gradle/caches/transforms-4/b9e960fdf61cf311e9395030269a7636/transformed/versionedparcelable-1.1.0-runtime, /opt/gradle/.gradle/caches/transforms-4/b6b8c9ae02a9045af00051313225898a/transformed/collection-1.0.0, /opt/gradle/.gradle/caches/transforms-4/f52726cb295107e1edf8ff6d68771b8d/transformed/annotation-1.2.0, /opt/gradle/.gradle/caches/transforms-4/4824eb09034371122ddeab2b1c035a92/transformed/lifecycle-runtime-2.0.0-runtime, /opt/gradle/.gradle/caches/transforms-4/04a02daba5cc2057d247ed43c88b7927/transformed/lifecycle-common-2.0.0, /opt/gradle/.gradle/caches/transforms-4/bcfa3a7089f04fd0bdbfe9127b63bf68/transformed/core-common-2.0.0, and from all global synthetics files in 
+
+> Task :app:compileDebugJavaWithJavac
+Deleting stale output file: /app/applet/app/build/generated/ap_generated_sources/debug/out
+Deleting stale output file: /app/applet/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes
+Deleting stale output file: /app/applet/app/build/tmp/compileDebugJavaWithJavac/previous-compilation-data.bin
+Transforming webkit-1.12.0.aar (androidx.webkit:webkit:1.12.0) with AarToClassTransform
+Transforming core-1.1.0.aar (androidx.core:core:1.1.0) with AarToClassTransform
+Transforming versionedparcelable-1.1.0.aar (androidx.versionedparcelable:versionedparcelable:1.1.0) with AarToClassTransform
+Transforming collection-1.0.0.jar (androidx.collection:collection:1.0.0) with IdentityTransform
+Transforming annotation-1.2.0.jar (androidx.annotation:annotation:1.2.0) with IdentityTransform
+Transforming lifecycle-runtime-2.0.0.aar (androidx.lifecycle:lifecycle-runtime:2.0.0) with AarToClassTransform
+Transforming lifecycle-common-2.0.0.jar (androidx.lifecycle:lifecycle-common:2.0.0) with IdentityTransform
+Transforming core-common-2.0.0.jar (androidx.arch.core:core-common:2.0.0) with IdentityTransform
+Custom actions are attached to task ':app:compileDebugJavaWithJavac'.
+Caching disabled for task ':app:compileDebugJavaWithJavac' because:
+  Build cache is disabled
+Task ':app:compileDebugJavaWithJavac' is not up-to-date because:
+  Output property 'destinationDirectory' file /app/applet/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes has been removed.
+  Output property 'destinationDirectory' file /app/applet/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com has been removed.
+  Output property 'destinationDirectory' file /app/applet/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/google has been removed.
+  Output property 'options.generatedSourceOutputDirectory' file /app/applet/app/build/generated/ap_generated_sources/debug/out has been removed.
+The input changes require a full rebuild for incremental task ':app:compileDebugJavaWithJavac'.
+Java compiler version 21 has deprecated support for compiling with source/target version 8.
+Try one of the following options:
+    1. [Recommended] Use Java toolchain with a lower language version
+    2. Set a higher source/target version
+    3. Use a lower version of the JDK running the build (if you're not using Java toolchain)
+For more details on how to configure these settings, see https://developer.android.com/build/jdks.
+To suppress this warning, set android.javaCompile.suppressSourceTargetDeprecationWarning=true in gradle.properties.
+Full recompilation is required because no incremental change information is available. This is usually caused by clean builds or changing compiler arguments.
+Compiling with toolchain '/usr/lib/jvm/temurin-21-jdk-amd64'.
+file or directory '/app/applet/app/src/debug/java', not found
+Compiling with JDK Java compiler API.
+warning: [options] source value 8 is obsolete and will be removed in a future release
+warning: [options] target value 8 is obsolete and will be removed in a future release
+warning: [options] To suppress warnings about obsolete options, use -Xlint:-options.
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+3 warnings
+Class dependency analysis for incremental compilation took 0.005 secs.
+Created classpath snapshot for incremental compilation in 0.003 secs.
+Resolve mutations for :app:dexBuilderDebug (Thread[#136,Execution worker,5,main]) started.
+:app:dexBuilderDebug (Thread[#136,Execution worker,5,main]) started.
+
+> Task :app:dexBuilderDebug
+Deleting stale output file: /app/applet/app/build/intermediates/external_libs_dex_archive/debug/dexBuilderDebug/out
+Deleting stale output file: /app/applet/app/build/intermediates/project_dex_archive/debug/dexBuilderDebug/out
+Deleting stale output file: /app/applet/app/build/intermediates/external_libs_dex_archive_with_artifact_transforms/debug/dexBuilderDebug/out
+Deleting stale output file: /app/applet/app/build/intermediates/sub_project_dex_archive/debug/dexBuilderDebug/out
+Deleting stale output file: /app/applet/app/build/intermediates/mixed_scope_dex_archive/debug/dexBuilderDebug/out
+Caching disabled for task ':app:dexBuilderDebug' because:
+  Build cache is disabled
+Task ':app:dexBuilderDebug' is not up-to-date because:
+  Output property 'externalLibsFromArtifactTransformsOutputs.dex' file /app/applet/app/build/intermediates/external_libs_dex_archive_with_artifact_transforms/debug/dexBuilderDebug/out has been removed.
+  Output property 'externalLibsOutputs.dex' file /app/applet/app/build/intermediates/external_libs_dex_archive/debug/dexBuilderDebug/out has been removed.
+  Output property 'mixedScopeOutputs.dex' file /app/applet/app/build/intermediates/mixed_scope_dex_archive/debug/dexBuilderDebug/out has been removed.
+The input changes require a full rebuild for incremental task ':app:dexBuilderDebug'.
+Dex builder is incremental : false 
+Processing input /app/applet/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes
+Dexing /app/applet/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes
+Processing input /app/applet/app/build/intermediates/compile_and_runtime_not_namespaced_r_class_jar/debug/processDebugResources/R.jar
+Dexing /app/applet/app/build/intermediates/compile_and_runtime_not_namespaced_r_class_jar/debug/processDebugResources/R.jar
+Dexing '/app/applet/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes' to '/app/applet/app/build/intermediates/project_dex_archive/debug/dexBuilderDebug/out'
+Dexing '/app/applet/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes' to '/app/applet/app/build/intermediates/project_dex_archive/debug/dexBuilderDebug/out'
+Dexing '/app/applet/app/build/intermediates/compile_and_runtime_not_namespaced_r_class_jar/debug/processDebugResources/R.jar' to '/app/applet/app/build/intermediates/project_dex_archive/debug/dexBuilderDebug/out/bcdb64ffd500159abd88d4f9cdf75a83d23134cb2eef0b836fd9182b29b49fed_0.jar'
+Dexing '/app/applet/app/build/intermediates/compile_and_runtime_not_namespaced_r_class_jar/debug/processDebugResources/R.jar' to '/app/applet/app/build/intermediates/project_dex_archive/debug/dexBuilderDebug/out/bcdb64ffd500159abd88d4f9cdf75a83d23134cb2eef0b836fd9182b29b49fed_1.jar'
+Done with all dex archive conversions
+Resolve mutations for :app:mergeProjectDexDebug (Thread[#136,Execution worker,5,main]) started.
+:app:mergeProjectDexDebug (Thread[#136,Execution worker,5,main]) started.
+
+> Task :app:mergeProjectDexDebug
+Deleting stale output file: /app/applet/app/build/intermediates/dex/debug/mergeProjectDexDebug
+Caching disabled for task ':app:mergeProjectDexDebug' because:
+  Build cache is disabled
+Task ':app:mergeProjectDexDebug' is not up-to-date because:
+  Output property 'outputDir' file /app/applet/app/build/intermediates/dex/debug/mergeProjectDexDebug has been removed.
+  Output property 'outputDir' file /app/applet/app/build/intermediates/dex/debug/mergeProjectDexDebug/0 has been removed.
+  Output property 'outputDir' file /app/applet/app/build/intermediates/dex/debug/mergeProjectDexDebug/0/classes.dex has been removed.
+  Output property 'outputDir' file /app/applet/app/build/intermediates/dex/debug/mergeProjectDexDebug/1 has been removed.
+  Output property 'outputDir' file /app/applet/app/build/intermediates/dex/debug/mergeProjectDexDebug/10 has been removed.
+  Output property 'outputDir' file /app/applet/app/build/intermediates/dex/debug/mergeProjectDexDebug/11 has been removed.
+  Output property 'outputDir' file /app/applet/app/build/intermediates/dex/debug/mergeProjectDexDebug/12 has been removed.
+  Output property 'outputDir' file /app/applet/app/build/intermediates/dex/debug/mergeProjectDexDebug/13 has been removed.
+  Output property 'outputDir' file /app/applet/app/build/intermediates/dex/debug/mergeProjectDexDebug/14 has been removed.
+  Output property 'outputDir' file /app/applet/app/build/intermediates/dex/debug/mergeProjectDexDebug/15 has been removed.
+  Output property 'outputDir' file /app/applet/app/build/intermediates/dex/debug/mergeProjectDexDebug/2 has been removed.
+  Output property 'outputDir' file /app/applet/app/build/intermediates/dex/debug/mergeProjectDexDebug/3 has been removed.
+  Output property 'outputDir' file /app/applet/app/build/intermediates/dex/debug/mergeProjectDexDebug/4 has been removed.
+  Output property 'outputDir' file /app/applet/app/build/intermediates/dex/debug/mergeProjectDexDebug/5 has been removed.
+  Output property 'outputDir' file /app/applet/app/build/intermediates/dex/debug/mergeProjectDexDebug/6 has been removed.
+  Output property 'outputDir' file /app/applet/app/build/intermediates/dex/debug/mergeProjectDexDebug/7 has been removed.
+  Output property 'outputDir' file /app/applet/app/build/intermediates/dex/debug/mergeProjectDexDebug/8 has been removed.
+  Output property 'outputDir' file /app/applet/app/build/intermediates/dex/debug/mergeProjectDexDebug/9 has been removed.
+The input changes require a full rebuild for incremental task ':app:mergeProjectDexDebug'.
+Merging to '/app/applet/app/build/intermediates/dex/debug/mergeProjectDexDebug/0' with D8 from all or a subset of dex files in /app/applet/app/build/intermediates/project_dex_archive/debug/dexBuilderDebug/out/bcdb64ffd500159abd88d4f9cdf75a83d23134cb2eef0b836fd9182b29b49fed_0.jar, /app/applet/app/build/intermediates/project_dex_archive/debug/dexBuilderDebug/out/bcdb64ffd500159abd88d4f9cdf75a83d23134cb2eef0b836fd9182b29b49fed_1.jar, and from all global synthetics files in 
+Merging to '/app/applet/app/build/intermediates/dex/debug/mergeProjectDexDebug/6' with D8 from all or a subset of dex files in /app/applet/app/build/intermediates/project_dex_archive/debug/dexBuilderDebug/out, /app/applet/app/build/intermediates/project_dex_archive/debug/dexBuilderDebug/out, and from all global synthetics files in 
+Merging to '/app/applet/app/build/intermediates/dex/debug/mergeProjectDexDebug/9' with D8 from all or a subset of dex files in /app/applet/app/build/intermediates/project_dex_archive/debug/dexBuilderDebug/out, /app/applet/app/build/intermediates/project_dex_archive/debug/dexBuilderDebug/out, /app/applet/app/build/intermediates/project_dex_archive/debug/dexBuilderDebug/out, /app/applet/app/build/intermediates/project_dex_archive/debug/dexBuilderDebug/out, /app/applet/app/build/intermediates/project_dex_archive/debug/dexBuilderDebug/out, /app/applet/app/build/intermediates/project_dex_archive/debug/dexBuilderDebug/out, /app/applet/app/build/intermediates/project_dex_archive/debug/dexBuilderDebug/out, and from all global synthetics files in 
+Merging to '/app/applet/app/build/intermediates/dex/debug/mergeProjectDexDebug/11' with D8 from all or a subset of dex files in /app/applet/app/build/intermediates/project_dex_archive/debug/dexBuilderDebug/out, /app/applet/app/build/intermediates/project_dex_archive/debug/dexBuilderDebug/out, /app/applet/app/build/intermediates/project_dex_archive/debug/dexBuilderDebug/out, and from all global synthetics files in 
+Merging to '/app/applet/app/build/intermediates/dex/debug/mergeProjectDexDebug/13' with D8 from all or a subset of dex files in /app/applet/app/build/intermediates/project_dex_archive/debug/dexBuilderDebug/out, /app/applet/app/build/intermediates/project_dex_archive/debug/dexBuilderDebug/out, /app/applet/app/build/intermediates/project_dex_archive/debug/dexBuilderDebug/out, /app/applet/app/build/intermediates/project_dex_archive/debug/dexBuilderDebug/out, /app/applet/app/build/intermediates/project_dex_archive/debug/dexBuilderDebug/out, /app/applet/app/build/intermediates/project_dex_archive/debug/dexBuilderDebug/out, /app/applet/app/build/intermediates/project_dex_archive/debug/dexBuilderDebug/out, and from all global synthetics files in 
+Resolve mutations for :app:packageDebug (Thread[#136,Execution worker,5,main]) started.
+:app:packageDebug (Thread[#136,Execution worker,5,main]) started.
+
+> Task :app:packageDebug
+Deleting stale output file: /app/applet/app/build/outputs/apk/debug/output-metadata.json
+Deleting stale output file: /app/applet/app/build/outputs/apk/debug
+Deleting stale output file: /app/applet/app/build/intermediates/incremental/packageDebug/tmp
+Custom actions are attached to task ':app:packageDebug'.
+Caching disabled for task ':app:packageDebug' because:
+  Build cache is disabled
+  Caching has been disabled for the task
+Task ':app:packageDebug' is not up-to-date because:
+  Output property 'ideModelOutputFile' file /app/applet/app/build/outputs/apk/debug/output-metadata.json has been removed.
+  Output property 'incrementalFolder' file /app/applet/app/build/intermediates/incremental/packageDebug/tmp has been removed.
+  Output property 'incrementalFolder' file /app/applet/app/build/intermediates/incremental/packageDebug/tmp/debug has been removed.
+  Output property 'outputDirectory' file /app/applet/app/build/outputs/apk/debug has been removed.
+The input changes require a full rebuild for incremental task ':app:packageDebug'.
+Resolve mutations for :app:createDebugApkListingFileRedirect (Thread[#138,Execution worker Thread 3,5,main]) started.
+:app:createDebugApkListingFileRedirect (Thread[#136,Execution worker,5,main]) started.
+
+> Task :app:createDebugApkListingFileRedirect
+Deleting stale output file: /app/applet/app/build/intermediates/apk_ide_redirect_file/debug/createDebugApkListingFileRedirect/redirect.txt
+Caching disabled for task ':app:createDebugApkListingFileRedirect' because:
+  Build cache is disabled
+  Caching has been disabled for the task
+Task ':app:createDebugApkListingFileRedirect' is not up-to-date because:
+  Output property 'redirectFile' file /app/applet/app/build/intermediates/apk_ide_redirect_file/debug/createDebugApkListingFileRedirect/redirect.txt has been removed.
+Resolve mutations for :app:assembleDebug (Thread[#136,Execution worker,5,main]) started.
+:app:assembleDebug (Thread[#136,Execution worker,5,main]) started.
+
+> Task :app:assembleDebug
+Skipping task ':app:assembleDebug' as it has no actions.
+AAPT2 aapt2-8.5.0-11315950-linux Daemon #0: shutdown
+
+BUILD SUCCESSFUL in 4s
+32 actionable tasks: 31 executed, 1 up-to-date
