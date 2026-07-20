@@ -197,7 +197,7 @@ public class YTProWebViewClient extends WebViewClient {
 		web.evaluateJavascript("(function () { var script = document.createElement('script'); script.src='https://youtube.com/ytpro_cdn/npm/ytpro/bgplay.js'; document.body.appendChild(script);  })();", null);
 		web.evaluateJavascript("(function () { var script = document.createElement('script');script.type='module';script.src='https://youtube.com/ytpro_cdn/npm/ytpro/innertube.js'; document.body.appendChild(script);  })();", null);
 		
-		// Translation & Share-to-Download Transformer - V16 (Master)
+		// Translation & Share-to-Download Transformer - V20 (Dedicated Download Button)
 		web.evaluateJavascript("(function() { " +
 				"  const translations = { " +
 				"    'YT PRO Settings': 'إعدادات YT PRO', " +
@@ -226,44 +226,77 @@ public class YTProWebViewClient extends WebViewClient {
 				"    'Loading...': 'جاري التحميل...', " +
 				"    'Language': 'اللغة', " +
 				"    'Search YouTube': 'بحث في يوتيوب', " +
+				"    'YouTube': 'يوتيوب', " +
+				"    'Home': 'الرئيسية', " +
+				"    'Shorts': 'قصيرة', " +
+				"    'Subscriptions': 'الاشتراكات', " +
+				"    'Library': 'المكتبة', " +
 				"    'Made with': 'صُنع بـ', " +
 				"    'by Prateek Chaubey': 'بواسطة Prateek Chaubey', " +
 				"    'Please follow Habitius on Instagram': 'تواصل مع المطور (WhatsApp)', " +
 				"    'For daily habit,lifestyle and health tips': 'لأي استفسار أو دعم فني تواصل معنا' " +
 				"  }; " +
 				"  function runTools() { " +
-				"    // 1. Translate UI Components " +
+				"    // 1. Translation Engine " +
 				"    var elements = document.querySelectorAll('div, span, button, p, b, li, a'); " +
 				"    elements.forEach(el => { " +
 				"      if (el.children.length > 0 && el.tagName !== 'B') return; " +
 				"      var txt = el.innerText.trim(); " +
-				"      for (var key in translations) { " +
-				"        if (txt === key || txt.includes(key)) { " +
-				"          el.innerText = el.innerText.replace(key, translations[key]); " +
+				"      if (translations[txt]) { " +
+				"        el.innerText = translations[txt]; " +
+				"      } else { " +
+				"        for (var key in translations) { " +
+				"          if (txt === key || (txt.length < 30 && txt.includes(key))) { " +
+				"            el.innerText = el.innerText.replace(key, translations[key]); " +
+				"          } " +
 				"        } " +
 				"      } " +
 				"    }); " +
-				"    // 2. Placeholder Translation " +
+				"    // 2. Input Placeholders " +
 				"    document.querySelectorAll('input').forEach(input => { " +
 				"      if (translations[input.placeholder]) input.placeholder = translations[input.placeholder]; " +
 				"    }); " +
-				"    // 3. Transform Share Buttons (Shorts + Normal) " +
-				"    var shareSelectors = ['[aria-label*=\"Share\"]', '[aria-label*=\"مشاركة\"]', '.reel-player-overlay-actions-share', 'ytm-share-button-renderer', 'button[aria-label*=\"Share\"]', 'button[aria-label*=\"مشاركة\"]', '.ytm-reel-player-overlay-actions > div:nth-child(3)']; " +
-				"    document.querySelectorAll(shareSelectors.join(',')).forEach(btn => { " +
-				"      if (btn.dataset.ytproV17) return; " +
-				"      btn.dataset.ytproV17 = 'true'; " +
+				"    // 3. Inject Download Button (Shorts) " +
+				"    if (window.location.href.includes('/shorts/')) { " +
+				"      var shareElements = document.querySelectorAll('ytm-share-button-renderer, button[aria-label*=\"Share\" i], button[aria-label*=\"مشاركة\"]'); " +
+				"      shareElements.forEach(function(shareBtn) { " +
+				"        var actionContainer = shareBtn.closest('ytm-reel-player-overlay-actions'); " +
+				"        if (!actionContainer) { " +
+				"          var curr = shareBtn; " +
+				"          for (var i=0; i<3; i++) { if (curr.parentElement && curr.parentElement.children.length >= 3) { actionContainer = curr.parentElement; break; } curr = curr.parentElement; } " +
+				"        } " +
+				"        if (!actionContainer || actionContainer.querySelector('.ytpro-dl-new-btn')) return; " +
+				"        var dlBtn = document.createElement('div'); " +
+				"        dlBtn.className = 'ytpro-dl-new-btn'; " +
+				"        dlBtn.style.cssText = 'display: flex; flex-direction: column; align-items: center; justify-content: center; padding-top: 8px; padding-bottom: 8px; cursor: pointer; z-index: 9999; margin-bottom: 4px;'; " +
+				"        dlBtn.innerHTML = '<div style=\"background: rgba(0,0,0,0.6); width: 44px; height: 44px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 6px;\"><svg viewBox=\"0 0 24 24\" style=\"width: 24px; height: 24px; fill: white;\"><path d=\"M17 18V19H6V18H17ZM16.5 11.4L15.8 10.7L12 14.4V4H11V14.4L7.2 10.6L6.5 11.3L11.5 16.3L16.5 11.4Z\"></path></svg></div><span style=\"color: white; font-size: 13px; font-weight: 500; font-family: Roboto, Arial, sans-serif; text-shadow: 1px 1px 2px rgba(0,0,0,0.8);\">تنزيل</span>'; " +
+				"        dlBtn.onclick = function(e) { " +
+				"          e.preventDefault(); e.stopPropagation(); " +
+				"          Android.openSeal(window.location.href.split(\"#\")[0]); " +
+				"        }; " +
+				"        var shareWrapper = shareBtn.tagName === 'YTM-SHARE-BUTTON-RENDERER' ? shareBtn : (shareBtn.parentElement === actionContainer ? shareBtn : shareBtn.parentElement); " +
+				"        actionContainer.insertBefore(dlBtn, shareWrapper); " +
+				"      }); " +
+				"    } " +
+				"    // 4. Transform Normal Video Share Buttons " +
+				"    var selectors = ['ytm-share-button-renderer', 'button[aria-label*=\"Share\"]', 'button[aria-label*=\"مشاركة\"]']; " +
+				"    document.querySelectorAll(selectors.join(',')).forEach(btn => { " +
+				"      if (btn.dataset.ytproV21) return; " +
+				"      btn.dataset.ytproV21 = 'true'; " +
+				"      if (window.location.href.includes('/shorts/')) return; " +
 				"      btn.onclick = function(e) { " +
 				"        e.preventDefault(); e.stopPropagation(); " +
-				"        Android.openSeal(window.location.href.split(/[?#]/)[0]); " +
+				"        Android.openSeal(window.location.href.split(\"#\")[0]); " +
 				"        return false; " +
 				"      }; " +
 				"      var svg = btn.querySelector('svg'); " +
 				"      if (svg) svg.innerHTML = '<path d=\"M17 18V19H6V18H17ZM16.5 11.4L15.8 10.7L12 14.4V4H11V14.4L7.2 10.6L6.5 11.3L11.5 16.3L16.5 11.4Z\" fill=\"white\"></path>'; " +
 				"      var txt = btn.querySelector('span, div[class*=\"text\"]'); " +
 				"      if (txt) { txt.innerText = 'تنزيل'; txt.style.color = 'white'; } " +
+				"      if (btn.getAttribute('aria-label')) btn.setAttribute('aria-label', 'تنزيل'); " +
 				"    }); " +
 				"  } " +
-				"  if (!window.ytproMasterV17) { window.ytproMasterV17 = true; setInterval(runTools, 600); } " +
+				"  if (!window.ytproMasterV21) { window.ytproMasterV21 = true; setInterval(runTools, 700); } " +
 				"})();", null);
 
 		

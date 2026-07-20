@@ -19,6 +19,7 @@
 	    <queries>
         <package android:name="com.junkfood.seal" />
     </queries>
+    <attribution android:tag="default" android:label="@string/app_name" />
 
     <application
 		android:allowBackup="true"
