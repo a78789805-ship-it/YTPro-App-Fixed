@@ -1,8 +1,8 @@
 <resources>
-	<string	name="app_name"	translatable="false">YouTube Pro</string>
-	<string	name="grant_mic">Please Grant Microphone Permission in order to use Speech Recognition</string>
-	<string	name="grant_storage">Please Grant Storage Permission in order to download files</string>
-	<string	name="no_pip">Unfortunately, PIP is not supported on your Android version</string>
-	<string	name="dl_started">Download started</string>
-	<string	name="dl">Download</string>
+	<string	name="app_name"	translatable="false">يوتيوب برو</string>
+	<string	name="grant_mic">يرجى منح إذن الميكروفون لاستخدام التعرف على الكلام</string>
+	<string	name="grant_storage">يرجى منح إذن التخزين لتنزيل الملفات</string>
+	<string	name="no_pip">للأسف، خاصية صورة داخل صورة (PIP) غير مدعومة في إصدار أندرويد لديك</string>
+	<string	name="dl_started">بدأ التنزيل</string>
+	<string	name="dl">تنزيل</string>
 </resources>

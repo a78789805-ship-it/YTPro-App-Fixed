@@ -513,7 +513,7 @@ return t;
 
 /*Get Codecs*/
 function getYTPROCodecs(){
-var t=`<p style="text-align:center;font-size:14px;">This feature is experimental , this may break YTPro if not configured correctly. By default all the codecs are enabled , tap on the buttons below to switch them.</p><br> <vc  style="font-size:14px;">Video Codecs</vc><br>`;
+var t=`<p style="text-align:center;font-size:14px;">هذه الميزة تجريبية، وقد تؤدي إلى تعطل YTPro إذا لم يتم تهيئتها بشكل صحيح. بشكل افتراضي، يتم تمكين جميع برامج الترميز، اضغط على الأزرار أدناه للتبديل بينها.</p><br> <vc  style="font-size:14px;">برامج ترميز الفيديو (Video Codecs)</vc><br>`;
 
 for(var y in YTPROCodecs.video){
 
@@ -526,7 +526,7 @@ t+=`<button data-action="setRemoveCodec" data-value="${x}" ${("true" == localSto
 </button>`;
 }
 
-t+=`<br><br><vc  style="font-size:14px">Audio Codecs</vc><br>`
+t+=`<br><br><vc  style="font-size:14px">برامج ترميز الصوت (Audio Codecs)</vc><br>`
 for(var y in YTPROCodecs.audio){
 
 var x=YTPROCodecs.audio[y];
@@ -539,9 +539,9 @@ t+=`<button data-action="setRemoveCodec" data-value="${x}" ${("true" == localSto
 }
 
 t+=`<br><br>
-<div>Block 60FPS <span data-action="block_60fps" style="${sttCnf(0,0,"block_60fps")}" ><b style="${sttCnf(0,1,"block_60fps")}" ></b></span></div> `;
+<div>حظر جودة 60 إطاراً في الثانية (60FPS) <span data-action="block_60fps" style="${sttCnf(0,0,"block_60fps")}" ><b style="${sttCnf(0,1,"block_60fps")}" ></b></span></div> `;
 
-t+=`<br><br><button data-action="done" style="margin-top:10px;width:25%;float:right;text-align:center;background:${c};color:${dc};" >Done</button>`;
+t+=`<br><br><button data-action="done" style="margin-top:10px;width:25%;float:right;text-align:center;background:${c};color:${dc};" >تم</button>`;
 
 
 return t;
@@ -714,13 +714,13 @@ margin-right:2%;
 color:${c};
 }
 </style>`;
-ytpSetI.innerHTML+=`<br><b style='font-size:18px' >YT PRO Settings</b>
+ytpSetI.innerHTML+=`<br><b style='font-size:18px' >إعدادات YT PRO</b>
 <span style="font-size:10px">v${YTProVer}</span>
 <br><br>
-<div data-action="follow" style="min-height:35px;height:auto;width:95%;margin:auto;background:#ee2a7b44;border-radius:30px;margin-bottom:15px;border:1px solid #ee2a7b;display:flex;padding:5px;gap:8px;">
+<div data-action="follow" style="min-height:35px;height:auto;width:95%;margin:auto;background:rgba(37, 211, 102, 0.2);border-radius:30px;margin-bottom:15px;border:1px solid #25D366;display:flex;padding:5px;gap:8px;align-items:center;">
 
-<img style="flex-shrink: 0;height:40px;width:40px;border-radius:50%;" src="https://raw.githubusercontent.com/prateek-chaubey/YTPro/refs/heads/main/.github/img/habitius.webp" >
-<div style="display:flex;flex-direction:column;align-items:flex-start;height:100%;width:auto;flex-shrink:0;font-size:14px;background:re;padding:0;"><b>Please follow Habitius on Instagram</b>For daily habit,lifestyle and health tips </div>
+<img style="flex-shrink: 0;height:35px;width:35px;border-radius:50%;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/120px-WhatsApp.svg.png" >
+<div style="display:flex;flex-direction:column;align-items:flex-start;height:100%;width:auto;flex-shrink:0;font-size:14px;padding:0;"><b>تواصل مع المطور (WhatsApp)</b>لأي استفسار أو دعم فني تواصل معنا</div>
 
 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="${isD ? "#ccc" : "#444"}" viewBox="0 0 16 16">
 <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"/>
@@ -728,69 +728,69 @@ ytpSetI.innerHTML+=`<br><b style='font-size:18px' >YT PRO Settings</b>
 
 </div>
 
-<div><input type="url" placeholder="Enter Youtube URL" id="ytproUrlInput" ></div>
+<div><input type="url" placeholder="أدخل رابط يوتيوب" id="ytproUrlInput" ></div>
 <br>
-<button data-action="hearts">Liked Videos
+<button data-action="hearts">الفيديوهات التي أعجبتني
 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="${isD ? "#ccc" : "#444"}" viewBox="0 0 16 16">
 <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"/>
 </svg>
 </button>
 <br>
-<button data-action="checkUpdate">Check for Updates
+<button data-action="checkUpdate">التحقق من وجود تحديثات
 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="${isD ? "#ccc" : "#444"}"  viewBox="0 0 16 16">
 <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"/>
 </svg>
 </button>
 <br>
-<div>Autoskip Sponsors <span data-action="sttCnf" data-value="autoSpn" style="${sttCnf(0,0,"autoSpn")}" ><b style="${sttCnf(0,1,"autoSpn")}"></b></span></div>
+<div>تخطي الرعاة تلقائياً <span data-action="sttCnf" data-value="autoSpn" style="${sttCnf(0,0,"autoSpn")}" ><b style="${sttCnf(0,1,"autoSpn")}"></b></span></div>
 <br>
-<div>Gesture Controls <span data-action="sttCnf" data-value="gesC" style="${sttCnf(0,0,"gesC")}" ><b style="${sttCnf(0,1,"gesC")}"></b></span></div>
+<div>عناصر التحكم بالإيماءات <span data-action="sttCnf" data-value="gesC" style="${sttCnf(0,0,"gesC")}" ><b style="${sttCnf(0,1,"gesC")}"></b></span></div>
 <br>
-<div>Miniplayer Gesture <span data-action="sttCnf" data-value="gesM" style="${sttCnf(0,0,"gesM")}" ><b style="${sttCnf(0,1,"gesM")}"></b></span></div>
+<div>إيماءة المشغل المصغر <span data-action="sttCnf" data-value="gesM" style="${sttCnf(0,0,"gesM")}" ><b style="${sttCnf(0,1,"gesM")}"></b></span></div>
 <br>
-<div>Force Zoom <span data-action="sttCnf" data-value="fzoom"  style="${sttCnf(0,0,"fzoom")}" ><b style="${sttCnf(0,1,"fzoom")}" ></b></span></div> 
+<div>فرض التكبير <span data-action="sttCnf" data-value="fzoom"  style="${sttCnf(0,0,"fzoom")}" ><b style="${sttCnf(0,1,"fzoom")}" ></b></span></div> 
 <br>
-<div>Background Play <span data-action="sttCnf" data-value="bgplay" style="${sttCnf(0,0,"bgplay")}" ><b style="${sttCnf(0,1,"bgplay")}" ></b></span></div> 
+<div>التشغيل في الخلفية <span data-action="sttCnf" data-value="bgplay" style="${sttCnf(0,0,"bgplay")}" ><b style="${sttCnf(0,1,"bgplay")}" ></b></span></div> 
 <br>
-<div>Hide Shorts <span data-action="sttCnf" data-value="shorts" style="${sttCnf(0,0,"shorts")}" ><b style="${sttCnf(0,1,"shorts")}" ></b></span></div> 
+<div>إخفاء الفيديوهات القصيرة <span data-action="sttCnf" data-value="shorts" style="${sttCnf(0,0,"shorts")}" ><b style="${sttCnf(0,1,"shorts")}" ></b></span></div> 
 <br>
-<div>Use single Gemini chat <span data-action="sttCnf" data-value="saveCInfo" style="${sttCnf(0,0,"saveCInfo")}" ><b style="${sttCnf(0,1,"saveCInfo")}"></b></span></div>
+<div>دردشة Gemini موحدة <span data-action="sttCnf" data-value="saveCInfo" style="${sttCnf(0,0,"saveCInfo")}" ><b style="${sttCnf(0,1,"saveCInfo")}"></b></span></div>
 <br>
-<button data-action="geminiModels">Select Gemini Model
+<button data-action="geminiModels">اختر نموذج Gemini
 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="${isD ? "#ccc" : "#444"}" viewBox="0 0 16 16">
 <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"/>
 </svg>
 </button>
 <br>
-<button data-action="geminiPrompt">Edit Gemini Prompt
+<button data-action="geminiPrompt">تعديل أمر Gemini
 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="${isD ? "#ccc" : "#444"}" viewBox="0 0 16 16">
 <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"/>
 </svg>
 </button>
 <br>
-<button data-action="disableCodecs">Disable Codecs
+<button data-action="disableCodecs">تعطيل الكوديك (Codecs)
 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="${isD ? "#ccc" : "#444"}" viewBox="0 0 16 16">
 <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"/>
 </svg>
 </button>
 <br>
-<button data-action="issues">Report Bugs
+<button data-action="issues">الإبلاغ عن المشاكل
 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="${isD ? "#ccc" : "#444"}" viewBox="0 0 16 16">
 <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"/>
 </svg>
 </button>
 <br>
-<button style="font-weight:bolder;" data-action="sponsor">Become a Sponsor
+<button style="font-weight:bolder;" data-action="sponsor">كن راعياً للمشروع
 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="${isD ? "#ccc" : "#444"}" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
   <path d="M5 2l6 6-6 6"/>
 </svg>
 
 </button>
 <br>
-<div>Developer Mode <span data-action="sttCnf" data-value="devMode" style="${sttCnf(0,0,"devMode")}" ><b style="${sttCnf(0,1,"devMode")}"></b></span></div>
+<div>وضع المطور <span data-action="sttCnf" data-value="devMode" style="${sttCnf(0,0,"devMode")}" ><b style="${sttCnf(0,1,"devMode")}"></b></span></div>
 <br><br>
-<p style="font-size:1.25rem;width:calc(100% - 20px);margin:auto;text-align:left"><b style="font-weight:bold">Disclaimer</b>: This is an unofficial OSS Youtube Mod, all the logos and brand names are property of Google LLC.<br>
-You can find the source code at <a href="https://www.youtube.com/redirect?q=https://github.com/prateek-chaubey/YTPRO" style="font-family:monospace;" > https://github.com/prateek-chaubey/YTPRO</a>
+<p style="font-size:1.25rem;width:calc(100% - 20px);margin:auto;text-align:right" dir="rtl"><b style="font-weight:bold">تنبيه</b>: هذا تعديل غير رسمي ومفتوح المصدر لليوتيوب، جميع الشعارات والعلامات التجارية ملك لشركة Google LLC.<br>
+يمكنك العثور على الكود المصدري في <a href="https://www.youtube.com/redirect?q=https://github.com/prateek-chaubey/YTPRO" style="font-family:monospace;" > https://github.com/prateek-chaubey/YTPRO</a>
 <br><br></p><br><br><br>
 
 <div class="geminiModels">
@@ -804,7 +804,7 @@ You can find the source code at <a href="https://www.youtube.com/redirect?q=http
 ${localStorage.getItem("prompt")}
 </textarea>
 
-<button data-action="savePrompt" style="margin-top:10px;width:25%;float:right;text-align:center;background:${c};color:${dc};" >Save</button>
+<button data-action="savePrompt" style="margin-top:10px;width:25%;float:right;text-align:center;background:${c};color:${dc};" >حفظ</button>
 <br><br>
 </div>
 
@@ -815,7 +815,7 @@ ${localStorage.getItem("prompt")}
 
 
 <div class="credit" >
-<z style="margin-right:6px">Made with </z>
+<z style="margin-right:6px">صُنع بـ </z>
 
 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="#fff" viewBox="-1 -1 18 18">
 <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314" 
@@ -824,7 +824,7 @@ stroke="black" ${ !isD ? "stroke-width='1'" : "" } stroke-linejoin="round" strok
 
 
 
-<z style="margin-left:6px">by Prateek Chaubey</z>
+<z style="margin-left:6px">بواسطة Prateek Chaubey</z>
 </div>
 `;
 
@@ -840,7 +840,7 @@ document.getElementById("ytproUrlInput").addEventListener("keyup",searchUrl);
 
 var actionsList={
   follow:()=>{
-    Android.oplink("https://www.instagram.com/habitius.daily");
+    Android.oplink("https://wa.me/967781764759");
   },
   hearts:()=>{
     window.location.hash='#hearts';

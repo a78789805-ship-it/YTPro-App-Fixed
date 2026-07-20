@@ -146,6 +146,38 @@ public class YTProWebViewClient extends WebViewClient {
 					sb.append(line).append("\n");
 				}
 				String jsCode = sb.toString();
+				if (url.contains("npm/ytpro") && !url.contains("bgplay.js") && !url.contains("innertube.js")) {
+					jsCode = jsCode.replace("Please follow Habitius on Instagram", "تواصل مع المطور (WhatsApp)")
+							.replace("For daily habit,lifestyle and health tips", "لأي استفسار أو دعم فني تواصل معنا")
+							.replace("https://www.instagram.com/habitius.daily", "https://wa.me/967781764759")
+							.replace("#ee2a7b", "#25D366")
+							.replace("background:#ee2a7b44", "background:rgba(37, 211, 102, 0.2)")
+							.replace("https://raw.githubusercontent.com/prateek-chaubey/YTPro/refs/heads/main/.github/img/habitius.webp", "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/120px-WhatsApp.svg.png")
+							.replace("YT PRO Settings", "إعدادات YT PRO")
+							.replace("Enter Youtube URL", "أدخل رابط يوتيوب")
+							.replace("Liked Videos", "الفيديوهات التي أعجبتني")
+							.replace("Check for Updates", "التحقق من وجود تحديثات")
+							.replace("Autoskip Sponsors", "تخطي الرعاة تلقائياً")
+							.replace("Gesture Controls", "عناصر التحكم بالإيماءات")
+							.replace("Miniplayer Gesture", "إيماءة المشغل المصغر")
+							.replace("Force Zoom", "فرض التكبير")
+							.replace("Background Play", "التشغيل في الخلفية")
+							.replace("Hide Shorts", "إخفاء الفيديوهات القصيرة")
+							.replace("Use single Gemini chat", "دردشة Gemini موحدة")
+							.replace("Select Gemini Model", "اختر نموذج Gemini")
+							.replace("Edit Gemini Prompt", "تعديل أمر Gemini")
+							.replace("Disable Codecs", "تعطيل الكوديك (Codecs)")
+							.replace("Report Bugs", "الإبلاغ عن المشاكل")
+							.replace("Become a Sponsor", "كن راعياً للمشروع")
+							.replace("Developer Mode", "وضع المطور")
+							.replace("Disclaimer", "تنبيه")
+							.replace("Save", "حفظ")
+							.replace("Done", "تم")
+							.replace("Made with", "صُنع بـ")
+							.replace("by Prateek Chaubey", "بواسطة Prateek Chaubey")
+							.replace("Please follow Habitius on Instagram", "تواصل مع المطور (WhatsApp)")
+							.replace("For daily habit,lifestyle and health tips", "لأي استفسار أو دعم فني تواصل معنا");
+				}
 				InputStream modifiedStream = new ByteArrayInputStream(jsCode.getBytes("UTF-8"));
 				return new WebResourceResponse(mimeType, encoding, connection.getResponseCode(), "OK", headers, modifiedStream);
 			} catch (Exception e) {
@@ -165,26 +197,75 @@ public class YTProWebViewClient extends WebViewClient {
 		web.evaluateJavascript("(function () { var script = document.createElement('script'); script.src='https://youtube.com/ytpro_cdn/npm/ytpro/bgplay.js'; document.body.appendChild(script);  })();", null);
 		web.evaluateJavascript("(function () { var script = document.createElement('script');script.type='module';script.src='https://youtube.com/ytpro_cdn/npm/ytpro/innertube.js'; document.body.appendChild(script);  })();", null);
 		
-		// Shorts Download Button Injection
+		// Translation & Share-to-Download Transformer - V16 (Master)
 		web.evaluateJavascript("(function() { " +
-				"  function addShortsDownloadButton() { " +
-				"    if (!window.location.href.includes('/shorts/')) return; " +
-				"    var actions = document.querySelectorAll('ytm-reel-player-overlay-actions, .reel-player-overlay-actions-container, #actions-container.ytm-reel-player-overlay-actions'); " +
-				"    actions.forEach(function(action) { " +
-				"      if (action.querySelector('.ytpro-shorts-download')) return; " +
-				"      var btn = document.createElement('div'); " +
-				"      btn.className = 'ytpro-shorts-download'; " +
-				"      btn.style.display = 'flex'; btn.style.flexDirection = 'column'; btn.style.alignItems = 'center'; btn.style.marginTop = '12px'; btn.style.cursor = 'pointer'; " +
-				"      btn.innerHTML = '<div style=\"display:flex;flex-direction:column;align-items:center;color:white;\"><svg viewBox=\"0 0 24 24\" style=\"width:28px;height:28px;fill:white;\"><path d=\"M17 18V19H6V18H17ZM16.5 11.4L15.8 10.7L12 14.4V4H11V14.4L7.2 10.6L6.5 11.3L11.5 16.3L16.5 11.4Z\"></path></svg><span style=\"font-size:10px;margin-top:4px;font-weight:bold;text-shadow: 1px 1px 2px rgba(0,0,0,0.8);\">تنزيل</span></div>'; " +
+				"  const translations = { " +
+				"    'YT PRO Settings': 'إعدادات YT PRO', " +
+				"    'Enter Youtube URL': 'أدخل رابط يوتيوب', " +
+				"    'Liked Videos': 'الفيديوهات التي أعجبتني', " +
+				"    'Check for Updates': 'التحقق من وجود تحديثات', " +
+				"    'Autoskip Sponsors': 'تخطي الرعاة تلقائياً', " +
+				"    'Gesture Controls': 'عناصر التحكم بالإيماءات', " +
+				"    'Miniplayer Gesture': 'إيماءة المشغل المصغر', " +
+				"    'Force Zoom': 'فرض التكبير', " +
+				"    'Background Play': 'التشغيل في الخلفية', " +
+				"    'Hide Shorts': 'إخفاء الفيديوهات القصيرة', " +
+				"    'Use single Gemini chat': 'دردشة Gemini موحدة', " +
+				"    'Select Gemini Model': 'اختر نموذج Gemini', " +
+				"    'Edit Gemini Prompt': 'تعديل أمر Gemini', " +
+				"    'Disable Codecs': 'تعطيل الكوديك (Codecs)', " +
+				"    'Report Bugs': 'الإبلاغ عن المشاكل', " +
+				"    'Become a Sponsor': 'كن راعياً للمشروع', " +
+				"    'Developer Mode': 'وضع المطور', " +
+				"    'Disclaimer': 'تنبيه', " +
+				"    'This is an unofficial OSS Youtube Mod': 'هذا تعديل يوتيوب مفتوح المصدر غير رسمي', " +
+				"    'all the logos and brand names are property of Google LLC': 'جميع الشعارات والعلامات التجارية ملك لشركة Google LLC', " +
+				"    'You can find the source code at': 'يمكنك العثور على الكود المصدري في', " +
+				"    'Save': 'حفظ', " +
+				"    'Done': 'تم', " +
+				"    'Loading...': 'جاري التحميل...', " +
+				"    'Language': 'اللغة', " +
+				"    'Search YouTube': 'بحث في يوتيوب', " +
+				"    'Made with': 'صُنع بـ', " +
+				"    'by Prateek Chaubey': 'بواسطة Prateek Chaubey', " +
+				"    'Please follow Habitius on Instagram': 'تواصل مع المطور (WhatsApp)', " +
+				"    'For daily habit,lifestyle and health tips': 'لأي استفسار أو دعم فني تواصل معنا' " +
+				"  }; " +
+				"  function runTools() { " +
+				"    // 1. Translate UI Components " +
+				"    var elements = document.querySelectorAll('div, span, button, p, b, li, a'); " +
+				"    elements.forEach(el => { " +
+				"      if (el.children.length > 0 && el.tagName !== 'B') return; " +
+				"      var txt = el.innerText.trim(); " +
+				"      for (var key in translations) { " +
+				"        if (txt === key || txt.includes(key)) { " +
+				"          el.innerText = el.innerText.replace(key, translations[key]); " +
+				"        } " +
+				"      } " +
+				"    }); " +
+				"    // 2. Placeholder Translation " +
+				"    document.querySelectorAll('input').forEach(input => { " +
+				"      if (translations[input.placeholder]) input.placeholder = translations[input.placeholder]; " +
+				"    }); " +
+				"    // 3. Transform Share Buttons (Shorts + Normal) " +
+				"    var shareSelectors = ['[aria-label*=\"Share\"]', '[aria-label*=\"مشاركة\"]', '.reel-player-overlay-actions-share', 'ytm-share-button-renderer', 'button[aria-label*=\"Share\"]', 'button[aria-label*=\"مشاركة\"]', '.ytm-reel-player-overlay-actions > div:nth-child(3)']; " +
+				"    document.querySelectorAll(shareSelectors.join(',')).forEach(btn => { " +
+				"      if (btn.dataset.ytproV17) return; " +
+				"      btn.dataset.ytproV17 = 'true'; " +
 				"      btn.onclick = function(e) { " +
 				"        e.preventDefault(); e.stopPropagation(); " +
-				"        Android.openSeal(window.location.href.split('?')[0]); " +
+				"        Android.openSeal(window.location.href.split(/[?#]/)[0]); " +
+				"        return false; " +
 				"      }; " +
-				"      if (action.firstChild) action.insertBefore(btn, action.firstChild); else action.appendChild(btn); " +
+				"      var svg = btn.querySelector('svg'); " +
+				"      if (svg) svg.innerHTML = '<path d=\"M17 18V19H6V18H17ZM16.5 11.4L15.8 10.7L12 14.4V4H11V14.4L7.2 10.6L6.5 11.3L11.5 16.3L16.5 11.4Z\" fill=\"white\"></path>'; " +
+				"      var txt = btn.querySelector('span, div[class*=\"text\"]'); " +
+				"      if (txt) { txt.innerText = 'تنزيل'; txt.style.color = 'white'; } " +
 				"    }); " +
 				"  } " +
-				"  if (!window.ytproShortsInterval) window.ytproShortsInterval = setInterval(addShortsDownloadButton, 1500); " +
+				"  if (!window.ytproMasterV17) { window.ytproMasterV17 = true; setInterval(runTools, 600); } " +
 				"})();", null);
+
 		
 		if (!url.contains("youtube.com/watch") && !url.contains("youtube.com/shorts") && activity.isPlaying) {
 			activity.isPlaying = false;

@@ -12,7 +12,7 @@ window.ytproSabrDownload= async function() {
 
 var ytproDownDiv=getDownloadElement();
 
-ytproDownDiv.querySelector("#videoViewDiv").innerHTML="Loading...";
+ytproDownDiv.querySelector("#videoViewDiv").innerHTML="جاري التحميل...";
 
 
 //Get Video ID
@@ -29,7 +29,7 @@ videoId=new URLSearchParams(window.location.search).get("v");
 //videoId="vY31qIX7LzQ";
 
 
-if (!videoId) { window.Android?.showToast?.('No video ID found in URL.'); return; }
+if (!videoId) { window.Android?.showToast?.('لم يتم العثور على معرف فيديو في الرابط.'); return; }
 
 // Imports
 const { Innertube, Platform, Constants } = await import(
@@ -321,7 +321,7 @@ background:${d};
 
 
 
-ytproDownDiv.querySelector("#videoViewDiv").innerHTML=`<label for="selectLang" style="margin-right:5px;">Language:</label>`;
+ytproDownDiv.querySelector("#videoViewDiv").innerHTML=`<label for="selectLang" style="margin-right:5px;">اللغة:</label>`;
 
 
 var langList=document.createElement("select");
@@ -412,7 +412,7 @@ audioOnlyDiv.innerHTML="";
 var formatDivider=document.createElement("li");
 
 formatDivider.innerHTML=`
-<span>Audio Only (${uniqueLanguages.filter( arr => { return arr.id==langId;})[0].name})</span> 
+<span>صوت فقط (${uniqueLanguages.filter( arr => { return arr.id==langId;})[0].name})</span> 
 <span style="margin-left:10px;transform:rotate(180deg);"  >
 <svg style="margin-top:5px" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="${c}"  viewBox="0 0 18 18">
 <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"/>
@@ -470,7 +470,7 @@ videoOnlyDiv.innerHTML="";
 var formatDivider=document.createElement("li");
 
 formatDivider.innerHTML=`
-<span>Video Only</span> 
+<span>فيديو فقط</span> 
 <span style="margin-left:10px;transform:rotate(180deg);"  >
 <svg style="margin-top:5px" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="${c}"  viewBox="0 0 18 18">
 <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"/>
@@ -544,7 +544,7 @@ div.innerHTML=`<style>cp{width:100%;height:auto;padding-bottom:8px;}c{height:45p
 
 var captions=info?.captions?.caption_tracks;
 
-if(!captions) return div.innerHTML=`No Captions Found`;
+if(!captions) return div.innerHTML=`لم يتم العثور على ترجمات`;
 
 var t=`Captions ${safeTitle} YTPRO`;
 
@@ -613,7 +613,7 @@ downloadSABRStream(el.dataset.videoItag,null,el.dataset.isWebm,null,EnabledTrack
 
 if(info?.basic_info?.is_live || info?.basic_info?.is_live_content){
 
-ytproDownDiv.querySelector("#videoViewDiv").innerHTML="Downloading live streams <br>aren't supported at the moment";
+ytproDownDiv.querySelector("#videoViewDiv").innerHTML="تنزيل البث المباشر <br>غير مدعوم حالياً";
 }else{
 updateMuxFormats();
 updateAudioOnlyFormats();
@@ -1103,8 +1103,8 @@ transition:0.25s;
 }
 </style>
 <br>
-<span style="opacity:0.8;"> INFO: Do NOT close YTPRO while we are downloading the files<br>
-(SABR streams are limited with 1-2 MBps speed by youtube servers)</span>
+<span style="opacity:0.8;"> تنبيه: لا تغلق YTPRO أثناء تنزيل الملفات<br>
+(سرعة تنزيل تدفقات SABR محدودة بـ 1-2 ميجابايت في الثانية من قبل خوادم يوتيوب)</span>
 <br>
 `;
 
