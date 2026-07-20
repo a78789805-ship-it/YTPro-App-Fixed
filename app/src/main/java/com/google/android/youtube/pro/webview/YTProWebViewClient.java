@@ -150,7 +150,7 @@ public class YTProWebViewClient extends WebViewClient {
 					jsCode = jsCode.replace("Please follow Habitius on Instagram", "تواصل مع المطور (WhatsApp)")
 							.replace("For daily habit,lifestyle and health tips", "لأي استفسار أو دعم فني تواصل معنا")
 							.replace("https://www.instagram.com/habitius.daily", "https://wa.me/967781764759")
-							.replace("#ee2a7b", "#25D366")
+							.replace("#ee2a7b", "#34C759")
 							.replace("background:#ee2a7b44", "background:rgba(37, 211, 102, 0.2)")
 							.replace("https://raw.githubusercontent.com/prateek-chaubey/YTPro/refs/heads/main/.github/img/habitius.webp", "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/120px-WhatsApp.svg.png")
 							.replace("YT PRO Settings", "إعدادات YT PRO")
@@ -170,13 +170,17 @@ public class YTProWebViewClient extends WebViewClient {
 							.replace("Report Bugs", "الإبلاغ عن المشاكل")
 							.replace("Become a Sponsor", "كن راعياً للمشروع")
 							.replace("Developer Mode", "وضع المطور")
-							.replace("Disclaimer", "تنبيه")
+							.replace("You can find the source code at <a href=\"https://www.youtube.com/redirect?q=https://github.com/prateek-chaubey/YTPRO\" style=\"font-family:monospace;\" > https://github.com/prateek-chaubey/YTPRO</a>", "").replace("Disclaimer", "تنبيه").replace("if(isD)var a=[\"#000\",\"#717171\",\"#fff\"];else a=[\"#fff\",\"#909090\",\"#151515\"];", "if(isD)var a=[\"#fff\",\"#555\",\"#34C759\"];else a=[\"#fff\",\"#ccc\",\"#34C759\"];").replace("#ssprodivI div span{\ndisplay:block;\nheight:23px;\nwidth:40px;\nborder-radius:40px;\nright:10px;\nposition:absolute;\nbackground:#151515;\n}", "#ssprodivI div span{\ndisplay:inline-flex;\nheight:26px;\nwidth:46px;\nborder-radius:26px;\nright:auto;\nposition:relative;\nbackground:#ccc;\ntransition:background 0.3s cubic-bezier(0.4, 0.0, 0.2, 1);\ncursor:pointer;\nflex-shrink:0;\nmargin-right:8px;\n}").replace("#ssprodivI div span b{\ndisplay:block;\nheight:19px;\nwidth:19px;\nposition:absolute;\nright:2px;\ntop:2px;\nborder-radius:50px;\nbackground:#fff;\n}", "#ssprodivI div span b{\nheight:22px;\nwidth:22px;\nbackground:#fff;\nborder-radius:50%;\nposition:absolute;\nright:2px;\ntop:2px;\ntransition:transform 0.3s cubic-bezier(0.4, 0.0, 0.2, 1), background 0.3s;\nbox-shadow:0 1px 3px rgba(0,0,0,0.3);\n}").replace("#ssprodivI div{\nheight:10px;\nwidth:calc(100% - 20px);\npadding:10px;\nfont-size:1.45rem;\ntext-align:left;\ndisplay:flex;\nalign-items:center;\nposition:relative;\nmargin-top:3px;\n}", "#ssprodivI div{\nmin-height:20px;\nwidth:calc(100% - 20px);\npadding:10px;\nfont-size:1.45rem;\ntext-align:left;\ndisplay:flex;\njustify-content:space-between;\nalign-items:center;\nposition:relative;\nmargin-top:3px;\ngap:15px;\n}")
+                            .replace("left:2px;", "right:2px;left:auto;")
+                            .replace("e.children[0].style.left=\"2px\"", "e.children[0].style.right=\"2px\",e.children[0].style.left=\"auto\"")
+                            .replace("e.children[0].style.left=\"auto\",e.children[0].style.right=\"2px\"", "e.children[0].style.left=\"2px\",e.children[0].style.right=\"auto\"")
+                            .replace("1==t?`background:${a[0]};`:`background:${a[2]};`", "1==t?`background:${a[0]};`:`background:${a[2]};left:2px;right:auto;`")
 							.replace("Save", "حفظ")
 							.replace("Done", "تم")
-							.replace("Made with", "صُنع بـ")
-							.replace("by Prateek Chaubey", "بواسطة Prateek Chaubey")
-							.replace("Please follow Habitius on Instagram", "تواصل مع المطور (WhatsApp)")
-							.replace("For daily habit,lifestyle and health tips", "لأي استفسار أو دعم فني تواصل معنا");
+                            .replace("GeminiModels={\"3.0 Pro\":\'[1,null,null,null,\"9d8ca3786ebdfbea\",null,null,0,[4],null,null,1]\',\"3.0 Flash\":\'[1,null,null,null,\"fbb127bbb056c959\",null,null,0,[4],null,null,1]\',\"3.0 Flash Thinking\":\'[1,null,null,null,\"5bf011840784117a\",null,null,0,[4],null,null,1]\',\"3.0 Pro Plus\":\'[1,null,null,null,\"e6fa609c3fa255c0\",null,null,0,[4],null,null,4]\',\"3.0 Flash Plus\":\'[1,null,null,null,\"56fdd199312815e2\",null,null,0,[4],null,null,4]\',\"3.0 Flash Thinking Plus\":\'[1,null,null,null,\"e051ce1aa80aa576\",null,null,0,[4],null,null,4]\',\"3.0 Pro Advanced\":\'[1,null,null,null,\"e6fa609c3fa255c0\",null,null,0,[4],null,null,2]\',\"3.0 Flash Advanced\":\'[1,null,null,null,\"56fdd199312815e2\",null,null,0,[4],null,null,2]\',\"3.0 Flash Thinking Advanced\":\'[1,null,null,null,\"e051ce1aa80aa576\",null,null,0,[4],null,null,2]\'}", "GeminiModels={\"3.0 Pro\":\'[1,null,null,null,\"9d8ca3786ebdfbea\",null,null,0,[4],null,null,1]\',\"3.0 Flash\":\'[1,null,null,null,\"fbb127bbb056c959\",null,null,0,[4],null,null,1]\',\"3.0 Flash Thinking\":\'[1,null,null,null,\"5bf011840784117a\",null,null,0,[4],null,null,1]\',\"3.0 Pro Plus\":\'[1,null,null,null,\"e6fa609c3fa255c0\",null,null,0,[4],null,null,4]\',\"3.0 Flash Plus\":\'[1,null,null,null,\"56fdd199312815e2\",null,null,0,[4],null,null,4]\',\"3.0 Flash Thinking Plus\":\'[1,null,null,null,\"e051ce1aa80aa576\",null,null,0,[4],null,null,4]\',\"3.0 Pro Advanced\":\'[1,null,null,null,\"e6fa609c3fa255c0\",null,null,0,[4],null,null,2]\',\"3.0 Flash Advanced\":\'[1,null,null,null,\"56fdd199312815e2\",null,null,0,[4],null,null,2]\',\"3.0 Flash Thinking Advanced\":\'[1,null,null,null,\"e051ce1aa80aa576\",null,null,0,[4],null,null,2]\',\"Gemini 3.5 Flash\":\'[1,null,null,null,\"gemini-3.5-flash\",null,null,0,[4],null,null,1]\',\"Gemini 3.1 Flash Lite\":\'[1,null,null,null,\"gemini-3.1-flash-lite\",null,null,0,[4],null,null,1]\',\"Gemini 3.0 Flash Preview\":\'[1,null,null,null,\"gemini-3-flash-preview\",null,null,0,[4],null,null,1]\',\"Gemini 3.1 Pro Preview\":\'[1,null,null,null,\"gemini-3.1-pro-preview\",null,null,0,[4],null,null,1]\',\"Gemini 3.1 Flash Lite Image\":\'[1,null,null,null,\"gemini-3.1-flash-lite-image\",null,null,0,[4],null,null,1]\',\"Gemma 4 31B IT\":\'[1,null,null,null,\"gemma-4-31b-it\",null,null,0,[4],null,null,1]\'}")
+							.replace("Made with", "بواسطة عبدالرحمن المخلافي 🔥")
+							.replace("by Prateek Chaubey", "صُنع بـ")
+;
 				}
 				InputStream modifiedStream = new ByteArrayInputStream(jsCode.getBytes("UTF-8"));
 				return new WebResourceResponse(mimeType, encoding, connection.getResponseCode(), "OK", headers, modifiedStream);
@@ -231,8 +235,8 @@ public class YTProWebViewClient extends WebViewClient {
 				"    'Shorts': 'قصيرة', " +
 				"    'Subscriptions': 'الاشتراكات', " +
 				"    'Library': 'المكتبة', " +
-				"    'Made with': 'صُنع بـ', " +
-				"    'by Prateek Chaubey': 'بواسطة Prateek Chaubey', " +
+				"    'Made with': 'بواسطة عبدالرحمن المخلافي 🔥', " +
+				"    'by Prateek Chaubey': 'صُنع بـ', " +
 				"    'Please follow Habitius on Instagram': 'تواصل مع المطور (WhatsApp)', " +
 				"    'For daily habit,lifestyle and health tips': 'لأي استفسار أو دعم فني تواصل معنا' " +
 				"  }; " +
@@ -258,25 +262,56 @@ public class YTProWebViewClient extends WebViewClient {
 				"    }); " +
 				"    // 3. Inject Download Button (Shorts) " +
 				"    if (window.location.href.includes('/shorts/')) { " +
-				"      var shareElements = document.querySelectorAll('ytm-share-button-renderer, button[aria-label*=\"Share\" i], button[aria-label*=\"مشاركة\"]'); " +
-				"      shareElements.forEach(function(shareBtn) { " +
-				"        var actionContainer = shareBtn.closest('ytm-reel-player-overlay-actions'); " +
-				"        if (!actionContainer) { " +
-				"          var curr = shareBtn; " +
-				"          for (var i=0; i<3; i++) { if (curr.parentElement && curr.parentElement.children.length >= 3) { actionContainer = curr.parentElement; break; } curr = curr.parentElement; } " +
+				"      var svgs = document.querySelectorAll('svg'); " +
+				"      var refChild = null; " +
+				"      var column = null; " +
+				"      for (var i=0; i<svgs.length; i++) { " +
+				"        var p = svgs[i].querySelector('path'); " +
+				"        if (p && (p.getAttribute('d').startsWith('M18.77') || p.getAttribute('d').startsWith('M1 21h4V9H1v12zm22-11') || p.getAttribute('d').startsWith('M3,11h3v10H3V11z M18.77'))) { " +
+				"          var curr = svgs[i]; " +
+				"          while(curr && curr.tagName !== 'BODY') { " +
+				"            if (curr.children.length >= 3) { column = curr; refChild = svgs[i]; break; } " +
+				"            curr = curr.parentElement; " +
+				"          } " +
+				"          if (column) break; " +
 				"        } " +
-				"        if (!actionContainer || actionContainer.querySelector('.ytpro-dl-new-btn')) return; " +
-				"        var dlBtn = document.createElement('div'); " +
-				"        dlBtn.className = 'ytpro-dl-new-btn'; " +
-				"        dlBtn.style.cssText = 'display: flex; flex-direction: column; align-items: center; justify-content: center; padding-top: 8px; padding-bottom: 8px; cursor: pointer; z-index: 9999; margin-bottom: 4px;'; " +
-				"        dlBtn.innerHTML = '<div style=\"background: rgba(0,0,0,0.6); width: 44px; height: 44px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 6px;\"><svg viewBox=\"0 0 24 24\" style=\"width: 24px; height: 24px; fill: white;\"><path d=\"M17 18V19H6V18H17ZM16.5 11.4L15.8 10.7L12 14.4V4H11V14.4L7.2 10.6L6.5 11.3L11.5 16.3L16.5 11.4Z\"></path></svg></div><span style=\"color: white; font-size: 13px; font-weight: 500; font-family: Roboto, Arial, sans-serif; text-shadow: 1px 1px 2px rgba(0,0,0,0.8);\">تنزيل</span>'; " +
-				"        dlBtn.onclick = function(e) { " +
-				"          e.preventDefault(); e.stopPropagation(); " +
-				"          Android.openSeal(window.location.href.split(\"#\")[0]); " +
-				"        }; " +
-				"        var shareWrapper = shareBtn.tagName === 'YTM-SHARE-BUTTON-RENDERER' ? shareBtn : (shareBtn.parentElement === actionContainer ? shareBtn : shareBtn.parentElement); " +
-				"        actionContainer.insertBefore(dlBtn, shareWrapper); " +
-				"      }); " +
+				"      } " +
+				"      if (!column) { " +
+				"        var allBtns = document.querySelectorAll('button'); " +
+				"        for (var j=0; j<allBtns.length; j++) { " +
+				"          var lbl = allBtns[j].getAttribute('aria-label') || ''; " +
+				"          if (lbl.toLowerCase().includes('like') || lbl.includes('إعجاب') || lbl.includes('أعجبني')) { " +
+				"            var curr2 = allBtns[j]; " +
+				"            while(curr2 && curr2.tagName !== 'BODY') { " +
+				"              if (curr2.children.length >= 3) { column = curr2; refChild = allBtns[j]; break; } " +
+				"              curr2 = curr2.parentElement; " +
+				"            } " +
+				"            if (column) break; " +
+				"          } " +
+				"        } " +
+				"      } " +
+				"      if (column && !column.querySelector('.ytpro-dl-new-btn')) { " +
+				"          var dlBtn = document.createElement('div'); " +
+				"          dlBtn.className = 'ytpro-dl-new-btn'; " +
+				"          dlBtn.style.cssText = 'display: flex; flex-direction: column; align-items: center; justify-content: center; padding-top: 8px; padding-bottom: 8px; cursor: pointer; z-index: 9999; margin-bottom: 4px;'; " +
+				"          dlBtn.innerHTML = '<div style=\"background: rgba(0,0,0,0.6); width: 44px; height: 44px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 6px;\"><svg viewBox=\"0 0 24 24\" style=\"width: 24px; height: 24px; fill: white;\"><path d=\"M17 18V19H6V18H17ZM16.5 11.4L15.8 10.7L12 14.4V4H11V14.4L7.2 10.6L6.5 11.3L11.5 16.3L16.5 11.4Z\"></path></svg></div><span style=\"color: white; font-size: 13px; font-weight: 500; font-family: Roboto, Arial, sans-serif; text-shadow: 1px 1px 2px rgba(0,0,0,0.8);\">تنزيل</span>'; " +
+				"          dlBtn.onclick = function(e) { " +
+				"            e.preventDefault(); e.stopPropagation(); " +
+				"            Android.openSeal(window.location.href.split(\"#\")[0]); " +
+				"          }; " +
+				"          var child = refChild; " +
+				"          while(child.parentElement && child.parentElement !== column) { child = child.parentElement; } " +
+				"          column.insertBefore(dlBtn, child); " +
+				"      } else if (!column && !document.querySelector('.ytpro-dl-fallback-btn')) { " +
+				"        var fb = document.createElement('div'); " +
+				"        fb.className = 'ytpro-dl-fallback-btn ytpro-dl-new-btn'; " +
+				"        fb.style.cssText = 'position: fixed; right: 12px; top: 40%; transform: translateY(-50%); display: flex; flex-direction: column; align-items: center; justify-content: center; z-index: 999999;'; " +
+				"        fb.innerHTML = '<div style=\"background: rgba(0,0,0,0.6); width: 44px; height: 44px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 6px; border: 1.5px solid rgba(255,255,255,0.4);\"><svg viewBox=\"0 0 24 24\" style=\"width: 24px; height: 24px; fill: white;\"><path d=\"M17 18V19H6V18H17ZM16.5 11.4L15.8 10.7L12 14.4V4H11V14.4L7.2 10.6L6.5 11.3L11.5 16.3L16.5 11.4Z\"></path></svg></div><span style=\"color: white; font-size: 13px; font-weight: 500; font-family: Roboto, Arial, sans-serif; text-shadow: 1px 1px 2px rgba(0,0,0,1);\">تنزيل</span>'; " +
+				"        fb.onclick = function(e) { e.preventDefault(); e.stopPropagation(); Android.openSeal(window.location.href.split(\"#\")[0]); }; " +
+				"        document.body.appendChild(fb); " +
+				"      } " +
+				"    } else { " +
+				"      var fb = document.querySelector('.ytpro-dl-fallback-btn'); if (fb) fb.remove(); " +
 				"    } " +
 				"    // 4. Transform Normal Video Share Buttons " +
 				"    var selectors = ['ytm-share-button-renderer', 'button[aria-label*=\"Share\"]', 'button[aria-label*=\"مشاركة\"]']; " +

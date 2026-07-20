@@ -51,13 +51,17 @@ connection.setRequestProperty(key,value);
 
 } catch (JSONException e) {
 e.printStackTrace();
-return new JSONObject();
+JSONObject err = new JSONObject();
+try { err.put("stream", "Error: Invalid headers format"); } catch(Exception ex){}
+return err;
 }
 }
 
 } catch (JSONException e) {
 e.printStackTrace();
-return new JSONObject();
+JSONObject err = new JSONObject();
+try { err.put("stream", "Error: JSONException in headers"); } catch(Exception ex){}
+return err;
 }
 
 
@@ -65,13 +69,16 @@ return new JSONObject();
 connection.setDoOutput(true);
 
 try (OutputStream os = connection.getOutputStream()) {
-os.write(body.toString().getBytes());
+os.write(body.toString().getBytes("UTF-8"));
 }
 
 int responseCode = connection.getResponseCode();
 if (responseCode != HttpURLConnection.HTTP_OK) {
-return new JSONObject();
+JSONObject err = new JSONObject();
+try { err.put("stream", "Error: HTTP " + responseCode); } catch(Exception ex){}
+return err;
 }
+
 
 
 
@@ -80,7 +87,9 @@ return new JSONObject();
 return readResponse(connection);
 } catch (Exception e) {
 e.printStackTrace();
-return new JSONObject();
+JSONObject err = new JSONObject();
+try { err.put("stream", "Error: " + e.getMessage()); } catch(Exception ex){}
+return err;
 }
 }
 
@@ -102,6 +111,7 @@ stream.put("stream", response.toString());
 return stream;
 }
 }
+
 
 
 
@@ -141,8 +151,15 @@ response.append(line);
 
 
 Matcher matcher = Pattern.compile("\"SNlM0e\":\"(.*?)\"").matcher(response.toString());
-return matcher.find() ? matcher.group(1) : "error";
+if (matcher.find()) {
+    return matcher.group(1);
+}
+matcher = Pattern.compile("SNlM0e[\"']?\\s*:\\s*[\"']([^\"']+)[\"']").matcher(response.toString());
+if (matcher.find()) {
+    return matcher.group(1);
+}
 
+return "error";
 
 }catch(Exception e){
 e.printStackTrace();

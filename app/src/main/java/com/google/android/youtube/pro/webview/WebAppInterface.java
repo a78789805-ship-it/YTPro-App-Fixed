@@ -75,6 +75,18 @@ public class WebAppInterface {
 					if (pageUrl == null || pageUrl.isEmpty()) {
 						pageUrl = web.getUrl();
 					}
+					// Clean URL to download only the video instead of the whole playlist
+					if (pageUrl != null && pageUrl.contains("watch")) {
+						try {
+							android.net.Uri uri = android.net.Uri.parse(pageUrl);
+							String videoId = uri.getQueryParameter("v");
+							if (videoId != null && !videoId.isEmpty()) {
+								pageUrl = "https://www.youtube.com/watch?v=" + videoId;
+							}
+						} catch (Exception ex) {
+							ex.printStackTrace();
+						}
+					}
 					intent.putExtra(Intent.EXTRA_TEXT, pageUrl);
 					intent.setClassName("com.junkfood.seal", "com.junkfood.seal.QuickDownloadActivity");
 					intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
@@ -215,7 +227,8 @@ public class WebAppInterface {
 	public void getSNlM0e(String cookies) {
 		new Thread(() -> {
 			String response = GeminiWrapper.getSNlM0e(cookies);
-			activity.runOnUiThread(() -> web.evaluateJavascript("callbackSNlM0e.resolve(`" + response + "`)", null));
+			String b64 = android.util.Base64.encodeToString(response.getBytes(), android.util.Base64.NO_WRAP);
+			activity.runOnUiThread(() -> web.evaluateJavascript("callbackSNlM0e.resolve(atob('" + b64 + "'))", null));
 		}).start();
 	}
 	
@@ -223,7 +236,8 @@ public class WebAppInterface {
 	public void GeminiClient(String url, String headers, String body) {
 		new Thread(() -> {
 			JSONObject response = GeminiWrapper.getStream(url, headers, body);
-			activity.runOnUiThread(() -> web.evaluateJavascript("callbackGeminiClient.resolve(" + response + ")", null));
+			String b64 = android.util.Base64.encodeToString(response.toString().getBytes(), android.util.Base64.NO_WRAP);
+			activity.runOnUiThread(() -> web.evaluateJavascript("callbackGeminiClient.resolve(JSON.parse(atob('" + b64 + "')))", null));
 		}).start();
 	}
 	
