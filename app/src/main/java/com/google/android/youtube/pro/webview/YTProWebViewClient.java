@@ -154,32 +154,43 @@ public class YTProWebViewClient extends WebViewClient {
 							.replace("background:#ee2a7b44", "background:rgba(37, 211, 102, 0.2)")
 							.replace("https://raw.githubusercontent.com/prateek-chaubey/YTPro/refs/heads/main/.github/img/habitius.webp", "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/120px-WhatsApp.svg.png")
 							.replace("YT PRO Settings", "إعدادات YT PRO")
-							.replace("Enter Youtube URL", "أدخل رابط يوتيوب")
-							.replace("Liked Videos", "الفيديوهات التي أعجبتني")
-							.replace("Check for Updates", "التحقق من وجود تحديثات")
-							.replace("Autoskip Sponsors", "تخطي الرعاة تلقائياً")
-							.replace("Gesture Controls", "عناصر التحكم بالإيماءات")
-							.replace("Miniplayer Gesture", "إيماءة المشغل المصغر")
-							.replace("Force Zoom", "فرض التكبير")
-							.replace("Background Play", "التشغيل في الخلفية")
-							.replace("Hide Shorts", "إخفاء الفيديوهات القصيرة")
-							.replace("Use single Gemini chat", "دردشة Gemini موحدة")
-							.replace("Select Gemini Model", "اختر نموذج Gemini")
-							.replace("Edit Gemini Prompt", "تعديل أمر Gemini")
-							.replace("Disable Codecs", "تعطيل الكوديك (Codecs)")
-							.replace("Report Bugs", "الإبلاغ عن المشاكل")
-							.replace("Become a Sponsor", "كن راعياً للمشروع")
-							.replace("Developer Mode", "وضع المطور")
-							.replace("You can find the source code at <a href=\"https://www.youtube.com/redirect?q=https://github.com/prateek-chaubey/YTPRO\" style=\"font-family:monospace;\" > https://github.com/prateek-chaubey/YTPRO</a>", "").replace("Disclaimer", "تنبيه").replace("if(isD)var a=[\"#000\",\"#717171\",\"#fff\"];else a=[\"#fff\",\"#909090\",\"#151515\"];", "if(isD)var a=[\"#fff\",\"#555\",\"#34C759\"];else a=[\"#fff\",\"#ccc\",\"#34C759\"];").replace("#ssprodivI div span{\ndisplay:block;\nheight:23px;\nwidth:40px;\nborder-radius:40px;\nright:10px;\nposition:absolute;\nbackground:#151515;\n}", "#ssprodivI div span{\ndisplay:inline-flex;\nheight:26px;\nwidth:46px;\nborder-radius:26px;\nright:auto;\nposition:relative;\nbackground:#ccc;\ntransition:background 0.3s cubic-bezier(0.4, 0.0, 0.2, 1);\ncursor:pointer;\nflex-shrink:0;\nmargin-right:8px;\n}").replace("#ssprodivI div span b{\ndisplay:block;\nheight:19px;\nwidth:19px;\nposition:absolute;\nright:2px;\ntop:2px;\nborder-radius:50px;\nbackground:#fff;\n}", "#ssprodivI div span b{\nheight:22px;\nwidth:22px;\nbackground:#fff;\nborder-radius:50%;\nposition:absolute;\nright:2px;\ntop:2px;\ntransition:transform 0.3s cubic-bezier(0.4, 0.0, 0.2, 1), background 0.3s;\nbox-shadow:0 1px 3px rgba(0,0,0,0.3);\n}").replace("#ssprodivI div{\nheight:10px;\nwidth:calc(100% - 20px);\npadding:10px;\nfont-size:1.45rem;\ntext-align:left;\ndisplay:flex;\nalign-items:center;\nposition:relative;\nmargin-top:3px;\n}", "#ssprodivI div{\nmin-height:20px;\nwidth:calc(100% - 20px);\npadding:10px;\nfont-size:1.45rem;\ntext-align:left;\ndisplay:flex;\njustify-content:space-between;\nalign-items:center;\nposition:relative;\nmargin-top:3px;\ngap:15px;\n}")
+                            .replace("Enter Youtube URL", "أدخل رابط يوتيوب")
+                            .replace("Liked Videos", "الفيديوهات التي أعجبتني")
+                            .replace("Check for Updates", "التحقق من وجود تحديثات")
+                            .replace("Autoskip Sponsors", "تخطي الرعاة تلقائياً")
+                            .replace("Gesture Controls", "عناصر التحكم بالإيماءات")
+                            .replace("Miniplayer Gesture", "إيماءة المشغل المصغر")
+                            .replace("Force Zoom", "فرض التكبير")
+                            .replace("Background Play", "التشغيل في الخلفية")
+                            .replace("Hide Shorts", "إخفاء الفيديوهات القصيرة")
+                            .replace("Use single Gemini chat", "دردشة Gemini موحدة")
+                            .replace("Select Gemini Model", "اختر نموذج Gemini")
+                            .replace("Edit Gemini Prompt", "تعديل أمر Gemini")
+                            .replace("Disable Codecs", "تعطيل الكوديك (Codecs)")
+                            .replace("Report Bugs", "الإبلاغ عن المشاكل")
+                            .replace("Become a Sponsor", "كن راعياً للمشروع")
+                            .replace("Developer Mode", "وضع المطور")
+                            .replace("You can find the source code at <a href=\"https://www.youtube.com/redirect?q=https://github.com/prateek-chaubey/YTPRO\" style=\"font-family:monospace;\" > https://github.com/prateek-chaubey/YTPRO</a>", "")
+                            .replace("Disclaimer", "تنبيه").replace("This is an unofficial OSS Youtube Mod, all the logos and brand names are property of Google LLC.", "<div style='direction:rtl;text-align:right;font-size:0.9rem;opacity:0.8;'>هذا تعديل يوتيوب مفتوح المصدر غير رسمي، جميع الشعارات والعلامات التجارية ملك لشركة Google LLC.</div>")
+                            // Theme Colors
+                            // Theme & Logic RTL Fix
+                            .replace("if(isD)var a=[\"#000\",\"#717171\",\"#fff\"];else a=[\"#fff\",\"#909090\",\"#151515\"];", "if(isD)var a=[\"#fff\",\"#555\",\"#34C759\"];else a=[\"#fff\",\"#ccc\",\"#34C759\"];")
+                            .replace("direction:rtl;", "direction:rtl;text-align:right;")
+                            // Optimized Row Style - Fixed Overlap
+                            .replace("#ssprodivI div{\nheight:10px;\nwidth:calc(100% - 20px);\npadding:10px;\nfont-size:1.45rem;\ntext-align:left;\ndisplay:flex;\nalign-items:center;\nposition:relative;\nmargin-top:3px;\n}", "#ssprodivI div{display:flex !important;justify-content:space-between !important;align-items:center !important;min-height:56px !important;width:calc(100% - 20px) !important;padding:8px 15px !important;font-size:1.1rem !important;text-align:right !important;position:relative !important;margin-top:5px !important;border-bottom:1px solid rgba(128,128,128,0.1) !important;box-sizing:border-box !important;}")
+                            // Optimized Toggle Style
+                            .replace("#ssprodivI div span{\ndisplay:block;\nheight:23px;\nwidth:40px;\nborder-radius:40px;\nright:10px;\nposition:absolute;\nbackground:#151515;\n}", "#ssprodivI div span{display:inline-flex !important;position:relative !important;height:26px !important;width:48px !important;border-radius:26px !important;background:#ccc !important;transition:all 0.3s ease !important;cursor:pointer !important;flex-shrink:0 !important;margin-left:10px !important;}")
+                            .replace("#ssprodivI div span b{\ndisplay:block;\nheight:19px;\nwidth:19px;\nposition:absolute;\nright:2px;\ntop:2px;\nborder-radius:50px;\nbackground:#fff;\n}", "#ssprodivI div span b{height:22px !important;width:22px !important;background:#fff !important;border-radius:50% !important;position:absolute !important;left:2px !important;top:2px !important;transition:all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;box-shadow:0 2px 5px rgba(0,0,0,0.3) !important;}")
+                            // Logic Fix for Toggles in RTL
                             .replace("left:2px;", "right:2px;left:auto;")
                             .replace("e.children[0].style.left=\"2px\"", "e.children[0].style.right=\"2px\",e.children[0].style.left=\"auto\"")
                             .replace("e.children[0].style.left=\"auto\",e.children[0].style.right=\"2px\"", "e.children[0].style.left=\"2px\",e.children[0].style.right=\"auto\"")
-                            .replace("1==t?`background:${a[0]};`:`background:${a[2]};`", "1==t?`background:${a[0]};`:`background:${a[2]};left:2px;right:auto;`")
-							.replace("Save", "حفظ")
+                            .replace("1==t?`background:${a[0]};`:`background:${a[2]};`", "1==t?`background:${a[0]};left:2px;right:auto;`:`background:${a[2]};` ")
+                            .replace("Save", "حفظ")
 							.replace("Done", "تم")
-                            .replace("GeminiModels={\"3.0 Pro\":\'[1,null,null,null,\"9d8ca3786ebdfbea\",null,null,0,[4],null,null,1]\',\"3.0 Flash\":\'[1,null,null,null,\"fbb127bbb056c959\",null,null,0,[4],null,null,1]\',\"3.0 Flash Thinking\":\'[1,null,null,null,\"5bf011840784117a\",null,null,0,[4],null,null,1]\',\"3.0 Pro Plus\":\'[1,null,null,null,\"e6fa609c3fa255c0\",null,null,0,[4],null,null,4]\',\"3.0 Flash Plus\":\'[1,null,null,null,\"56fdd199312815e2\",null,null,0,[4],null,null,4]\',\"3.0 Flash Thinking Plus\":\'[1,null,null,null,\"e051ce1aa80aa576\",null,null,0,[4],null,null,4]\',\"3.0 Pro Advanced\":\'[1,null,null,null,\"e6fa609c3fa255c0\",null,null,0,[4],null,null,2]\',\"3.0 Flash Advanced\":\'[1,null,null,null,\"56fdd199312815e2\",null,null,0,[4],null,null,2]\',\"3.0 Flash Thinking Advanced\":\'[1,null,null,null,\"e051ce1aa80aa576\",null,null,0,[4],null,null,2]\'}", "GeminiModels={\"3.0 Pro\":\'[1,null,null,null,\"9d8ca3786ebdfbea\",null,null,0,[4],null,null,1]\',\"3.0 Flash\":\'[1,null,null,null,\"fbb127bbb056c959\",null,null,0,[4],null,null,1]\',\"3.0 Flash Thinking\":\'[1,null,null,null,\"5bf011840784117a\",null,null,0,[4],null,null,1]\',\"3.0 Pro Plus\":\'[1,null,null,null,\"e6fa609c3fa255c0\",null,null,0,[4],null,null,4]\',\"3.0 Flash Plus\":\'[1,null,null,null,\"56fdd199312815e2\",null,null,0,[4],null,null,4]\',\"3.0 Flash Thinking Plus\":\'[1,null,null,null,\"e051ce1aa80aa576\",null,null,0,[4],null,null,4]\',\"3.0 Pro Advanced\":\'[1,null,null,null,\"e6fa609c3fa255c0\",null,null,0,[4],null,null,2]\',\"3.0 Flash Advanced\":\'[1,null,null,null,\"56fdd199312815e2\",null,null,0,[4],null,null,2]\',\"3.0 Flash Thinking Advanced\":\'[1,null,null,null,\"e051ce1aa80aa576\",null,null,0,[4],null,null,2]\',\"Gemini 3.5 Flash\":\'[1,null,null,null,\"gemini-3.5-flash\",null,null,0,[4],null,null,1]\',\"Gemini 3.1 Flash Lite\":\'[1,null,null,null,\"gemini-3.1-flash-lite\",null,null,0,[4],null,null,1]\',\"Gemini 3.0 Flash Preview\":\'[1,null,null,null,\"gemini-3-flash-preview\",null,null,0,[4],null,null,1]\',\"Gemini 3.1 Pro Preview\":\'[1,null,null,null,\"gemini-3.1-pro-preview\",null,null,0,[4],null,null,1]\',\"Gemini 3.1 Flash Lite Image\":\'[1,null,null,null,\"gemini-3.1-flash-lite-image\",null,null,0,[4],null,null,1]\',\"Gemma 4 31B IT\":\'[1,null,null,null,\"gemma-4-31b-it\",null,null,0,[4],null,null,1]\'}")
-							.replace("Made with", "بواسطة عبدالرحمن المخلافي 🔥")
-							.replace("by Prateek Chaubey", "صُنع بـ")
+                            .replace("GeminiModels={\"3.0 Pro\":\'[1,null,null,null,\"9d8ca3786ebdfbea\",null,null,0,[4],null,null,1]\',\"3.0 Flash\":\'[1,null,null,null,\"fbb127bbb056c959\",null,null,0,[4],null,null,1]\',\"3.0 Flash Thinking\":\'[1,null,null,null,\"5bf011840784117a\",null,null,0,[4],null,null,1]\',\"3.0 Pro Plus\":\'[1,null,null,null,\"e6fa609c3fa255c0\",null,null,0,[4],null,null,4]\',\"3.0 Flash Plus\":\'[1,null,null,null,\"56fdd199312815e2\",null,null,0,[4],null,null,4]\',\"3.0 Flash Thinking Plus\":\'[1,null,null,null,\"e051ce1aa80aa576\",null,null,0,[4],null,null,4]\',\"3.0 Pro Advanced\":\'[1,null,null,null,\"e6fa609c3fa255c0\",null,null,0,[4],null,null,2]\',\"3.0 Flash Advanced\":\'[1,null,null,null,\"56fdd199312815e2\",null,null,0,[4],null,null,2]\',\"3.0 Flash Thinking Advanced\":\'[1,null,null,null,\"e051ce1aa80aa576\",null,null,0,[4],null,null,2]\'}", "GeminiModels={\"3.0 Pro\":\'[1,null,null,null,\"9d8ca3786ebdfbea\",null,null,0,[4],null,null,1]\',\"3.0 Flash\":\'[1,null,null,null,\"fbb127bbb056c959\",null,null,0,[4],null,null,1]\',\"3.0 Flash Thinking\":\'[1,null,null,null,\"5bf011840784117a\",null,null,0,[4],null,null,1]\',\"3.0 Pro Plus\":\'[1,null,null,null,\"e6fa609c3fa255c0\",null,null,0,[4],null,null,4]\',\"3.0 Flash Plus\":\'[1,null,null,null,\"56fdd199312815e2\",null,null,0,[4],null,null,4]\',\"3.0 Flash Thinking Plus\":\'[1,null,null,null,\"e051ce1aa80aa576\",null,null,0,[4],null,null,4]\',\"3.0 Pro Advanced\":\'[1,null,null,null,\"e6fa609c3fa255c0\",null,null,0,[4],null,null,2]\',\"3.0 Flash Advanced\":\'[1,null,null,null,\"56fdd199312815e2\",null,null,0,[4],null,null,2]\',\"3.0 Flash Thinking Advanced\":\'[1,null,null,null,\"e051ce1aa80aa576\",null,null,0,[4],null,null,2]\',\"Gemini 3.5 Flash\":\'[1,null,null,null,\"9d8ca3786ebdfbea\",null,null,0,[4],null,null,1]\',\"Gemini 3.1 Flash Lite\":\'[1,null,null,null,\"9d8ca3786ebdfbea\",null,null,0,[4],null,null,1]\',\"Gemini 3.0 Flash Preview\":\'[1,null,null,null,\"9d8ca3786ebdfbea\",null,null,0,[4],null,null,1]\',\"Gemini 3.1 Pro Preview\":\'[1,null,null,null,\"9d8ca3786ebdfbea\",null,null,0,[4],null,null,1]\',\"Gemini 3.1 Flash Lite Image\":\'[1,null,null,null,\"9d8ca3786ebdfbea\",null,null,0,[4],null,null,1]\',\"Gemma 4 31B IT\":\'[1,null,null,null,\"9d8ca3786ebdfbea\",null,null,0,[4],null,null,1]\'}")
+							.replace("Made with", "صُنع بكل ❤️")
+							.replace("by Prateek Chaubey", "بواسطة عبدالرحمن المخلافي 🔥")
 ;
 				}
 				InputStream modifiedStream = new ByteArrayInputStream(jsCode.getBytes("UTF-8"));
@@ -235,8 +246,8 @@ public class YTProWebViewClient extends WebViewClient {
 				"    'Shorts': 'قصيرة', " +
 				"    'Subscriptions': 'الاشتراكات', " +
 				"    'Library': 'المكتبة', " +
-				"    'Made with': 'بواسطة عبدالرحمن المخلافي 🔥', " +
-				"    'by Prateek Chaubey': 'صُنع بـ', " +
+				"    'Made with': 'صُنع بكل ❤️', " +
+				"    'by Prateek Chaubey': 'بواسطة عبدالرحمن المخلافي 🔥', " +
 				"    'Please follow Habitius on Instagram': 'تواصل مع المطور (WhatsApp)', " +
 				"    'For daily habit,lifestyle and health tips': 'لأي استفسار أو دعم فني تواصل معنا' " +
 				"  }; " +
