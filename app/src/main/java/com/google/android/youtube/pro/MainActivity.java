@@ -71,7 +71,11 @@ public class MainActivity extends Activity {
         web.getSettings().setDomStorageEnabled(true);
         web.getSettings().setDatabaseEnabled(true);
         web.getSettings().setMediaPlaybackRequiresUserGesture(false); 
-        web.getSettings().setUserAgentString("Mozilla/5.0 (Linux; Android 13; SM-G991U) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Mobile Safari/537.36");
+        String userAgent = web.getSettings().getUserAgentString();
+        if (userAgent != null) {
+            userAgent = userAgent.replace("; wv", "");
+            web.getSettings().setUserAgentString(userAgent);
+        }
         web.setLayerType(View.LAYER_TYPE_HARDWARE, null);
 
         CookieManager cookieManager = CookieManager.getInstance();

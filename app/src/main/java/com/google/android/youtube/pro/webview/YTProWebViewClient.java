@@ -34,10 +34,15 @@ public class YTProWebViewClient extends WebViewClient {
 	public WebResourceResponse shouldInterceptRequest(WebView view, WebResourceRequest request) {
 		String url = request.getUrl().toString();
 		
-		if (request.isForMainFrame() && (url.contains("m.youtube.com") || url.contains("www.youtube.com"))) {
+		if (url.contains("accounts.google.com") || url.contains("ssl.gstatic.com") || url.contains("play.google.com")) {
+			return super.shouldInterceptRequest(view, request);
+		}
+
+		if (request.isForMainFrame() && (url.contains("m.youtube.com") || url.contains("www.youtube.com")) && !url.contains("/signin") && !url.contains("/account") && !url.contains("accounts.google.com")) {
 			try {
 				URL newUrl = new URL(url);
 				HttpsURLConnection connection = (HttpsURLConnection) newUrl.openConnection();
+				connection.setInstanceFollowRedirects(false);
 				connection.setRequestMethod(request.getMethod());
 				
 				for (Map.Entry<String, String> header : request.getRequestHeaders().entrySet()) {
@@ -55,11 +60,17 @@ public class YTProWebViewClient extends WebViewClient {
 				for (Map.Entry<String, List<String>> entry : connection.getHeaderFields().entrySet()) {
 					if (entry.getKey() != null) {
 						String headerName = entry.getKey().toLowerCase();
+						if (headerName.equals("set-cookie")) {
+							for (String cookie : entry.getValue()) {
+								android.webkit.CookieManager.getInstance().setCookie(url, cookie);
+							}
+						}
 						if (!headerName.equals("content-security-policy") && !headerName.equals("content-security-policy-report-only")) {
 							safeHeaders.put(entry.getKey(), String.join(", ", entry.getValue()));
 						}
 					}
 				}
+				android.webkit.CookieManager.getInstance().flush();
 				
 				InputStream is = connection.getInputStream();
 				BufferedReader reader = new BufferedReader(new InputStreamReader(is));
@@ -81,41 +92,7 @@ public class YTProWebViewClient extends WebViewClient {
 		}
 		
 		
-		if (url.startsWith("https://www.google.com/js/") || 
-		url.startsWith("https://www.google.com/recaptcha/") ||
-		url.startsWith("https://www.google.com/js/th/")) {
-			
-			try {
-				HttpsURLConnection conn = (HttpsURLConnection) new URL(url).openConnection();
-				conn.setRequestProperty("User-Agent", request.getRequestHeaders().get("User-Agent"));
-				conn.setRequestProperty("Referer", "https://www.youtube.com/");
-				conn.setInstanceFollowRedirects(true);
-				conn.setConnectTimeout(10000);
-				conn.setReadTimeout(10000);
-				conn.connect();
-				
-				String mimeType = conn.getContentType();
-				String encoding = conn.getContentEncoding();
-				if (encoding == null) encoding = "utf-8";
-				if (mimeType == null) mimeType = "application/javascript";
-				
-				Map<String, String> headers = new HashMap<>();
-				headers.put("Access-Control-Allow-Origin", "*");
-				headers.put("Access-Control-Allow-Methods", "GET, POST, OPTIONS");
-				headers.put("Access-Control-Allow-Headers", "*");
-				headers.put("Cross-Origin-Resource-Policy", "cross-origin");
-				
-				return new WebResourceResponse(
-				mimeType, encoding,
-				conn.getResponseCode(), "OK",
-				headers, conn.getInputStream()
-				);
-				
-			} catch (Exception e) {
-				Log.e("YTPRO_WVC", "Google JS fetch failed: " + e.getMessage());
-			}
-		}
-		
+		// Removed Google JS interception to fix login issues
 		
 		if (url.contains("youtube.com/ytpro_cdn/")) {
 			String modifiedUrl = url;
@@ -188,8 +165,26 @@ public class YTProWebViewClient extends WebViewClient {
 		web.evaluateJavascript("(function () { var script = document.createElement('script'); script.src='https://youtube.com/ytpro_cdn/npm/ytpro/bgplay.js'; document.body.appendChild(script);  })();", null);
 		web.evaluateJavascript("(function () { var script = document.createElement('script');script.type='module';script.src='https://youtube.com/ytpro_cdn/npm/ytpro/innertube.js'; document.body.appendChild(script);  })();", null);
 		
-		
-		
+		// Shorts Download Button Injection
+		web.evaluateJavascript("(function() { " +
+				"  function addShortsDownloadButton() { " +
+				"    if (!window.location.href.includes('/shorts/')) return; " +
+				"    var actions = document.querySelectorAll('ytm-reel-player-overlay-actions, .reel-player-overlay-actions-container, #actions-container.ytm-reel-player-overlay-actions'); " +
+				"    actions.forEach(function(action) { " +
+				"      if (action.querySelector('.ytpro-shorts-download')) return; " +
+				"      var btn = document.createElement('div'); " +
+				"      btn.className = 'ytpro-shorts-download'; " +
+				"      btn.style.display = 'flex'; btn.style.flexDirection = 'column'; btn.style.alignItems = 'center'; btn.style.marginTop = '12px'; btn.style.cursor = 'pointer'; " +
+				"      btn.innerHTML = '<div style=\"display:flex;flex-direction:column;align-items:center;color:white;\"><svg viewBox=\"0 0 24 24\" style=\"width:28px;height:28px;fill:white;\"><path d=\"M17 18V19H6V18H17ZM16.5 11.4L15.8 10.7L12 14.4V4H11V14.4L7.2 10.6L6.5 11.3L11.5 16.3L16.5 11.4Z\"></path></svg><span style=\"font-size:10px;margin-top:4px;font-weight:bold;text-shadow: 1px 1px 2px rgba(0,0,0,0.8);\">تنزيل</span></div>'; " +
+				"      btn.onclick = function(e) { " +
+				"        e.preventDefault(); e.stopPropagation(); " +
+				"        Android.openSeal(window.location.href.split('?')[0]); " +
+				"      }; " +
+				"      if (action.firstChild) action.insertBefore(btn, action.firstChild); else action.appendChild(btn); " +
+				"    }); " +
+				"  } " +
+				"  if (!window.ytproShortsInterval) window.ytproShortsInterval = setInterval(addShortsDownloadButton, 1500); " +
+				"})();", null);
 		
 		if (!url.contains("youtube.com/watch") && !url.contains("youtube.com/shorts") && activity.isPlaying) {
 			activity.isPlaying = false;
